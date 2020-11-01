@@ -23,8 +23,69 @@ local vr = LeaderLib.Classes.VisualResourceData
 ITEMSLOT = VisualManager.Slot
 VISUALSLOT = VisualManager.VisualSlot
 
+---@return VisualResourceData|nil
+local function GetTieredArmorData(visual, armorType, rarity, level, slot, tieredArmorData)
+	if tieredArmorData == nil then
+		return nil
+	end
+	local tieredArmorTypeData = tieredArmorData[armorType]
+	if tieredArmorTypeData ~= nil then
+		local rarityData = tieredArmorTypeData[rarity]
+		if rarityData ~= nil then
+			for i,v in pairs(rarityData) do
+				if (v.Min == nil or level >= v.Min or v.Min <= 0) and (v.Max == nil or level <= v.Max or v.Max >= Ext.ExtraData.LevelCap) then
+					return v[slot]
+				end
+			end
+		end
+	end
+	return nil
+end
+
+---@alias OnEquipmentChangedCallback fun(self:VisualElementData, char:EsvCharacter, item:EsvItem, equipped:boolean, tieredArmorData:table<string,table>, uniqueItemTags:table<string,string>)
+
+---@param self VisualElementData
+---@param char EsvCharacter
+---@param item EsvItem
+---@param equipped boolean
+---@param tieredArmorData table<string,table>
+---@param uniqueItemTags table<string,string>
+local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, uniqueItemTags)
+	if Debug.Enabled then
+		Ext.Print(string.format(Debug.TraceEquipParams, char.DisplayName, item.StatsId, equipped))
+	end
+	local visualsChanged = false
+	if equipped then
+		local slot = GameHelpers.Item.GetEquippedSlot(char.MyGuid, item.MyGuid) or item.Stats.Slot
+		if item.Stats.Unique == 1 then
+			if uniqueItemTags ~= nil then
+				local specialArmorType = ""
+				for tag,armorType in pairs(uniqueItemTags) do
+					if item:HasTag(tag) or string.find(item.Stats.Tags, tag) then
+						specialArmorType = armorType
+						break
+					end
+				end
+				if specialArmorType ~= "" then
+					self:ApplyVisualsForArmorType(char, specialArmorType, item.Stats.Slot)
+					visualsChanged = true
+				end
+			end
+		else
+			local tieredArmorData = GetTieredArmorData(char.RootTemplate.VisualTemplate, item.Stats.ArmorType, item.Stats.ItemTypeReal, item.Stats.Level, slot)
+			if tieredArmorData ~= nil then
+				tieredArmorData:SetVisualOnCharacter(char.MyGuid)
+				visualsChanged = true
+			end
+		end
+	end
+	if not visualsChanged then
+		self.OnEquipmentChangedDefault(self, char, item, equipped)
+	end
+end
+
 for i,func in pairs(ArmorInitFunctions) do
-	local b,result = xpcall(func, debug.traceback, ve, vr)
+	local b,result = xpcall(func, debug.traceback, ve, vr, OnEquipmentChanged)
 	if not b then
 		Ext.PrintError(result)
 	end
