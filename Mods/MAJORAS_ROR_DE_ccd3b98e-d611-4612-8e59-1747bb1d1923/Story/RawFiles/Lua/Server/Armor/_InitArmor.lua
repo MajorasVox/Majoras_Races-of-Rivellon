@@ -16,6 +16,8 @@ local vr = LeaderLib.Classes.VisualResourceData
 ITEMSLOT = VisualManager.Slot
 VISUALSLOT = VisualManager.VisualSlot
 
+EMPTY_VISUAL = "ROR_Empty"
+
 ---@return VisualResourceData|nil
 local function GetTieredArmorData(visual, armorType, rarity, level, slot, tieredArmorData)
 	if tieredArmorData == nil then

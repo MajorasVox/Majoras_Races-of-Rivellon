@@ -1,4 +1,3 @@
-local EMPTY_VISUAL = "Demon_Kin_Male_Body_Naked_A_Empty_A"
 local UniqueItems = {
 	MAJROR_IncarnateArmor = "Incarnate"
 }
