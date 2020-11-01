@@ -1,0 +1,4 @@
+QRY
+QRY_IsTrueUndead(S_Player_Demonic_Kin_9666cb05-8764-4d97-9bb5-9e3a6556d562)
+THEN
+DB_NOOP(1);

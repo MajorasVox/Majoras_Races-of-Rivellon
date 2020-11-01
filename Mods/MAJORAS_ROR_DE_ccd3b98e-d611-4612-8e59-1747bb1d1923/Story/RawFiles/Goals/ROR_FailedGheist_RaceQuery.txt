@@ -1,0 +1,4 @@
+QRY
+QRY_IsTrueRace(S_Player_Failed_Gheist_543a2e21-cbff-4262-a41d-2be62cbe2b7e, "Human")
+THEN
+DB_NOOP(1);

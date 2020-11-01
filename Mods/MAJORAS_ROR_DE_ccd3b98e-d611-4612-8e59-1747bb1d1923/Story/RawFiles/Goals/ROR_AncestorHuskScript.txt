@@ -1,0 +1,9 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+LeaderLib_Origins_Register_All(S_Player_Ancestor_Husk_ddf64b07-0637-4194-b26e-2e0e80d6821d, "Neutral", "Hero Henchman Rogue", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "MYSTIC", "SOLDIER", "SHAPESHIFT_ROR_ANCESTOR_HUSK");
+KBSECTION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

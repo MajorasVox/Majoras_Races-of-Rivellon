@@ -1,0 +1,8 @@
+{
+    "RequiredExtensionVersion": 52,
+    "ModTable": "MAJORAS_ROR_DE",
+    "FeatureFlags": [
+        "OsirisExtensions",
+        "Lua"
+    ]
+}

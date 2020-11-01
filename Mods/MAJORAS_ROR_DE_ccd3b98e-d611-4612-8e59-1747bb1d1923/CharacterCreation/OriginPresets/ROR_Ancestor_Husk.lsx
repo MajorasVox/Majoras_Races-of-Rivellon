@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" time="1387205254" />
+    <version major="1" minor="3" revision="0" build="0" />
+    <region id="CharacterCreationManager">
+        <node id="root">
+            <children>
+                <node id="OriginDesc">
+                    <attribute id="OriginName" value="ROR_Ancestor_Husk" type="22" />
+					<attribute id="OriginDisplayName" value="Deku'Deku" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginDescription" value="The last great war wrought devastation on all the races, you remember first hand the massacre of your people. Deliver the justice denied your people." handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginLongDescription" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+                    <attribute id="CharacterUUID" value="ddf64b07-0637-4194-b26e-2e0e80d6821d" type="22" />
+                    <attribute id="UserCanAlterTags" value="0" type="19" />
+                    <attribute id="SkillSet" value="Avatar_ROR_Ancestor_Husk" type="22" />
+                    <attribute id="RootTemplateOverride" value="2089617c-41b0-4760-b07c-139760542b87" type="22" />
+                    
+                	<children>
+                		<node id="SupportedGenders">
+                			<children>
+                                <node id="Gender">
+                                    <attribute id="Gender" value="Male" type="23" />
+                                </node>
+                			</children>
+                		</node>
+
+                		<node id="SupportedRaces">
+                			<children>
+                				<node id="SupportedRaces">
+                                    <attribute id="Object" value="Elf" type="22" />
+                                </node>
+                			</children>
+                        </node>
+                	</children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

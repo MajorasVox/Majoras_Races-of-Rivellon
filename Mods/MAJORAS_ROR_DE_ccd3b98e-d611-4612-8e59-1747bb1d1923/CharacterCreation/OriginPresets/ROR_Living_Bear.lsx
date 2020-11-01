@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" time="1387205254" />
+    <version major="1" minor="3" revision="0" build="0" />
+    <region id="CharacterCreationManager">
+        <node id="root">
+            <children>
+                <node id="OriginDesc">
+                    <attribute id="OriginName" value="ROR_Living_Bear" type="22" />
+					<attribute id="OriginDisplayName" value="Oberon" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginDescription" value="You awoke life given where there was none. The only of your kind, what will you do noble bear, how will you use this gift; after all the choice is yours alone." handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginLongDescription" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+                    <attribute id="CharacterUUID" value="50924c85-ffd3-469b-ab68-49f056580f00" type="22" />
+                    <attribute id="UserCanAlterTags" value="0" type="19" />
+                    <attribute id="SkillSet" value="Avatar_ROR_Living_Bear" type="22" />
+                    <attribute id="RootTemplateOverride" value="d1561903-ec2a-4bed-b232-2f6f3accdd33" type="22" />
+                    
+                	<children>
+                		<node id="SupportedGenders">
+                			<children>
+                                <node id="Gender">
+                                    <attribute id="Gender" value="Male" type="23" />
+                                </node>
+                			</children>
+                		</node>
+
+                		<node id="SupportedRaces">
+                			<children>
+                				<node id="SupportedRaces">
+                                    <attribute id="Object" value="Undead_Dwarf" type="22" />
+                                </node>
+                			</children>
+                        </node>
+                	</children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

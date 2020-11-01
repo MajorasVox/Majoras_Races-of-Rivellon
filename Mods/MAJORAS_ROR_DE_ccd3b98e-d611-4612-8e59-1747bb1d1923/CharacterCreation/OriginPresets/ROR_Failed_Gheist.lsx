@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" time="1387205254" />
+    <version major="1" minor="3" revision="0" build="0" />
+    <region id="CharacterCreationManager">
+        <node id="root">
+            <children>
+                <node id="OriginDesc">
+                    <attribute id="OriginName" value="ROR_Failed_Gheist" type="22" />
+					<attribute id="OriginDisplayName" value="Null" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginDescription" value="Poor creature, they took away who you are, they tried to strip you of source. Cast out for not being a useful tool, but you are so much more." handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginLongDescription" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+                    <attribute id="CharacterUUID" value="543a2e21-cbff-4262-a41d-2be62cbe2b7e" type="22" />
+                    <attribute id="UserCanAlterTags" value="0" type="19" />
+                    <attribute id="SkillSet" value="Avatar_ROR_Failed_Gheist" type="22" />
+                    <attribute id="RootTemplateOverride" value="2a57604e-93ab-4765-a7b2-3fff3dbf89b4" type="22" />
+                    
+                	<children>
+                		<node id="SupportedGenders">
+                			<children>
+                                <node id="Gender">
+                                    <attribute id="Gender" value="Male" type="23" />
+                                </node>
+                			</children>
+                		</node>
+
+                		<node id="SupportedRaces">
+                			<children>
+                				<node id="SupportedRaces">
+                                    <attribute id="Object" value="Elf" type="22" />
+                                </node>
+                			</children>
+                        </node>
+                	</children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
