@@ -1,12 +1,12 @@
 -- TODO
 local EMPTY_VISUAL = ""
-local TieredArmor = nil
 local UniqueItems = nil
 
 ---@param ve VisualElementData
 ---@param vr VisualResourceData
 ---@param onEquipmentChangedCallback OnEquipmentChangedCallback
 return function(ve, vr, onEquipmentChangedCallback)	
+	local TieredArmor = nil
 	local visualData = ve:Create({OnEquipmentChanged=function(self, char, item, equipped)
 		onEquipmentChangedCallback(self, char, item, equipped, TieredArmor, UniqueItems)
 	end})

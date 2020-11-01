@@ -1,12 +1,3 @@
----@type fun(ve:VisualElementData, vr:VisualResourceData)[]
-local ArmorInitFunctions = {
-	Ext.Require("Server/Armor/AncientElf.lua"),
-	Ext.Require("Server/Armor/DemonKin.lua"),
-	Ext.Require("Server/Armor/FailedGheist.lua"),
-	Ext.Require("Server/Armor/LivingBear.lua"),
-	Ext.Require("Server/Armor/Zombie.lua"),
-}
-
 VISUALID = {
     AncientElf = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
     FailedGheist = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
@@ -14,6 +5,8 @@ VISUALID = {
     LivingBear = "b8ddbc75-415f-4894-afc2-2256e11b723d",
     Zombie = "ab01c22a-cce0-483b-84e6-2d331b6c2982"
 }
+
+VisualManager = LeaderLib.VisualManager
 
 ---@type VisualElementData
 local ve = LeaderLib.Classes.VisualElementData
@@ -83,6 +76,15 @@ local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, u
 		self.OnEquipmentChangedDefault(self, char, item, equipped)
 	end
 end
+
+---@type fun(ve:VisualElementData, vr:VisualResourceData)[]
+local ArmorInitFunctions = {
+	Ext.Require("Server/Armor/AncientElf.lua"),
+	Ext.Require("Server/Armor/DemonKin.lua"),
+	Ext.Require("Server/Armor/FailedGheist.lua"),
+	Ext.Require("Server/Armor/LivingBear.lua"),
+	Ext.Require("Server/Armor/Zombie.lua"),
+}
 
 for i,func in pairs(ArmorInitFunctions) do
 	local b,result = xpcall(func, debug.traceback, ve, vr, OnEquipmentChanged)

@@ -1,6 +1,7 @@
 Ext.Print("[ROR] Loaded Shared.lua.")
 
 LeaderLib = Mods.LeaderLib
+Common = LeaderLib.Common
 GameHelpers = LeaderLib.GameHelpers
 
 Debug = {
