@@ -11,6 +11,7 @@ Editor/Mods/MAJORAS_ROR_DE_ccd3b98e-d611-4612-8e59-1747bb1d1923/Levels/*
 # Story files        #
 ######################
 *.div
+!story_header.div
 *.raw
 story_orphanqueries_ignore.txt
 Mods/MAJORAS_ROR_DE_ccd3b98e-d611-4612-8e59-1747bb1d1923/Story/Dialogs/Autosave/*
@@ -51,6 +52,7 @@ story.debugInfo
 *.lsefx
 #*.lsx
 *.lsmg
+*.wem
 
 # Logs               #
 ######################
@@ -115,5 +117,6 @@ launch.json
 ehthumbs.db
 Thumbs.db
 *.lnk
+
 
 
