@@ -1,9 +1,0 @@
-Version 1
-SubGoalCombiner SGC_AND
-INITSECTION
-LeaderLib_Origins_Register_All(S_Player_Zombie_1677ad2e-6c42-4ffd-b3fd-4cecdef0a62c, "Neutral", "Hero Henchman Rogue", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "OUTLAW", "JESTER", "SHAPESHIFT_ROR_ZOMBIE");
-KBSECTION
-EXITSECTION
-
-ENDEXITSECTION
-ParentTargetEdge "__Start"

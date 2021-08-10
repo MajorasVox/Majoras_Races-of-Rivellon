@@ -1,4 +1,0 @@
-QRY
-QRY_IsTrueUndead(S_Player_Living_Bear_50924c85-ffd3-469b-ab68-49f056580f00)
-THEN
-DB_NOOP(1);
