@@ -1,9 +1,9 @@
 VISUALID = {
-    AncientElf = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
-    FailedGheist = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
-    DemonicKin = "d656291b-81f3-445e-84df-4e32cfc18d46",
-    LivingBear = "b8ddbc75-415f-4894-afc2-2256e11b723d",
-    Zombie = "ab01c22a-cce0-483b-84e6-2d331b6c2982"
+	AncientElf = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
+	FailedGheist = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
+	DemonicKin = "d656291b-81f3-445e-84df-4e32cfc18d46",
+	LivingBear = "b8ddbc75-415f-4894-afc2-2256e11b723d",
+	Zombie = "ab01c22a-cce0-483b-84e6-2d331b6c2982"
 }
 
 VisualManager = LeaderLib.VisualManager
@@ -47,29 +47,29 @@ end
 ---@param uniqueItemTags table<string,string>
 local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, uniqueItemTags)
 	if Debug.Enabled then
-		Ext.Print(string.format(Debug.TraceEquipParams, char.DisplayName, item.StatsId, equipped))
+		--Ext.Print(string.format(Debug.TraceEquipParams, char.DisplayName, item.StatsId, equipped))
+		fprint(LOGLEVEL.TRACE, "[ROR:OnEquipmentChanged] char(%s)[%s] item(%s) equipped(%s)", char.DisplayName, char.MyGuid, item.DisplayName, equipped)
 	end
 	local visualsChanged = false
 	if equipped then
 		local slot = GameHelpers.Item.GetEquippedSlot(char.MyGuid, item.MyGuid) or item.Stats.Slot
-		if item.Stats.Unique == 1 then
-			if uniqueItemTags ~= nil then
-				local specialArmorType = ""
-				for tag,armorType in pairs(uniqueItemTags) do
-					if item:HasTag(tag) or string.find(item.Stats.Tags, tag) then
-						specialArmorType = armorType
-						break
-					end
-				end
-				if specialArmorType ~= "" then
-					self:ApplyVisualsForArmorType(char, specialArmorType, item.Stats.Slot)
-					visualsChanged = true
+		if uniqueItemTags ~= nil then
+			local specialArmorType = ""
+			for tag,armorType in pairs(uniqueItemTags) do
+				if GameHelpers.ItemHasTag(item, tag) then
+					specialArmorType = armorType
+					break
 				end
 			end
-		else
-			local tieredArmorData = GetTieredArmorData(char.RootTemplate.VisualTemplate, item.Stats.ArmorType, item.Stats.ItemTypeReal, item.Stats.Level, slot)
-			if tieredArmorData ~= nil then
-				tieredArmorData:SetVisualOnCharacter(char.MyGuid)
+			if specialArmorType ~= "" then
+				self:ApplyVisualsForArmorType(char, specialArmorType, item.Stats.Slot)
+				visualsChanged = true
+			end
+		end
+		if not visualsChanged then
+			local visualData = GetTieredArmorData(char.RootTemplate.VisualTemplate, item.Stats.ArmorType, item.Stats.ItemTypeReal, item.Stats.Level, slot, tieredArmorData)
+			if visualData ~= nil then
+				visualData:SetVisualOnCharacter(char.MyGuid)
 				visualsChanged = true
 			end
 		end
