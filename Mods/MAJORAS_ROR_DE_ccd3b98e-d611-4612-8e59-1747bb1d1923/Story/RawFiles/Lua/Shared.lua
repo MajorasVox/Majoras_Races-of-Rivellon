@@ -9,6 +9,8 @@ Debug = {
     TraceEquipParams = "[OnEquipmentChanged] char(%s) item(%s) equipped(%s)"
 }
 
+Mods.LeaderLib.Import(Mods.MAJORAS_ROR_DE)
+
 --[[
 Console commands:
 
