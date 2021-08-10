@@ -1,9 +1,5 @@
 Ext.Print("[ROR] Loaded Shared.lua.")
 
-LeaderLib = Mods.LeaderLib
-Common = LeaderLib.Common
-GameHelpers = LeaderLib.GameHelpers
-
 Debug = {
     Enabled = Ext.IsDeveloperMode(),
     TraceEquipParams = "[OnEquipmentChanged] char(%s) item(%s) equipped(%s)"
