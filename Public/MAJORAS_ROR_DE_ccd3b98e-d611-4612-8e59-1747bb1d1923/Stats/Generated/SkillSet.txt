@@ -5,11 +5,10 @@ new skillset "Avatar_ROR_Failed_Gheist"
 add skill "Dome_CircleOfProtection"
 
 new skillset "Avatar_ROR_Demonic_Kin"
-add skill "Dome_CircleOfProtection"
+add skill "Shout_PlaceHolder"
 
 new skillset "Avatar_ROR_Zombie"
 add skill "Dome_CircleOfProtection"
 
 new skillset "Avatar_ROR_Living_Bear"
 add skill "Dome_CircleOfProtection"
-
