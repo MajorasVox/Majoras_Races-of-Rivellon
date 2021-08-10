@@ -5,7 +5,7 @@ new skillset "Avatar_ROR_Failed_Gheist"
 add skill "Dome_CircleOfProtection"
 
 new skillset "Avatar_ROR_Demonic_Kin"
-add skill "Shout_PlaceHolder"
+add skill "Shout_ROR_DemonWings"
 
 new skillset "Avatar_ROR_Zombie"
 add skill "Dome_CircleOfProtection"
