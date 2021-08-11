@@ -94,3 +94,5 @@ for i,func in pairs(ArmorInitFunctions) do
 		Ext.PrintError(result)
 	end
 end
+
+Ext.Require("Server/Armor/_ArmorDebug.lua")
