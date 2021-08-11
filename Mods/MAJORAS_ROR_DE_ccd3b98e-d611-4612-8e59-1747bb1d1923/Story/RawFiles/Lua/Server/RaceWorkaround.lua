@@ -26,20 +26,20 @@ local OriginRaces = {
 }
 
 --Making sure QRY_IsTrueRace doesn't return true for whatever race our origins might be inherently
-Ext.RegisterOsirisListener("QRY_IsTrueRace", 2, "after", function(uuid, race)
+Ext.RegisterOsirisListener("QRY_IsTrueRace", 2, "before", function(uuid, race)
 	uuid = StringHelpers.GetUUID(uuid)
 	local trueRace = OriginRaces[uuid]
-	if trueRace ~= nil then
-		return trueRace == race
+	if trueRace ~= nil and trueRace == race then
+		return true
 	end
 end)
 
 --Overriding the QRY_IsTrueUndead result so it works regardless of the CharacterGetRace result.
-Ext.RegisterOsirisListener("QRY_IsTrueUndead", 1, "after", function(uuid)
+Ext.RegisterOsirisListener("QRY_IsTrueUndead", 1, "before", function(uuid)
 	uuid = StringHelpers.GetUUID(uuid)
 	local trueRace = OriginRaces[uuid]
-	if trueRace ~= nil then
-		return undeadRace[trueRace] == true
+	if trueRace ~= nil and undeadRace[trueRace] == true then
+		return true
 	end
 end)
 
