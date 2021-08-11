@@ -204,7 +204,8 @@ return function(ve, vr, onEquipmentChangedCallback)
 					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ACCESSORY_Ghoul_Steaks_A", VISUALSLOT.Extra1),
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_ROBE_Ghoul_Armor_A", VISUALSLOT.Torso),
-						vr:Create("", VISUALSLOT.Extra1)
+						--TODO Extras for ghoul armor
+						--vr:Create("", VISUALSLOT.Extra1)
 					}
 				},
 			},
@@ -213,14 +214,16 @@ return function(ve, vr, onEquipmentChangedCallback)
 					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Dreamer_Helmet_B", VISUALSLOT.Arms),
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_ROBE_Dreamer_Armor_B", VISUALSLOT.Torso),
-						vr:Create("", VISUALSLOT.Extra1),
+						--TODO Extras for Dreamer B
+						--vr:Create("", VISUALSLOT.Extra1),
 					}
 				},
 			},
 			Divine = {
 				{
-					[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso)
+					--TODO Need some sort of different visual for Divine, or maybe the same visuals, but with different materials.
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Dreamer_Helmet_B", VISUALSLOT.Arms),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Dreamer_Armor_B", VISUALSLOT.Torso)
 				},
 			}
 		},

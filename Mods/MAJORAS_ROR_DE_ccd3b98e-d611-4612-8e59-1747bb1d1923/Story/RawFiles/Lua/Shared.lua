@@ -1,15 +1,9 @@
 Ext.Print("[ROR] Loaded Shared.lua.")
 
-LeaderLib = Mods.LeaderLib
-Common = LeaderLib.Common
-GameHelpers = LeaderLib.GameHelpers
-
 Debug = {
     Enabled = Ext.IsDeveloperMode(),
     TraceEquipParams = "[OnEquipmentChanged] char(%s) item(%s) equipped(%s)"
 }
-
-Mods.LeaderLib.Import(Mods.MAJORAS_ROR_DE)
 
 --[[
 Console commands:
@@ -27,6 +21,8 @@ Origins = {
     LivingBear = "50924c85-ffd3-469b-ab68-49f056580f00",
     Zombie = "1677ad2e-6c42-4ffd-b3fd-4cecdef0a62c"
 }
+
+Mods.LeaderLib.ImportUnsafe(Mods.MAJORAS_ROR_DE)
 
 Ext.RegisterListener("ModuleLoading", function()
     GameHelpers.VoiceMetaData.Register.ScholarMale(Origins.AncientElf)
