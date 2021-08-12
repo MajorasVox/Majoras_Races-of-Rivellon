@@ -1,0 +1,71 @@
+[Race]
+Race Name:
+
+- Demon -
+_______________________________________
+[Origin]
+Origin Name:
+
+- Berobreus -
+"Demon, first one, child of Chaos. You escape Tartarus finding your way to the shores of the material; you stand rightly so where source is ripe, and you are ravening!"
+_______________________________________
+[Racial Talent]
+~ Talent ~ / First Ones
+"TO DO"
+
+- (Reasoning) - -
+
+~ Talent ~ / Prosopopoeia
+
+- Prosopopoeia -
+"TO DO"
+
+- (Reasoning) - -
+_______________________________________
+[Racial Ability]
+Ability Name:
+
+- All-Consuming Hunger -
+"Devour the weak to proliferate your demonic vigour."
+
+[Concept]
+A risk-reward ability that consumes target *Fatality* within a radius of 3 for 1 AP; target must be affected by status effect {Weak}, and be under 30% Health:
+
+- (When Successful) - - Will heal, buff, and generate one source point on the targets death; the target will explode, erupting into a pillar of blood *Masking The Caster & Target During Consumption*. When the torrent of blood dissipates, the caster will stand where the target originally stood *As If Consumed By Caster*.
+
+~ Buff ~ / Edacious Reprieve 
+> 3 Turns
++ 25% Heal
++ 30% Damage Increase
++ 1 Source Point
+
+~ Caveat ~ / Source Compulsion
+> Activates at the end of the first turn of {Edacious Reprieve}
+- 1 Source Point
+
+// (If 1 Source Is Removed) - 
+
+~ Buff ~ / 
+> 1 Turn
++ Adrenaline
+
+\\ (If 1 Source Is Not Removed) - 
+
+~ Debuff ~ / Perpetual Appetence
+> 3 Turns
+- 15% Heal
+> 2 Turns
++ Taunted
++ Enraged
++ Madness
+_______________________________________
+[Origin Skill]
+Skill Name:
+
+- True Name -
+"TO DO"
+
+[Concept]
+
+- TO DO - - 
+_______________________________________
