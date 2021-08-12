@@ -26,7 +26,7 @@ local function ConsumingHungerSuccess(attacker, target)
 	local x,y,z = table.unpack(target.WorldPos)
 	Osi.LeaderLib_Behavior_TeleportTo(attacker.MyGuid, x, y, z)
 
-	CombatLog.AddTextToAllPlayers(1, text.ConsumingHungerCombatLogSuccess:ReplacePlaceholders(attacker.DisplayName, target.DisplayName))
+	CombatLog.AddTextToAllPlayers("Combat", text.ConsumingHungerCombatLogSuccess:ReplacePlaceholders(attacker.DisplayName, target.DisplayName))
 end
 
 Timer.RegisterListener("ROR_ConsumingHunger", function(timerName, data)
@@ -45,7 +45,7 @@ Timer.RegisterListener("ROR_ConsumingHunger", function(timerName, data)
 				ConsumingHungerSuccess(attacker, target)
 			else
 				CharacterStatusText(target.MyGuid, text.ConsumingHungerBossFailed:ReplacePlaceholders(target.DisplayName))
-				CombatLog.AddTextToAllPlayers(1, text.ConsumingHungerCombatLogFailed:ReplacePlaceholders(attacker.DisplayName, target.DisplayName, "Resisted devouring (Boss)."))
+				CombatLog.AddTextToAllPlayers("Combat", text.ConsumingHungerCombatLogFailed:ReplacePlaceholders(attacker.DisplayName, target.DisplayName, "Resisted devouring (Boss)."))
 			end
 		end
 	end
