@@ -1,6 +1,6 @@
 local skillSwap = {
 	[Origins.DemonicKin] = {
-		Cone_Flamebreath = "Target_ConsumeEnemy"
+		Cone_Flamebreath = "Target_ROR_DK_AllConsumingHunger"
 	}
 }
 
