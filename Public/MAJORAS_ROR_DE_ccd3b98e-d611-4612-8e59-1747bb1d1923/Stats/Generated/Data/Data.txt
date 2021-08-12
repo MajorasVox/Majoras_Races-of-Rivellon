@@ -1,0 +1,1 @@
+key "ROR_ConsumingHunger_BonusDamageMultiplier","1.5"
