@@ -26,11 +26,11 @@ local OriginRaces = {
 }
 
 --Making sure QRY_IsTrueRace doesn't return true for whatever race our origins might be inherently
-Ext.RegisterOsirisListener("QRY_IsTrueRace", 2, "before", function(uuid, race)
+--[[ Ext.RegisterOsirisListener("QRY_IsTrueRace", 2, "before", function(uuid, race)
 	uuid = StringHelpers.GetUUID(uuid)
 	local trueRace = OriginRaces[uuid]
-	if trueRace ~= nil and trueRace == race then
-		return true
+	if trueRace ~= nil then
+		return trueRace == race
 	end
 end)
 
@@ -41,7 +41,7 @@ Ext.RegisterOsirisListener("QRY_IsTrueUndead", 1, "before", function(uuid)
 	if trueRace ~= nil and undeadRace[trueRace] == true then
 		return true
 	end
-end)
+end) ]]
 
 Ext.RegisterOsirisListener("CharacterGetRace", 3, "before", function(uuid, canPolymorphOverride, raceResult)
 	if canPolymorphOverride ~= 1 then
