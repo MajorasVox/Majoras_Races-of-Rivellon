@@ -1,30 +1,60 @@
 [Race]
 Race Name:
-
 - Demon -
-_______________________________________
+_____________________________________________________________________________
 [Origin]
 Origin Name:
-
 - Berobreus -
-"Demon, first one, child of Chaos. You escape Tartarus finding your way to the shores of the material; you stand rightly so where source is ripe, and you are ravening!"
-_______________________________________
+"Demon, first one, child of Chaos. Plucked from Tartarus. A would be sourceror shackles you to the shores of the material, thinking you their would be puppet; you stand, rightly so, where Source is ripe, and you are ravening!"
+_____________________________________________________________________________
+[Tags]
+> Barbarian
+> Scholar
+> Villain 
+_____________________________________________________________________________
 [Racial Talent]
 ~ Talent ~ / First Ones
-"TO DO"
++ 1 Telekinesis
++ 20% Fire Resistance
+- 20% Water Resistance
+ 
+- (Logic) - - Demons were the first intelligent race, created by the Lord of Chaos, the 8th Eternal that seized control of Source. Chaos and its creations were later trapped, between the realm of the living, Rivellon, and the realm of the dead, The Hall of Echoes; Chaos created its dimension in between, Tartarus, where all Demons and damned souls reside for eternity.
 
-- (Reasoning) - -
+~ Talent ~ / Demonic Gluttony
+[Concept]
+The main mechanic tied to the Demon revolves around consuming Source & starving; the more Source the Demon consumes, the more constitution it possesses, but the slower it becomes (Tank). If the Demon becomes starved of Source, it becomes more desperate, gaining increased damage, but the hunger damages the Demon (Damage Dealer).
 
-~ Talent ~ / Prosopopoeia
++ 2 Maximum Source Containers
+> 10 States of {Demonic Gluttony}:
 
-- Prosopopoeia -
-"TO DO"
+Demon of Gluttony ~ (+ 5) - 10 Initiative / + 5 Constitution / {Buff}
+----------------------------------------------------------------------------
+|
+Insatiable ~ (+ 4) - 4 Initiative / + 4 Constitution
+|
+Gorged ~ (+ 3) - 3 Initiative / + 3 Constitution
+|
+Full ~ (+ 2) - 2 Initiative / + 2 Constitution
+|
+Satisfied ~ (+ 1) - 1 Initiative / + 1 Constitution
+|---------------------------------------------------------------------------
+Neutral ~ (> 0) * No Buff / * No Debuff
+|---------------------------------------------------------------------------
+Hungry ~ (- 1) + 5% Damage / - 5% Health
+|
+Starved ~ (- 2) + 10% Damage / - 10% Health
+|
+Ravenous ~ (- 3) + 15% Damage / - 15% Health
+|
+Voracious ~ (- 4) + 20% Damage / - 20% Health
+|
+----------------------------------------------------------------------------
+Demon of Famine ~ (- 5) + 25% Damage / - 30% Health / {Debuff}
 
-- (Reasoning) - -
-_______________________________________
+- (Logic) - - Demons are source hungry creatures and desire as much Source as they can get. The added maximum Source containers factor into the main mechanic and the hoarding of Source.
+_____________________________________________________________________________
 [Racial Ability]
 Ability Name:
-
 - All-Consuming Hunger -
 "Devour the weak to proliferate your demonic vigour."
 
@@ -36,7 +66,7 @@ A risk-reward ability that consumes target *Fatality* within a radius of 3 for 1
 ~ Buff ~ / Edacious Reprieve 
 > 3 Turns
 + 25% Heal
-+ 30% Damage Increase
++ 15% Damage Increase
 + 1 Source Point
 
 ~ Caveat ~ / Source Compulsion
@@ -46,26 +76,28 @@ A risk-reward ability that consumes target *Fatality* within a radius of 3 for 1
 // (If 1 Source Is Removed) - 
 
 ~ Buff ~ / 
-> 1 Turn
-+ Adrenaline
++ 1 Stack of {Demonic Gluttony}
 
 \\ (If 1 Source Is Not Removed) - 
 
 ~ Debuff ~ / Perpetual Appetence
+- 2 Stacks of {Demonic Gluttony}
 > 3 Turns
 - 15% Heal
 > 2 Turns
 + Taunted
 + Enraged
 + Madness
-_______________________________________
+
+- (When Failed) - - Will set {Crippled}
+_____________________________________________________________________________
 [Origin Skill]
 Skill Name:
-
 - True Name -
 "TO DO"
 
 [Concept]
+Polymorph ability allows the Demon to take the forms of other Demons.
 
-- TO DO - - 
-_______________________________________
+- (Logic) - - Demons are trapped within Tartarus but attempt to escape via the following methods: Making deals with mortal races, dominating the weak-minded, or being summoned; Summoning, banishing and entering a Demons personal dimension is done through knowing the Demons true name.
+_____________________________________________________________________________
