@@ -53,7 +53,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Divine = {
 				{
-					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Boots),
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_PLATE_Utopian_Helmet_A", VISUALSLOT.Boots),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_PLATE_Utopian_Armor_A", VISUALSLOT.Trousers)
 				},
 			}
