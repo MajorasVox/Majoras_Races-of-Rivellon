@@ -1,5 +1,15 @@
 local UniqueItems = {
-	MAJROR_IncarnateArmor = "Incarnate"
+	--Tag,ArmorTypeKey
+	Tags = {
+		MAJROR_IncarnateArmor = "Incarnate"
+	},
+	--StatID,ArmorTypeKey
+	Stats = {
+		--Gawin's Robe, Mistral Robes
+		ARM_UNIQUE_AirRobe = "LizardRobe",
+		--Danna Dumora
+		ARM_UNIQUE_RC_MageUpperBody = "LizardRobe",
+	}
 }
 
 ---@param ve VisualElementData
@@ -265,9 +275,12 @@ return function(ve, vr, onEquipmentChangedCallback)
 		[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Demon_Armor_A", VISUALSLOT.Torso),
 	})
 	
-	visualData:AddVisualsForType(UniqueItems.MAJROR_IncarnateArmor, {
+	visualData:AddVisualsForType(UniqueItems.Tags.MAJROR_IncarnateArmor, {
 		[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Incarnate_Helmet_A", VISUALSLOT.Arms),
 		[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Incarnate_Armor_A", VISUALSLOT.Torso),
+	})
+	visualData:AddVisualsForType("LizardRobe", {
+		[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Lizard_Armor_A", VISUALSLOT.Torso),
 	})
 	
 	VisualManager.Register.Visuals(VISUALID.DemonicKin, visualData)
