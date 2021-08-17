@@ -1,0 +1,26 @@
+Key	Content	Handle
+Target_ROR_DK_AllConsumingHunger_DisplayName	All-Consuming Hunger	h51919b5dgc0bfg4db8g97ccg049d8df5fed9
+Target_ROR_DK_AllConsumingHunger_Description	Devour the weak to proliferate your demonic vigour.	hb89e911cg9c18g400dg80acg315705223458
+Shout_ROR_DemonWings_DisplayName	Spread Your Wings	h9449fc86g8ddcg44cagb59fg37d4deae4d96
+Shout_ROR_DemonWings_Description	Spreads your demonic wings. You ignore ground surfaces as long as you're walking.	h692f86bdg95b1g4332ga07eg060d823eb98b
+ROR_DK_EDACIOUS_REPRIEVE_DisplayName	Edacious Reprieve	h70efcf2fg6463g4050gb4b7gd611ac35e35f
+ROR_DK_EDACIOUS_REPRIEVE_Description	Hunger is sated, reap the rewards.	hc33df90dg724bg4f2dg91f3gec26aa2427a4
+Stats_ROR_DK_EdaciousReprieve	Edacious Reprieve	h70efcf2fg6463g4050gb4b7gd611ac35e35f
+ROR_DK_PERPETUAL_APPETENCE_DisplayName	Perpetual Appetence	h10a57d7cg0ac2g469dgb674g161294824352
+ROR_DK_PERPETUAL_APPETENCE_Description	The hunger persists. Lose [1] Source Point on ending turn.	hd271c1ffg2a8ag4df2gbc3fgc0538424f267
+Stats_ROR_DK_PerpetualAppetence	Perpetual Appetence	h10a57d7cg0ac2g469dgb674g161294824352
+ROR_SkillProperties_ConsumingHunger	Devour Weak Targets[1]	h679e2e10g7daeg4ae7g8ce8ge7ab4ebe9980
+ROR_ConsumingHunger_StatusText_BossProtection	<font color='#FF4400'>[1] resists being consumed!</font>	h6774095eg201fg44b0g8f82gc8a1c394b3dd
+ROR_ConsumingHunger_StatusText_Success	<font color='#44FF00'>Consumed [1]!</font>	ha8a2dbbegb20cg498egb08ag8646c0088239
+ROR_ConsumingHunger_CombatLog_Success	<font color='#44FF00'>[1] devoured [2].</font>	h2f045ef5g2b2ag4f77gba27gb6832cb04fd0
+ROR_ConsumingHunger_CombatLog_Failed	<font color='#FF4400'>[1] failed to devour [2]: [3]</font>	hf6c1eb6cg719eg4e7bg9ae2gba38df986433
+ROR_Origin_Ancestor_Husk_DisplayName	Deku'Deku	h61152cc2g32fdg4763gbbfcg01b202a18a76
+ROR_Origin_Demonic_Kin_DisplayName	Berobreus	h91df470dgfc23g4d65g8b5cgcc926515c911
+ROR_Origin_Failed_Gheist_DisplayName	Null	h66fa7059g0221g42c1ga3f5gd8ad191b33da
+ROR_Origin_Living_Bear_DisplayName	Oberon	hec620481g3b28g493cg846bg800583e0b8f0
+ROR_Origin_Zombie_DisplayName	Zebadiah	h03c86dcdgfd76g4999gb300g6f53be6dcbb7
+ROR_Origin_Ancestor_Husk_Description	The last great war wrought devastation on all the races, you remember first hand the massacre of your people. Deliver the justice denied your people.	h5c98296agd425g4303gb985gd772c9207290
+ROR_Origin_Demonic_Kin_Description	Demon child you find your way to the shores of the material, source is ripe for the consuming. Make your Lord of Chaos proud!	h73a38336gff1eg452agbea9g690dbb69309f
+ROR_Origin_Failed_Gheist_Description	Poor creature, they took away who you are, they tried to strip you of source. Cast out for not being a useful tool, but you are so much more.	h2a691813g0bf5g49b5g91ddg580d7978c18a
+ROR_Origin_Living_Bear_Description	You awoke life given where there was none. The only of your kind, what will you do noble bear, how will you use this gift; after all the choice is yours alone.	h8d7db582g41fag4ef2gb9dcgd205ef66ad1a
+ROR_Origin_Zombie_Description	The dead rise every day, but you never truly died. Your search continues for whatever force keeps your heart rot & rolling.	hae0b1abag1f6cg40beg89dag1f4d5082796d

@@ -39,13 +39,35 @@ end
 
 ---@alias OnEquipmentChangedCallback fun(self:VisualElementData, char:EsvCharacter, item:EsvItem, equipped:boolean, tieredArmorData:table<string,table>, uniqueItemTags:table<string,string>)
 
+---@private
+---@class OriginUniqueItemData:table
+---@field Tags table<string,string>
+---@field Stats table<string,string>
+
+---@param char EsvCharacter
+---@param item EsvItem
+---@param data OriginUniqueItemData
+---@return string
+local function GetUniqueArmorType(char, item, data)
+	local statArmorType = data.Stats[item.StatsId]
+	if statArmorType then
+		return statArmorType
+	end
+	for tag,armorType in pairs(data.Tags) do
+		if GameHelpers.ItemHasTag(item, tag) then
+			return armorType
+		end
+	end
+	return nil
+end
+
 ---@param self VisualElementData
 ---@param char EsvCharacter
 ---@param item EsvItem
 ---@param equipped boolean
 ---@param tieredArmorData table<string,table>
----@param uniqueItemTags table<string,string>
-local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, uniqueItemTags)
+---@param uniqueItemData OriginUniqueItemData
+local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, uniqueItemData)
 	if Debug.Enabled then
 		--Ext.Print(string.format(Debug.TraceEquipParams, char.DisplayName, item.StatsId, equipped))
 		fprint(LOGLEVEL.TRACE, "[ROR:OnEquipmentChanged] char(%s)[%s] item(%s) equipped(%s)", char.DisplayName, char.MyGuid, item.DisplayName, equipped)
@@ -53,15 +75,9 @@ local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, u
 	local visualsChanged = false
 	if equipped then
 		local slot = GameHelpers.Item.GetEquippedSlot(char.MyGuid, item.MyGuid) or item.Stats.Slot
-		if uniqueItemTags ~= nil then
-			local specialArmorType = ""
-			for tag,armorType in pairs(uniqueItemTags) do
-				if GameHelpers.ItemHasTag(item, tag) then
-					specialArmorType = armorType
-					break
-				end
-			end
-			if specialArmorType ~= "" then
+		if uniqueItemData then
+			local specialArmorType = GetUniqueArmorType(char, item, uniqueItemData)
+			if specialArmorType then
 				self:ApplyVisualsForArmorType(char, specialArmorType, item.Stats.Slot)
 				visualsChanged = true
 			end

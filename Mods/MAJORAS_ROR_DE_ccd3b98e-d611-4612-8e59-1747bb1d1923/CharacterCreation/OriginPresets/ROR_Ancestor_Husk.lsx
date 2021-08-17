@@ -7,9 +7,9 @@
             <children>
                 <node id="OriginDesc">
                     <attribute id="OriginName" value="ROR_Ancestor_Husk" type="22" />
-					<attribute id="OriginDisplayName" value="Deku'Deku" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
-					<attribute id="OriginDescription" value="The last great war wrought devastation on all the races, you remember first hand the massacre of your people. Deliver the justice denied your people." handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
-					<attribute id="OriginLongDescription" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginDisplayName" value="Deku&apos;Deku" handle="h61152cc2g32fdg4763gbbfcg01b202a18a76" type="28" />
+					<attribute id="OriginDescription" value="The last great war wrought devastation on all the races, you remember first hand the massacre of your people. Deliver the justice denied your people." handle="h5c98296agd425g4303gb985gd772c9207290" type="28" />
+					<attribute id="OriginLongDescription" value="" handle="h5c98296agd425g4303gb985gd772c9207290" type="28" />
                     <attribute id="CharacterUUID" value="ddf64b07-0637-4194-b26e-2e0e80d6821d" type="22" />
                     <attribute id="UserCanAlterTags" value="0" type="19" />
                     <attribute id="SkillSet" value="Avatar_ROR_Ancestor_Husk" type="22" />

@@ -31,3 +31,5 @@ Ext.RegisterListener("ModuleLoading", function()
     GameHelpers.VoiceMetaData.Register.AdventurerMale(Origins.LivingBear)
     GameHelpers.VoiceMetaData.Register.TricksterMale(Origins.Zombie)
 end)
+
+Ext.Require("Shared/CustomSkillProperties.lua")
