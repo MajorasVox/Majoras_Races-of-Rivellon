@@ -117,7 +117,7 @@ launch.json
 ehthumbs.db
 Thumbs.db
 *.lnk
-
-
-
 .vscode/settings.json
+
+# Unignoring
+!Mods/MAJORAS_ROR_DE_ccd3b98e-d611-4612-8e59-1747bb1d1923/Localization/*
