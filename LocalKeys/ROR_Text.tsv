@@ -14,3 +14,8 @@ ROR_ConsumingHunger_StatusText_BossProtection	<font color='#FF4400'>[1] resists 
 ROR_ConsumingHunger_StatusText_Success	<font color='#44FF00'>Consumed [1]!</font>	ha8a2dbbegb20cg498egb08ag8646c0088239
 ROR_ConsumingHunger_CombatLog_Success	<font color='#44FF00'>[1] devoured [2].</font>	h2f045ef5g2b2ag4f77gba27gb6832cb04fd0
 ROR_ConsumingHunger_CombatLog_Failed	<font color='#FF4400'>[1] failed to devour [2]: [3]</font>	hf6c1eb6cg719eg4e7bg9ae2gba38df986433
+ROR_Origin_Ancestor_Husk_Description	The last great war wrought devastation on all the races, you remember first hand the massacre of your people. Deliver the justice denied your people.	h5c98296agd425g4303gb985gd772c9207290
+ROR_Origin_Demonic_Kin_Description	Demon child you find your way to the shores of the material, source is ripe for the consuming. Make your Lord of Chaos proud!	h73a38336gff1eg452agbea9g690dbb69309f
+ROR_Origin_Failed_Gheist_Description	Poor creature, they took away who you are, they tried to strip you of source. Cast out for not being a useful tool, but you are so much more.	h2a691813g0bf5g49b5g91ddg580d7978c18a
+ROR_Origin_Living_Bear_Description	You awoke life given where there was none. The only of your kind, what will you do noble bear, how will you use this gift; after all the choice is yours alone.	h8d7db582g41fag4ef2gb9dcgd205ef66ad1a
+ROR_Origin_Zombie_Description	The dead rise every day, but you never truly died. Your search continues for whatever force keeps your heart rot & rolling.	hae0b1abag1f6cg40beg89dag1f4d5082796d

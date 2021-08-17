@@ -7,7 +7,7 @@
             <children>
                 <node id="OriginDesc">
                     <attribute id="OriginName" value="ROR_Demonic_Kin" type="22" />
-					<attribute id="OriginDisplayName" value="Berobreus" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
+					<attribute id="OriginDisplayName" value="Berobreus" handle="h91df470dgfc23g4d65g8b5cgcc926515c911" type="28" />
 					<attribute id="OriginDescription" value="Demon child you find your way to the shores of the material, source is ripe for the consuming. Make your Lord of Chaos proud!" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="ls::TranslatedStringRepository::s_HandleUnknown" type="28" />
                     <attribute id="CharacterUUID" value="9666cb05-8764-4d97-9bb5-9e3a6556d562" type="22" />
