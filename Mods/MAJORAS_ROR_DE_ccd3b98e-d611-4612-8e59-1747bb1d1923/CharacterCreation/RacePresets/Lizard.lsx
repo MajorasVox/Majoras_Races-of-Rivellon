@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+	<header version="2" time="1387205254" />
+	<version major="1" minor="3" revision="0" build="0" />
+	<region id="CharacterCreationManager">
+		<node id="root">
+			<children>
+				<node id="RaceDesc">
+					<attribute id="RaceDisplayName" value="Lizard" handle="h463890f4g3244g408dgbb8cg1716d85ace90" type="28" />
+					<attribute id="RaceName" value="Lizard" type="22" />
+					<attribute id="RaceDescription" value="Lizards of the Ancient Empire are cultured aristocrats - Source adepts who follow rules of law. Outsiders see their society as elitist. Lizards see outsiders as servants." handle="h9ac72571g9d3fg4304g8cedg471391a6a7fe" type="28" />
+					<attribute id="SkillSet" value="Race_Lizard" type="22" />
+					<attribute id="FemaleDefaultHairColor" value="4" type="5" />
+					<attribute id="FemaleDefaultSkinColor" value="4" type="5" />
+					<attribute id="MaleDefaultHairColor" value="0" type="5" />
+					<attribute id="MaleDefaultSkinColor" value="4" type="5" />
+					<attribute id="AllowBald" value="1" type="19" />
+					<children>
+						<node id="TagsAdded">
+							<children>
+								<node id="TagAdded">
+									<attribute id="Tag" value="LIZARD" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="TalentsAdded">
+							<children>
+								<node id="TalentAdded">
+									<attribute id="Talent" value="Lizard_Resistance" type="23" />
+								</node>
+								<node id="TalentAdded">
+									<attribute id="Talent" value="Lizard_Persuasion" type="23" />
+								</node>
+							</children>
+						</node>
+						<node id="FemaleDefaultPlayerNames">
+							<children>
+								<node id="FemaleDefaultPlayerNames">
+									<attribute id="Object" value="Mahalia" handle="h4c74584bgb3d0g4092g8305gf8559c2e20fb" type="28" />
+								</node>
+							</children>
+						</node>
+						<node id="FemaleIcons">
+							<children>
+								<node id="FemaleIcons">
+									<attribute id="Object" value="PlayerPortrait_Lizard_Female_A" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="FemaleRootTemplateIDs">
+							<children>
+								<node id="FemaleRootTemplateIDs">
+									<attribute id="Object" value="e4a6bcfa-ecd6-4e56-8592-cd16b85a1c50" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="MaleDefaultPlayerNames">
+							<children>
+								<node id="MaleDefaultPlayerNames">
+									<attribute id="Object" value="Rahimus" handle="hd27381ffgb946g46eag8e7bg0e59f32d2c59" type="28" />
+								</node>
+							</children>
+						</node>
+						<node id="MaleIcons">
+							<children>
+								<node id="MaleIcons">
+									<attribute id="Object" value="PlayerPortrait_Lizard_Male_B" type="22" />
+								</node>
+								<node id="MaleIcons">
+									<attribute id="Object" value="PlayerPortrait_Lizard_Male_A" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="MaleRootTemplateIDs">
+							<children>
+								<node id="MaleRootTemplateIDs">
+									<attribute id="Object" value="fa12e21f-0a10-47dd-af46-ab2c9a53cf6d" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="HenchManFemaleIcons">
+							<children>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_A_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_A_Red" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_B_Red" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_C_Red" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_D_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_D_Red" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_E_Red" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_F_Red" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_G_Black" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_A_White_Hair_G_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_B_White_Hair_D_Black" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_B_White_Hair_E_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_C_White_Hair_B_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_C_White_Hair_C_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_C_White_Hair_J_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_G_Black_Hair_I_Black" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_H_Black_Hair_P" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_H_White_Hair_F_Blond" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_N_Brown_Hair_F_Black" type="22" />
+								</node>
+								<node id="HenchManFemaleIcons">
+									<attribute id="Object" value="Portrait_PL_F_Face_O_White_Hair_P" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="HenchManFemaleRootTemplateIDs">
+							<children>
+								<node id="HenchManFemaleRootTemplateIDs">
+									<attribute id="Object" value="3ec36a84-93a1-409f-83d6-4b7b17745df6" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="HenchManMaleIcons">
+							<children>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_A_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_B_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_C_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_D_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_E_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_F_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_A_White_Hair_G_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_B_White_Hair_B_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_B_White_Hair_D_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_E_Brown_Hair_C_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_E_White_Hair_G_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_G_Black_Hair_B_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_K_Brown_Hair_P" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_M_White_Hair_F_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_M_White_Hair_M_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_O_Black_Hair_G_Black" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_P_White_Hair_A_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_P_White_Hair_C_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_P_White_Hair_E_Blond" type="22" />
+								</node>
+								<node id="HenchManMaleIcons">
+									<attribute id="Object" value="Portrait_PL_M_Face_P_White_Hair_J_Blond" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="HenchManMaleRootTemplateIDs">
+							<children>
+								<node id="HenchManMaleRootTemplateIDs">
+									<attribute id="Object" value="23f3af72-437c-4aff-91ca-914ef6e6ebb7" type="22" />
+								</node>
+							</children>
+						</node>
+						<node id="ClothColors">
+							<children>
+								<node id="ColorDesc">
+									<attribute id="ID" value="0" type="5" />
+									<attribute id="ColorName" value="Saddle Brown" handle="h186039efgdaa3g49afgb27dg44ea7248f24a" type="28" />
+									<attribute id="Value" value="4287317267" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="1" type="5" />
+									<attribute id="ColorName" value="Scarlet" handle="h6b8f121bg161eg42a4g9b55g4e28047be2a7" type="28" />
+									<attribute id="Value" value="4294910976" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="2" type="5" />
+									<attribute id="ColorName" value="Dark Orange" handle="h25bdb7a7g82c6g4019g87d0g12509915d94c" type="28" />
+									<attribute id="Value" value="4294937600" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="3" type="5" />
+									<attribute id="ColorName" value="Gold" handle="hb24711b2gd507g43bdg9f92g9d188aca8032" type="28" />
+									<attribute id="Value" value="4294956800" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="4" type="5" />
+									<attribute id="ColorName" value="Olive" handle="h0c8eea84g0b38g442fga9f7g172be1cf5c0b" type="28" />
+									<attribute id="Value" value="4286611456" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="5" type="5" />
+									<attribute id="ColorName" value="Forest Green" handle="hdc3c9ad3g33d6g49e6gb14eg8416a6e231ce" type="28" />
+									<attribute id="Value" value="4280453922" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="6" type="5" />
+									<attribute id="ColorName" value="Slate Gray" handle="h8386a4aag7cc4g4e11g981bg57f89680ad32" type="28" />
+									<attribute id="Value" value="4285563024" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="7" type="5" />
+									<attribute id="ColorName" value="Royal Blue" handle="ha1b3a0a2g7bb6g45d7gabd2g0f34506aec05" type="28" />
+									<attribute id="Value" value="4282477025" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="8" type="5" />
+									<attribute id="ColorName" value="Dark Violet" handle="h9ca714a8g2bf5g4060ga045gd5c6ef86a52f" type="28" />
+									<attribute id="Value" value="4287889619" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="9" type="5" />
+									<attribute id="ColorName" value="Orchid" handle="h9befcd75g9138g4cd6g96c8gaae27a044771" type="28" />
+									<attribute id="Value" value="4292505814" type="5" />
+								</node>
+							</children>
+						</node>
+						<node id="HairColors">
+							<children>
+								<node id="ColorDesc">
+									<attribute id="ID" value="0" type="5" />
+									<attribute id="ColorName" value="Zincite" handle="hf8a58c8dg8105g46a2gaa51g828b322e2840" type="28" />
+									<attribute id="Value" value="0xffFF9966" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="1" type="5" />
+									<attribute id="ColorName" value="Padparadscha" handle="h900ea57cgc940g409aga536gd022c6a47bab" type="28" />
+									<attribute id="Value" value="0xffe2725b" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="2" type="5" />
+									<attribute id="ColorName" value="Moonstone" handle="hae3ea0c4gbf67g494bg8cdcg0bc77a84e54f" type="28" />
+									<attribute id="Value" value="0xffda5b5d" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="3" type="5" />
+									<attribute id="ColorName" value="Smoked Topaz" handle="h5cccb48fg28e1g480cga7cfg756ee0037604" type="28" />
+									<attribute id="Value" value="0xffd2a868" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="4" type="5" />
+									<attribute id="ColorName" value="Fire Opal" handle="h35e44cb7g6f3fg41a8g82f7g4442d43cd310" type="28" />
+									<attribute id="Value" value="0xffea8207" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="5" type="5" />
+									<attribute id="ColorName" value="Almandine" handle="h074a1c6bg85aag413fgacadg8af348c2639d" type="28" />
+									<attribute id="Value" value="0xffa21212" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="6" type="5" />
+									<attribute id="ColorName" value="Rose Alabaster" handle="h60745b99ge934g4dadg827dg0caa588e4a0a" type="28" />
+									<attribute id="Value" value="0xffff7f9f" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="7" type="5" />
+									<attribute id="ColorName" value="Feldspar" handle="h329c2794g96f9g4f5agbc3dg31cd9044646f" type="28" />
+									<attribute id="Value" value="0xffe0b0ff" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="8" type="5" />
+									<attribute id="ColorName" value="Tanzanite" handle="h14f5f6afg913ag49c3g89c5gabe9dbdd1f72" type="28" />
+									<attribute id="Value" value="0xffce67bb" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="9" type="5" />
+									<attribute id="ColorName" value="Corundum" handle="h993054e8g52deg4ea2g8740gcb5393743bc0" type="28" />
+									<attribute id="Value" value="0xffc54b8c" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="10" type="5" />
+									<attribute id="ColorName" value="Amethyst" handle="h1a3c0565g7bbfg4348g9ac6g428b324048c7" type="28" />
+									<attribute id="Value" value="0xffa330bb" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="11" type="5" />
+									<attribute id="ColorName" value="Cobalt" handle="h18126d8dgcb89g4c3cgaf5dg48fd398c09cc" type="28" />
+									<attribute id="Value" value="0xff753fef" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="12" type="5" />
+									<attribute id="ColorName" value="Light Sapphire" handle="h681f0de0g7bc2g4d80g91dcg7ba639a5bd97" type="28" />
+									<attribute id="Value" value="0xff3870c8" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="13" type="5" />
+									<attribute id="ColorName" value="Helitrope" handle="h64f87066ga51cg45dfg808dg8de196d63ed5" type="28" />
+									<attribute id="Value" value="0xff2a45cd" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="14" type="5" />
+									<attribute id="ColorName" value="Fluorite" handle="h01e4c8a3g5195g49b2g9f39g7fea06d9cafa" type="28" />
+									<attribute id="Value" value="0xff5aaede" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="15" type="5" />
+									<attribute id="ColorName" value="Aquamarine" handle="h24189859gbcb5g4e98ga24bg4d6353378f0d" type="28" />
+									<attribute id="Value" value="0xffc9ffe5" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="16" type="5" />
+									<attribute id="ColorName" value="Chrysolite" handle="h8c1e1051gd2e2g4f8egb756ge6aa75b15723" type="28" />
+									<attribute id="Value" value="0xff00a997" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="17" type="5" />
+									<attribute id="ColorName" value="Peridot" handle="h463d5258g815dg40adg987dgffe4268f6e08" type="28" />
+									<attribute id="Value" value="0xff49796b" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="204" type="5" />
+									<attribute id="ColorName" value="Lilac" handle="e635049cdd934d69af74f50b7e79b241" type="28" />
+									<attribute id="Value" value="0xffeed2e1" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="205" type="5" />
+									<attribute id="ColorName" value="Silver" handle="239309e2e9d4465e8ffbbb5f4ef81715" type="28" />
+									<attribute id="Value" value="0xffC0C0C0" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="207" type="5" />
+									<attribute id="ColorName" value="Child of Light" handle="2631ed63c8ab43cbbae7093f5db0bcfc" type="28" />
+									<attribute id="Value" value="0xffFFFF99" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="211" type="5" />
+									<attribute id="ColorName" value="Whimsical Wisteria" handle="cc3de755661349ea9ef395965bf56582" type="28" />
+									<attribute id="Value" value="0xffC9A0DC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="212" type="5" />
+									<attribute id="ColorName" value="Princess Peach" handle="c0f3aea015654299a7536d9680203018" type="28" />
+									<attribute id="Value" value="0xffFEBAAD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="213" type="5" />
+									<attribute id="ColorName" value="Vivid Tangerine" handle="842ca6a1e8084b33b85abe2ba95cfcc5" type="28" />
+									<attribute id="Value" value="0xffFF9980" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="215" type="5" />
+									<attribute id="ColorName" value="Blue Slate" handle="190b09f3d98d495eb13777e151236481" type="28" />
+									<attribute id="Value" value="0xffB5CEE4" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="216" type="5" />
+									<attribute id="ColorName" value="Cool Breeze" handle="9b04be9a4d824113a29b6c43e4670605" type="28" />
+									<attribute id="Value" value="0xff87CEFA" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="217" type="5" />
+									<attribute id="ColorName" value="Astarte" handle="60bc787213894196b5c7e19b967e8c8b" type="28" />
+									<attribute id="Value" value="0xff8DD9CC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="218" type="5" />
+									<attribute id="ColorName" value="Jade" handle="458c968c4ae6442696fd7b01be1461e0" type="28" />
+									<attribute id="Value" value="0xff9DE093" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="219" type="5" />
+									<attribute id="ColorName" value="White Smoke" handle="e0895c78f0474477aaa14b0c467e4e9f" type="28" />
+									<attribute id="Value" value="0xffa3a3a3" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="220" type="5" />
+									<attribute id="ColorName" value="Glossy Grape" handle="3f5770f72ca2470eb6695b556bc5345f" type="28" />
+									<attribute id="Value" value="0xffAB92B3" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="221" type="5" />
+									<attribute id="ColorName" value="Lemon Quartz" handle="8567596d681c445b85a9549efffc9663" type="28" />
+									<attribute id="Value" value="0xffFFFF00" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="224" type="5" />
+									<attribute id="ColorName" value="Smokescreen" handle="aa3608aca36747bcae2ce3c50a85e96a" type="28" />
+									<attribute id="Value" value="0xffFA8072" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="227" type="5" />
+									<attribute id="ColorName" value="Alpha Quartz" handle="4bf0ba08e6f44f429aac785b36869a01" type="28" />
+									<attribute id="Value" value="0xffFFA500" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="230" type="5" />
+									<attribute id="ColorName" value="Grassy Knoll" handle="16db90954ccf4e73ac73a02aee5af47d" type="28" />
+									<attribute id="Value" value="0xff9ec96c" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="232" type="5" />
+									<attribute id="ColorName" value="Ogre Green" handle="aa72243aee93419799a0f210ff6cece3" type="28" />
+									<attribute id="Value" value="0xffABAD48" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="233" type="5" />
+									<attribute id="ColorName" value="Mountain Meadow" handle="bbfbf5677fae4a29972b169684d14600" type="28" />
+									<attribute id="Value" value="0xff92926E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="234" type="5" />
+									<attribute id="ColorName" value="Pink Void" handle="947a69b5e458481a9fb942f07a4d55c0" type="28" />
+									<attribute id="Value" value="0xffFC74FD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="235" type="5" />
+									<attribute id="ColorName" value="Orchid" handle="c5d9172647c140f9a93f2ec9cb2e5b62" type="28" />
+									<attribute id="Value" value="0xffDA70D6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="236" type="5" />
+									<attribute id="ColorName" value="Violet Visionary" handle="e1a6d3546f4c4a989a70f36f9f550fb1" type="28" />
+									<attribute id="Value" value="0xffC154C1" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="239" type="5" />
+									<attribute id="ColorName" value="Pink Pixie" handle="1ab0f8ebc09c4e328a5c75a776d07d22" type="28" />
+									<attribute id="Value" value="0xffFF1493" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="240" type="5" />
+									<attribute id="ColorName" value="Cupid" handle="6cfefdcee0e4409d84bc8e0f8171e7b5" type="28" />
+									<attribute id="Value" value="0xffDA3287" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="241" type="5" />
+									<attribute id="ColorName" value="Soulsap" handle="1766bfc51a3347e880f320c7ce1a6c4f" type="28" />
+									<attribute id="Value" value="0xffC71585" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="242" type="5" />
+									<attribute id="ColorName" value="Asphyxia" handle="659f75a7ec1a42a29e3c4feb28e3f242" type="28" />
+									<attribute id="Value" value="0xff9400D3" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="245" type="5" />
+									<attribute id="ColorName" value="Sunset Orange" handle="b783fa6323cc41d997a62b19bd6deadc" type="28" />
+									<attribute id="Value" value="0xffFE4C40" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="247" type="5" />
+									<attribute id="ColorName" value="Sandman" handle="1c9ce144b85c46d38240033c51c72d80" type="28" />
+									<attribute id="Value" value="0xffCD5C5C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="248" type="5" />
+									<attribute id="ColorName" value="Smashed Pumpkin" handle="2edb358ba22f4d9fad5f0010339e2495" type="28" />
+									<attribute id="Value" value="0xffFF6103" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="249" type="5" />
+									<attribute id="ColorName" value="Violator" handle="841f616f7c894325a8f29392818d907a" type="28" />
+									<attribute id="Value" value="0xffFF355E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="250" type="5" />
+									<attribute id="ColorName" value="Rosso Quattro" handle="0eb42a05dda749c985d5d34f8a372552" type="28" />
+									<attribute id="Value" value="0xffDA2C43" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="252" type="5" />
+									<attribute id="ColorName" value="Bloodstone" handle="24244143ebfa40708bddc7db5a641e2b" type="28" />
+									<attribute id="Value" value="0xffED0A3F" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="253" type="5" />
+									<attribute id="ColorName" value="Madder Lake" handle="204e881f27654d40bce322ceeb060784" type="28" />
+									<attribute id="Value" value="0xffCC3336" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="254" type="5" />
+									<attribute id="ColorName" value="Last Sin" handle="d05ec003431b4dc2bc2bd361d552e2c0" type="28" />
+									<attribute id="Value" value="0xffCA3435" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="256" type="5" />
+									<attribute id="ColorName" value="Burn Out" handle="7f0bcca4c67648c6aa4a59a0d6d1e2e4" type="28" />
+									<attribute id="Value" value="0xff8b757b" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="258" type="5" />
+									<attribute id="ColorName" value="Folklore Fuscia" handle="cb9048bac87f4a3b979b341bfe38cd5d" type="28" />
+									<attribute id="Value" value="0xff8B475D" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="260" type="5" />
+									<attribute id="ColorName" value="Sapphire" handle="a3796338050e47c39a654e5b50ae6230" type="28" />
+									<attribute id="Value" value="0xffA63A79" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="261" type="5" />
+									<attribute id="ColorName" value="Scarlet" handle="b95564f58c804e8db463a5ed0e481af3" type="28" />
+									<attribute id="Value" value="0xffBD0B4C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="262" type="5" />
+									<attribute id="ColorName" value="Heroine" handle="00e6319cd8734974be73fd12f85cb90d" type="28" />
+									<attribute id="Value" value="0xffA50B5E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="263" type="5" />
+									<attribute id="ColorName" value="Deep Mauve" handle="8c409b7b662249deaf43e08044aa53bd" type="28" />
+									<attribute id="Value" value="0xff993366" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="265" type="5" />
+									<attribute id="ColorName" value="Caramel" handle="a843b547a1ea42e788d08e548892ff7c" type="28" />
+									<attribute id="Value" value="0xffA52A2A" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="266" type="5" />
+									<attribute id="ColorName" value="Blood Brew" handle="aacb7d7425c34d52843e966eba640268" type="28" />
+									<attribute id="Value" value="0xffB0171F" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="268" type="5" />
+									<attribute id="ColorName" value="Bright Sky" handle="543a66d373b448c5ab0ae787fc09d442" type="28" />
+									<attribute id="Value" value="0xff76D7EA" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="269" type="5" />
+									<attribute id="ColorName" value="Deep Freeze" handle="d2344c90ebd94fa7b49b1ff983a4e95d" type="28" />
+									<attribute id="Value" value="0xff40E0D0" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="271" type="5" />
+									<attribute id="ColorName" value="Blizzard Blue" handle="2d6b91493f7144c9b96573e3ba5fa71e" type="28" />
+									<attribute id="Value" value="0xff50BFE6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="272" type="5" />
+									<attribute id="ColorName" value="Sea Nymph" handle="bf57fd51cb3248b0b373868c64f070ef" type="28" />
+									<attribute id="Value" value="0xff7DA9A4" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="273" type="5" />
+									<attribute id="ColorName" value="Gentle Earth" handle="958dda6dff5c4542bb89371a4fc56a6b" type="28" />
+									<attribute id="Value" value="0xff7DA98D" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="274" type="5" />
+									<attribute id="ColorName" value="Wild Blue Yonder" handle="267dfdf6839945909389daee2f77da72" type="28" />
+									<attribute id="Value" value="0xff7A89B8" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="275" type="5" />
+									<attribute id="ColorName" value="Shadow Blue" handle="82a7dfefa8af48fd891d36d4a9315d85" type="28" />
+									<attribute id="Value" value="0xff778BA5" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="276" type="5" />
+									<attribute id="ColorName" value="Spring Meadow" handle="d610063e2ebd49538414e5e3fb9b7eee" type="28" />
+									<attribute id="Value" value="0xff469496" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="277" type="5" />
+									<attribute id="ColorName" value="Electra" handle="cf850bee8dd44231bd9962b515d3ff0e" type="28" />
+									<attribute id="Value" value="0xff00CC99" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="278" type="5" />
+									<attribute id="ColorName" value="The Cure" handle="a0c2f4a628a84cf1ad04c3d0d177295c" type="28" />
+									<attribute id="Value" value="0xff339ACC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="279" type="5" />
+									<attribute id="ColorName" value="Mermaid" handle="b3d7ce4a4a96469e9bbbdf39c129eb7a" type="28" />
+									<attribute id="Value" value="0xff0081FF" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="280" type="5" />
+									<attribute id="ColorName" value="Eucalyptus" handle="49b120f0004c42119e68b1fa3bc0ec90" type="28" />
+									<attribute id="Value" value="0xff29AB87" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="282" type="5" />
+									<attribute id="ColorName" value="Kryptonite" handle="c40fd194e81041209a8ccf287c3e1696" type="28" />
+									<attribute id="Value" value="0xff66FF66" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="285" type="5" />
+									<attribute id="ColorName" value="Wintergreen Dream" handle="0fc0d40de4b24da09ae305651f72b4a0" type="28" />
+									<attribute id="Value" value="0xff56887D" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="286" type="5" />
+									<attribute id="ColorName" value="Hunter's Edge" handle="36a2bf8492bb4bc298730b0417e17768" type="28" />
+									<attribute id="Value" value="0xff1CAC78" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="287" type="5" />
+									<attribute id="ColorName" value="Lucky" handle="338f2e691044402197486579730285b2" type="28" />
+									<attribute id="Value" value="0xff008000" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="288" type="5" />
+									<attribute id="ColorName" value="Pixie Dust" handle="9b9a5dce13da4dee813edceaa3a3d47b" type="28" />
+									<attribute id="Value" value="0xff7B68EE" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="289" type="5" />
+									<attribute id="ColorName" value="Celestial Blue" handle="3919692fe3a64e2b97b530fff740b0f6" type="28" />
+									<attribute id="Value" value="0xff7070CC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="290" type="5" />
+									<attribute id="ColorName" value="Slate Blue" handle="2b47429a772b42139cd3d32208a140cb" type="28" />
+									<attribute id="Value" value="0xff6A5ACD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="291" type="5" />
+									<attribute id="ColorName" value="High Tide" handle="b443edad73934d608bf4a6697e8a4dec" type="28" />
+									<attribute id="Value" value="0xff4570E6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="294" type="5" />
+									<attribute id="ColorName" value="Royal Purple" handle="632e58c067094c4f8197b9f5ce095bf0" type="28" />
+									<attribute id="Value" value="0xff6B3FA0" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="295" type="5" />
+									<attribute id="ColorName" value="Stelvio" handle="b7dbb84e3a1045118f2e81f71813bcd0" type="28" />
+									<attribute id="Value" value="0xff00468C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="296" type="5" />
+									<attribute id="ColorName" value="Siren" handle="58753fa655f84814ac3baf3c3b514e0f" type="28" />
+									<attribute id="Value" value="0xff0000CD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="297" type="5" />
+									<attribute id="ColorName" value="Ultramarine Blue" handle="28672aaf2e4f4ee7b4300f6fdc126c36" type="28" />
+									<attribute id="Value" value="0xff3F26BF" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="298" type="5" />
+									<attribute id="ColorName" value="Void Dragon" handle="fe0debfdba3749f094459903fdae7062" type="28" />
+									<attribute id="Value" value="0xff000080" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="299" type="5" />
+									<attribute id="ColorName" value="Charcoal Gray" handle="5c29c1df6ece42d8a5f791d26d544573" type="28" />
+									<attribute id="Value" value="0xff736A62" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="301" type="5" />
+									<attribute id="ColorName" value="Death Knight" handle="5d79cd4d3c574ed5a0daecd35489805a" type="28" />
+									<attribute id="Value" value="0xff614051" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="303" type="5" />
+									<attribute id="ColorName" value="Van Dyke Brown" handle="594d493503de432c9417cb269e74f4df" type="28" />
+									<attribute id="Value" value="0xff664228" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="304" type="5" />
+									<attribute id="ColorName" value="Violet Visionary" handle="f41f649b7bec4b1085dc03ebfe7bc7dd" type="28" />
+									<attribute id="Value" value="0xff702670" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="305" type="5" />
+									<attribute id="ColorName" value="Black Opal" handle="df73bc1374024b94bcd5f00c9e8cdf44" type="28" />
+									<attribute id="Value" value="0xff443D4E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="306" type="5" />
+									<attribute id="ColorName" value="Purple Mountains' Majesty" handle="cfc858dbd83041c08353d56907b841a3" type="28" />
+									<attribute id="Value" value="0xff5C1867" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="308" type="5" />
+									<attribute id="ColorName" value="Zombie Troll" handle="5730b327930a4c8db1e730c34c81e89f" type="28" />
+									<attribute id="Value" value="0xff00755E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="309" type="5" />
+									<attribute id="ColorName" value="Chathams Blue" handle="ca2122df0be44d82b929b7b7a0baf995" type="28" />
+									<attribute id="Value" value="0xff1D437C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="310" type="5" />
+									<attribute id="ColorName" value="Kush" handle="f60afeb417a549259c1200cd613ce43f" type="28" />
+									<attribute id="Value" value="0xff006400" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="311" type="5" />
+									<attribute id="ColorName" value="Dark Craft" handle="638e2ae564e247eea3e815d15bf891cd" type="28" />
+									<attribute id="Value" value="0xff392C2C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="312" type="5" />
+									<attribute id="ColorName" value="Deepest Mode" handle="4e7537e033df44f2a4fb5e2052681326" type="28" />
+									<attribute id="Value" value="0xff1B1B1B" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="313" type="5" />
+									<attribute id="ColorName" value="Midnight Oil" handle="4de94511350b442696b3366d1f55f2f2" type="28" />
+									<attribute id="Value" value="0xff000000" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="400" type="5" />
+									<attribute id="ColorName" value="Moonstone" handle="c0005031828a4c89b9c748c41e4e44aa" type="28" />
+									<attribute id="Value" value="0xffFFFFFF" type="5" />
+								</node>
+							</children>
+						</node>
+						<node id="SkinColors">
+							<children>
+								<node id="ColorDesc">
+									<attribute id="ID" value="0" type="5" />
+									<attribute id="ColorName" value="Cornflower Blue" handle="heee26acbgda2cg4b94ga104g493ee676b1cc" type="28" />
+									<attribute id="Value" value="0xff6495ED" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="9" type="5" />
+									<attribute id="ColorName" value="Glaucous" handle="h776c0b6fg46b4g44a9g9b96g954b8a34fcd1" type="28" />
+									<attribute id="Value" value="0xff6082B6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="10" type="5" />
+									<attribute id="ColorName" value="Aquamarine" handle="58515561bd5c471ba04d40bf17587680" type="28" />
+									<attribute id="Value" value="0xff9dbab9" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="4" type="5" />
+									<attribute id="ColorName" value="Cerulean" handle="he6babfa2g77bcg4123g8890g3547a41c49df" type="28" />
+									<attribute id="Value" value="0xff007BA7" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="6" type="5" />
+									<attribute id="ColorName" value="Desert Sand" handle="h5c25ef8dg0cacg4f00g9587g1cebf01ec270" type="28" />
+									<attribute id="Value" value="0xfff2c595" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="7" type="5" />
+									<attribute id="ColorName" value="Myrtle" handle="hd088c0ccg1258g4697g83cbgd5a5c713d658" type="28" />
+									<attribute id="Value" value="0xff71af97" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="3" type="5" />
+									<attribute id="ColorName" value="Jasmine" handle="h59fa435fg8beag4123g8babg40b51fb49aae" type="28" />
+									<attribute id="Value" value="0xffe0b777" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="8" type="5" />
+									<attribute id="ColorName" value="Tyrian Purple" handle="h2a496815g1caeg4a6dg8343g8dfd96fe2000" type="28" />
+									<attribute id="Value" value="0xff7b5674" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="2" type="5" />
+									<attribute id="ColorName" value="Lavender" handle="h0628f506g8430g4a6dg91efg5caeecd0a87d" type="28" />
+									<attribute id="Value" value="0xffc89ce7" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="5" type="5" />
+									<attribute id="ColorName" value="Persian Orange" handle="h2757eccbgc53bg4b33ga195g0a0d572f8e66" type="28" />
+									<attribute id="Value" value="0xffD99058" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="1" type="5" />
+									<attribute id="ColorName" value="Amethyst" handle="145286a1731b4445bea1b3a19cc71683" type="28" />
+									<attribute id="Value" value="0xffa42832" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="11" type="5" />
+									<attribute id="ColorName" value="Mountbatten Pink" handle="h26230874g772ag455ag8081geeb8d48ffd6d" type="28" />
+									<attribute id="Value" value="0xff997A8D" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="12" type="5" />
+									<attribute id="ColorName" value="Mauve" handle="h4724b8b9g847bg4e38ga1d6ga50992b2cbb1" type="28" />
+									<attribute id="Value" value="0xffE0B0FF" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="13" type="5" />
+									<attribute id="ColorName" value="Biotite" handle="h156c50begd220g4c63g9f0dg95b656de69b7" type="28" />
+									<attribute id="Value" value="0xfff3d0ad" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="200" type="5" />
+									<attribute id="ColorName" value="Azure" handle="98de5c5f256c4345a980e555eaa502d0" type="28" />
+									<attribute id="Value" value="0xffF0F8FF" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="204" type="5" />
+									<attribute id="ColorName" value="Lilac" handle="e635049cdd934d69af74f50b7e79b241" type="28" />
+									<attribute id="Value" value="0xffeed2e1" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="205" type="5" />
+									<attribute id="ColorName" value="Silver" handle="239309e2e9d4465e8ffbbb5f4ef81715" type="28" />
+									<attribute id="Value" value="0xffC0C0C0" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="207" type="5" />
+									<attribute id="ColorName" value="Child of Light" handle="2631ed63c8ab43cbbae7093f5db0bcfc" type="28" />
+									<attribute id="Value" value="0xffFFFF99" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="208" type="5" />
+									<attribute id="ColorName" value="Peach Puff" handle="e2ea0327c2564d6ba95db6244682978b" type="28" />
+									<attribute id="Value" value="0xffFFDAB9" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="209" type="5" />
+									<attribute id="ColorName" value="Helium" handle="1396f763591e4fc49ac2e731eed00911" type="28" />
+									<attribute id="Value" value="0xffEBB0D7" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="212" type="5" />
+									<attribute id="ColorName" value="Princess Peach" handle="c0f3aea015654299a7536d9680203018" type="28" />
+									<attribute id="Value" value="0xffFEBAAD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="213" type="5" />
+									<attribute id="ColorName" value="Vivid Tangerine" handle="842ca6a1e8084b33b85abe2ba95cfcc5" type="28" />
+									<attribute id="Value" value="0xffFF9980" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="214" type="5" />
+									<attribute id="ColorName" value="Light Coral" handle="c67671fba26b482787e8c57e8bcf356d" type="28" />
+									<attribute id="Value" value="0xffF08080" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="215" type="5" />
+									<attribute id="ColorName" value="Blue Slate" handle="190b09f3d98d495eb13777e151236481" type="28" />
+									<attribute id="Value" value="0xffB5CEE4" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="216" type="5" />
+									<attribute id="ColorName" value="Cool Breeze" handle="9b04be9a4d824113a29b6c43e4670605" type="28" />
+									<attribute id="Value" value="0xff87CEFA" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="217" type="5" />
+									<attribute id="ColorName" value="Astarte" handle="60bc787213894196b5c7e19b967e8c8b" type="28" />
+									<attribute id="Value" value="0xff8DD9CC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="218" type="5" />
+									<attribute id="ColorName" value="Jade" handle="458c968c4ae6442696fd7b01be1461e0" type="28" />
+									<attribute id="Value" value="0xff9DE093" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="219" type="5" />
+									<attribute id="ColorName" value="White Smoke" handle="e0895c78f0474477aaa14b0c467e4e9f" type="28" />
+									<attribute id="Value" value="0xffa3a3a3" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="221" type="5" />
+									<attribute id="ColorName" value="Lemon Quartz" handle="8567596d681c445b85a9549efffc9663" type="28" />
+									<attribute id="Value" value="0xffFFFF00" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="222" type="5" />
+									<attribute id="ColorName" value="Gold" handle="2063895bef894ef4a21e91cd2cc2e330" type="28" />
+									<attribute id="Value" value="0xffFFD700" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="223" type="5" />
+									<attribute id="ColorName" value="Rainbow Pyrite" handle="a7051c03bb05475fa4b63226ad239ed4" type="28" />
+									<attribute id="Value" value="0xffF4A460" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="224" type="5" />
+									<attribute id="ColorName" value="Smokescreen" handle="aa3608aca36747bcae2ce3c50a85e96a" type="28" />
+									<attribute id="Value" value="0xffFA8072" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="226" type="5" />
+									<attribute id="ColorName" value="Aztec Gold" handle="8c90bc7b9e5d49e28a4fb2d98e40af00" type="28" />
+									<attribute id="Value" value="0xffC39953" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="227" type="5" />
+									<attribute id="ColorName" value="Alpha Quartz" handle="4bf0ba08e6f44f429aac785b36869a01" type="28" />
+									<attribute id="Value" value="0xffFFA500" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="229" type="5" />
+									<attribute id="ColorName" value="Yellow Ochre" handle="c4b14732785a46fc83ec0d2c867d9b6b" type="28" />
+									<attribute id="Value" value="0xffE38217" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="230" type="5" />
+									<attribute id="ColorName" value="Grassy Knoll" handle="16db90954ccf4e73ac73a02aee5af47d" type="28" />
+									<attribute id="Value" value="0xff9ec96c" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="232" type="5" />
+									<attribute id="ColorName" value="Ogre Green" handle="aa72243aee93419799a0f210ff6cece3" type="28" />
+									<attribute id="Value" value="0xffABAD48" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="234" type="5" />
+									<attribute id="ColorName" value="Pink Void" handle="947a69b5e458481a9fb942f07a4d55c0" type="28" />
+									<attribute id="Value" value="0xffFC74FD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="235" type="5" />
+									<attribute id="ColorName" value="Orchid" handle="c5d9172647c140f9a93f2ec9cb2e5b62" type="28" />
+									<attribute id="Value" value="0xffDA70D6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="236" type="5" />
+									<attribute id="ColorName" value="Violet Visionary" handle="e1a6d3546f4c4a989a70f36f9f550fb1" type="28" />
+									<attribute id="Value" value="0xffC154C1" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="237" type="5" />
+									<attribute id="ColorName" value="Rose Quartz" handle="2286f95891564731a906278b61a5a8b1" type="28" />
+									<attribute id="Value" value="0xffC8509B" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="238" type="5" />
+									<attribute id="ColorName" value="Watermelon" handle="b5e8e95977fa4174bfc140a0c062a2a2" type="28" />
+									<attribute id="Value" value="0xffFF3399" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="239" type="5" />
+									<attribute id="ColorName" value="Raspberry Garnet" handle="1ab0f8ebc09c4e328a5c75a776d07d22" type="28" />
+									<attribute id="Value" value="0xffFF1493" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="240" type="5" />
+									<attribute id="ColorName" value="Cupid" handle="6cfefdcee0e4409d84bc8e0f8171e7b5" type="28" />
+									<attribute id="Value" value="0xffDA3287" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="241" type="5" />
+									<attribute id="ColorName" value="Soulsap" handle="1766bfc51a3347e880f320c7ce1a6c4f" type="28" />
+									<attribute id="Value" value="0xffC71585" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="242" type="5" />
+									<attribute id="ColorName" value="Asphyxia" handle="659f75a7ec1a42a29e3c4feb28e3f242" type="28" />
+									<attribute id="Value" value="0xff9400D3" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="244" type="5" />
+									<attribute id="ColorName" value="Salmon of Knowledge" handle="dc0f6ad082614cd4a53a2ab7f8facf47" type="28" />
+									<attribute id="Value" value="0xffFF6347" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="245" type="5" />
+									<attribute id="ColorName" value="Sunset Orange" handle="b783fa6323cc41d997a62b19bd6deadc" type="28" />
+									<attribute id="Value" value="0xffFE4C40" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="246" type="5" />
+									<attribute id="ColorName" value="Quicksilver" handle="5421b89051da4064b44d65e2f145decf" type="28" />
+									<attribute id="Value" value="0xffD05340" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="247" type="5" />
+									<attribute id="ColorName" value="Sandman" handle="1c9ce144b85c46d38240033c51c72d80" type="28" />
+									<attribute id="Value" value="0xffCD5C5C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="249" type="5" />
+									<attribute id="ColorName" value="Violator" handle="841f616f7c894325a8f29392818d907a" type="28" />
+									<attribute id="Value" value="0xffFF355E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="250" type="5" />
+									<attribute id="ColorName" value="Rosso Quattro" handle="0eb42a05dda749c985d5d34f8a372552" type="28" />
+									<attribute id="Value" value="0xffDA2C43" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="252" type="5" />
+									<attribute id="ColorName" value="Bloodstone" handle="24244143ebfa40708bddc7db5a641e2b" type="28" />
+									<attribute id="Value" value="0xffED0A3F" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="254" type="5" />
+									<attribute id="ColorName" value="Last Sin" handle="d05ec003431b4dc2bc2bd361d552e2c0" type="28" />
+									<attribute id="Value" value="0xffCA3435" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="256" type="5" />
+									<attribute id="ColorName" value="Star Rose Quartz" handle="7f0bcca4c67648c6aa4a59a0d6d1e2e4" type="28" />
+									<attribute id="Value" value="0xff8b757b" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="257" type="5" />
+									<attribute id="ColorName" value="Sugar Plum" handle="a3abc8ff560b482f8f020443512ad8db" type="28" />
+									<attribute id="Value" value="0xff914E75" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="260" type="5" />
+									<attribute id="ColorName" value="Sapphire" handle="a3796338050e47c39a654e5b50ae6230" type="28" />
+									<attribute id="Value" value="0xffA63A79" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="262" type="5" />
+									<attribute id="ColorName" value="Heroine" handle="00e6319cd8734974be73fd12f85cb90d" type="28" />
+									<attribute id="Value" value="0xffA50B5E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="263" type="5" />
+									<attribute id="ColorName" value="Deep Mauve" handle="8c409b7b662249deaf43e08044aa53bd" type="28" />
+									<attribute id="Value" value="0xff993366" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="264" type="5" />
+									<attribute id="ColorName" value="Red Princess" handle="f80ef730302240b3a7804093d6d081ed" type="28" />
+									<attribute id="Value" value="0xffA42832" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="265" type="5" />
+									<attribute id="ColorName" value="Caramel" handle="a843b547a1ea42e788d08e548892ff7c" type="28" />
+									<attribute id="Value" value="0xffA52A2A" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="266" type="5" />
+									<attribute id="ColorName" value="Blood Brew" handle="aacb7d7425c34d52843e966eba640268" type="28" />
+									<attribute id="Value" value="0xffB0171F" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="267" type="5" />
+									<attribute id="ColorName" value="Demon Skin" handle="24f8eae3a8e74cb9a5c0a01680b96ac1" type="28" />
+									<attribute id="Value" value="0xff933709" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="268" type="5" />
+									<attribute id="ColorName" value="Fresh Air" handle="543a66d373b448c5ab0ae787fc09d442" type="28" />
+									<attribute id="Value" value="0xff76D7EA" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="269" type="5" />
+									<attribute id="ColorName" value="Deep Freeze" handle="d2344c90ebd94fa7b49b1ff983a4e95d" type="28" />
+									<attribute id="Value" value="0xff40E0D0" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="271" type="5" />
+									<attribute id="ColorName" value="Poseidon" handle="2d6b91493f7144c9b96573e3ba5fa71e" type="28" />
+									<attribute id="Value" value="0xff50BFE6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="272" type="5" />
+									<attribute id="ColorName" value="Sea Nymph" handle="bf57fd51cb3248b0b373868c64f070ef" type="28" />
+									<attribute id="Value" value="0xff7DA9A4" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="273" type="5" />
+									<attribute id="ColorName" value="Gentle Earth" handle="958dda6dff5c4542bb89371a4fc56a6b" type="28" />
+									<attribute id="Value" value="0xff7DA98D" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="274" type="5" />
+									<attribute id="ColorName" value="Wild Blue Yonder" handle="267dfdf6839945909389daee2f77da72" type="28" />
+									<attribute id="Value" value="0xff7A89B8" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="275" type="5" />
+									<attribute id="ColorName" value="Shadow Blue" handle="82a7dfefa8af48fd891d36d4a9315d85" type="28" />
+									<attribute id="Value" value="0xff778BA5" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="276" type="5" />
+									<attribute id="ColorName" value="Spring Meadow" handle="d610063e2ebd49538414e5e3fb9b7eee" type="28" />
+									<attribute id="Value" value="0xff469496" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="277" type="5" />
+									<attribute id="ColorName" value="Electra" handle="cf850bee8dd44231bd9962b515d3ff0e" type="28" />
+									<attribute id="Value" value="0xff00CC99" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="278" type="5" />
+									<attribute id="ColorName" value="The Cure" handle="a0c2f4a628a84cf1ad04c3d0d177295c" type="28" />
+									<attribute id="Value" value="0xff339ACC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="279" type="5" />
+									<attribute id="ColorName" value="Mermaid" handle="b3d7ce4a4a96469e9bbbdf39c129eb7a" type="28" />
+									<attribute id="Value" value="0xff0081FF" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="280" type="5" />
+									<attribute id="ColorName" value="Eucalyptus" handle="49b120f0004c42119e68b1fa3bc0ec90" type="28" />
+									<attribute id="Value" value="0xff29AB87" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="281" type="5" />
+									<attribute id="ColorName" value="Dark Cyan" handle="49a2da4c158d4b1291a37b02a782a21f" type="28" />
+									<attribute id="Value" value="0xff008B8B" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="282" type="5" />
+									<attribute id="ColorName" value="Limelight" handle="c40fd194e81041209a8ccf287c3e1696" type="28" />
+									<attribute id="Value" value="0xff66FF66" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="283" type="5" />
+									<attribute id="ColorName" value="Diatomacious Opal" handle="847cf57b32e444a0a535a72496c5d975" type="28" />
+									<attribute id="Value" value="0xff7FFF00" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="285" type="5" />
+									<attribute id="ColorName" value="Wintergreen Dream" handle="0fc0d40de4b24da09ae305651f72b4a0" type="28" />
+									<attribute id="Value" value="0xff56887D" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="286" type="5" />
+									<attribute id="ColorName" value="Hunter's Edge" handle="36a2bf8492bb4bc298730b0417e17768" type="28" />
+									<attribute id="Value" value="0xff1CAC78" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="287" type="5" />
+									<attribute id="ColorName" value="Lucky" handle="338f2e691044402197486579730285b2" type="28" />
+									<attribute id="Value" value="0xff008000" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="288" type="5" />
+									<attribute id="ColorName" value="Pixie Dust" handle="9b9a5dce13da4dee813edceaa3a3d47b" type="28" />
+									<attribute id="Value" value="0xff7B68EE" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="289" type="5" />
+									<attribute id="ColorName" value="Celestial Blue" handle="3919692fe3a64e2b97b530fff740b0f6" type="28" />
+									<attribute id="Value" value="0xff7070CC" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="290" type="5" />
+									<attribute id="ColorName" value="Slate Blue" handle="2b47429a772b42139cd3d32208a140cb" type="28" />
+									<attribute id="Value" value="0xff6A5ACD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="291" type="5" />
+									<attribute id="ColorName" value="High Tide" handle="b443edad73934d608bf4a6697e8a4dec" type="28" />
+									<attribute id="Value" value="0xff4570E6" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="292" type="5" />
+									<attribute id="ColorName" value="Headvice" handle="395a9cc9d6054219990c5686f136f28a" type="28" />
+									<attribute id="Value" value="0xff4169E1" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="294" type="5" />
+									<attribute id="ColorName" value="Royal Purple" handle="632e58c067094c4f8197b9f5ce095bf0" type="28" />
+									<attribute id="Value" value="0xff6B3FA0" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="295" type="5" />
+									<attribute id="ColorName" value="Stelvio" handle="b7dbb84e3a1045118f2e81f71813bcd0" type="28" />
+									<attribute id="Value" value="0xff00468C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="296" type="5" />
+									<attribute id="ColorName" value="Siren" handle="58753fa655f84814ac3baf3c3b514e0f" type="28" />
+									<attribute id="Value" value="0xff0000CD" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="297" type="5" />
+									<attribute id="ColorName" value="Quiksilver" handle="28672aaf2e4f4ee7b4300f6fdc126c36" type="28" />
+									<attribute id="Value" value="0xff3F26BF" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="298" type="5" />
+									<attribute id="ColorName" value="Void Dragon" handle="fe0debfdba3749f094459903fdae7062" type="28" />
+									<attribute id="Value" value="0xff000080" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="299" type="5" />
+									<attribute id="ColorName" value="Charcoal Gray" handle="5c29c1df6ece42d8a5f791d26d544573" type="28" />
+									<attribute id="Value" value="0xff736A62" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="300" type="5" />
+									<attribute id="ColorName" value="Smokey Diamond" handle="0f63d420e6a04f4fbadcfa5dfcc3ead9" type="28" />
+									<attribute id="Value" value="0xff666666" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="301" type="5" />
+									<attribute id="ColorName" value="Tourmaline" handle="5d79cd4d3c574ed5a0daecd35489805a" type="28" />
+									<attribute id="Value" value="0xff614051" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="302" type="5" />
+									<attribute id="ColorName" value="Coal Mine" handle="f968e69086b44ce29221de7096c0ce42" type="28" />
+									<attribute id="Value" value="0xff54626F" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="303" type="5" />
+									<attribute id="ColorName" value="Van Dyke Brown" handle="594d493503de432c9417cb269e74f4df" type="28" />
+									<attribute id="Value" value="0xff664228" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="304" type="5" />
+									<attribute id="ColorName" value="Violet Visionary" handle="f41f649b7bec4b1085dc03ebfe7bc7dd" type="28" />
+									<attribute id="Value" value="0xff702670" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="305" type="5" />
+									<attribute id="ColorName" value="Black Opal" handle="df73bc1374024b94bcd5f00c9e8cdf44" type="28" />
+									<attribute id="Value" value="0xff443D4E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="306" type="5" />
+									<attribute id="ColorName" value="Purple Mountains' Majesty" handle="cfc858dbd83041c08353d56907b841a3" type="28" />
+									<attribute id="Value" value="0xff5C1867" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="307" type="5" />
+									<attribute id="ColorName" value="Alchemy" handle="ad91eae4ace74909afb76b3ec9789253" type="28" />
+									<attribute id="Value" value="0xff660033" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="308" type="5" />
+									<attribute id="ColorName" value="Zombie Troll" handle="5730b327930a4c8db1e730c34c81e89f" type="28" />
+									<attribute id="Value" value="0xff00755E" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="309" type="5" />
+									<attribute id="ColorName" value="Chathams Blue" handle="ca2122df0be44d82b929b7b7a0baf995" type="28" />
+									<attribute id="Value" value="0xff1D437C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="310" type="5" />
+									<attribute id="ColorName" value="Kush" handle="f60afeb417a549259c1200cd613ce43f" type="28" />
+									<attribute id="Value" value="0xff006400" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="311" type="5" />
+									<attribute id="ColorName" value="Dark Craft" handle="638e2ae564e247eea3e815d15bf891cd" type="28" />
+									<attribute id="Value" value="0xff392C2C" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="312" type="5" />
+									<attribute id="ColorName" value="Deepest Mode" handle="4e7537e033df44f2a4fb5e2052681326" type="28" />
+									<attribute id="Value" value="0xff1B1B1B" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="313" type="5" />
+									<attribute id="ColorName" value="Midnight Oil" handle="4de94511350b442696b3366d1f55f2f2" type="28" />
+									<attribute id="Value" value="0xff000000" type="5" />
+								</node>
+								<node id="ColorDesc">
+									<attribute id="ID" value="400" type="5" />
+									<attribute id="ColorName" value="Moonstone" handle="c0005031828a4c89b9c748c41e4e44aa" type="28" />
+									<attribute id="Value" value="0xffFFFFFF" type="5" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
