@@ -8,7 +8,7 @@
                 <node id="OriginDesc">
                     <attribute id="OriginName" value="ROR_Living_Bear" type="22" />
 					<attribute id="OriginDisplayName" value="Oberon" handle="hec620481g3b28g493cg846bg800583e0b8f0" type="28" />
-					<attribute id="OriginDescription" value="You awoke life given where there was none. The only of your kind, what will you do noble bear, how will you use this gift; after all the choice is yours alone." handle="h8d7db582g41fag4ef2gb9dcgd205ef66ad1a" type="28" />
+					<attribute id="OriginDescription" value="" handle="h8d7db582g41fag4ef2gb9dcgd205ef66ad1a" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="h8d7db582g41fag4ef2gb9dcgd205ef66ad1a" type="28" />
                     <attribute id="CharacterUUID" value="50924c85-ffd3-469b-ab68-49f056580f00" type="22" />
                     <attribute id="UserCanAlterTags" value="0" type="19" />
