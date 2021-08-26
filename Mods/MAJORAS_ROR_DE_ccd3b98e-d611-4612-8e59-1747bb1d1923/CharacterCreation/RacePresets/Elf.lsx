@@ -15,7 +15,6 @@
                     <attribute id="MaleDefaultHairColor" value="7" type="5" />
                     <attribute id="MaleDefaultSkinColor" value="2" type="5" />
                     <attribute id="AllowBald" value="1" type="19" />
-					
                     <children>
 						<node id="TagsAdded">
 							<children>
@@ -364,7 +363,6 @@
 									<attribute id="ColorName" value="Peacock" handle="hc9640c1cgd93bg473dga4e1g8ee26f44d730" type="28" />
 									<attribute id="Value" value="0xff89a5a9" type="5" />
 								</node>
-								
 								<node id="ColorDesc">
 									<attribute id="ID" value="100" type="5" />
 									<attribute id="ColorName" value="Jet Black" handle="hec8c2809g2634g4018g92e4g4016c2ac0306" type="28" />
@@ -440,19 +438,12 @@
 									<attribute id="ColorName" value="Dragonscale Jade" handle="hac6f91e5g4c70g4622g8335gb96c817c3e56" type="28" />
 									<attribute id="Value" value="4283210112" type="5" />
 								</node>
-								
-																
 								<node id="ColorDesc"><attribute id="ID" value="204" type="5" /><attribute id="ColorName" value="Lilac" handle="e635049cdd934d69af74f50b7e79b241" type="28" /><attribute id="Value" value="0xffeed2e1" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="205" type="5" /><attribute id="ColorName" value="Silver Fox" handle="239309e2e9d4465e8ffbbb5f4ef81715" type="28" /><attribute id="Value" value="0xffC0C0C0" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="207" type="5" /><attribute id="ColorName" value="Child of Light" handle="2631ed63c8ab43cbbae7093f5db0bcfc" type="28" /><attribute id="Value" value="0xffFFFF99" type="5" /></node>
-
-
-
 								<node id="ColorDesc"><attribute id="ID" value="211" type="5" /><attribute id="ColorName" value="Whimsical Wisteria" handle="cc3de755661349ea9ef395965bf56582" type="28" /><attribute id="Value" value="0xffC9A0DC" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="212" type="5" /><attribute id="ColorName" value="Princess Peach" handle="c0f3aea015654299a7536d9680203018" type="28" /><attribute id="Value" value="0xffFEBAAD" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="213" type="5" /><attribute id="ColorName" value="Vivid Tangerine" handle="842ca6a1e8084b33b85abe2ba95cfcc5" type="28" /><attribute id="Value" value="0xffFF9980" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="215" type="5" /><attribute id="ColorName" value="Blue Slate" handle="190b09f3d98d495eb13777e151236481" type="28" /><attribute id="Value" value="0xffB5CEE4" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="216" type="5" /><attribute id="ColorName" value="Cool Breeze" handle="9b04be9a4d824113a29b6c43e4670605" type="28" /><attribute id="Value" value="0xff87CEFA" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="217" type="5" /><attribute id="ColorName" value="Astarte" handle="60bc787213894196b5c7e19b967e8c8b" type="28" /><attribute id="Value" value="0xff8DD9CC" type="5" /></node>
@@ -460,14 +451,8 @@
 								<node id="ColorDesc"><attribute id="ID" value="219" type="5" /><attribute id="ColorName" value="White Smoke" handle="e0895c78f0474477aaa14b0c467e4e9f" type="28" /><attribute id="Value" value="0xffa3a3a3" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="220" type="5" /><attribute id="ColorName" value="Glossy Grape" handle="3f5770f72ca2470eb6695b556bc5345f" type="28" /><attribute id="Value" value="0xffAB92B3" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="221" type="5" /><attribute id="ColorName" value="Sun" handle="8567596d681c445b85a9549efffc9663" type="28" /><attribute id="Value" value="0xffFFFF00" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="224" type="5" /><attribute id="ColorName" value="Smokescreen" handle="aa3608aca36747bcae2ce3c50a85e96a" type="28" /><attribute id="Value" value="0xffFA8072" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="227" type="5" /><attribute id="ColorName" value="Butterscotch" handle="4bf0ba08e6f44f429aac785b36869a01" type="28" /><attribute id="Value" value="0xffFFA500" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="230" type="5" /><attribute id="ColorName" value="Grassy Knoll" handle="16db90954ccf4e73ac73a02aee5af47d" type="28" /><attribute id="Value" value="0xff9ec96c" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="231" type="5" /><attribute id="ColorName" value="Inchworm" handle="3cff510e4d6c440f8789c0b448e683b6" type="28" /><attribute id="Value" value="0xffAFE313" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="232" type="5" /><attribute id="ColorName" value="Ogre Green" handle="aa72243aee93419799a0f210ff6cece3" type="28" /><attribute id="Value" value="0xffABAD48" type="5" /></node>
@@ -475,40 +460,28 @@
 								<node id="ColorDesc"><attribute id="ID" value="234" type="5" /><attribute id="ColorName" value="Pink Void" handle="947a69b5e458481a9fb942f07a4d55c0" type="28" /><attribute id="Value" value="0xffFC74FD" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="235" type="5" /><attribute id="ColorName" value="Orchid" handle="c5d9172647c140f9a93f2ec9cb2e5b62" type="28" /><attribute id="Value" value="0xffDA70D6" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="236" type="5" /><attribute id="ColorName" value="Violet Visionary" handle="e1a6d3546f4c4a989a70f36f9f550fb1" type="28" /><attribute id="Value" value="0xffC154C1" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="239" type="5" /><attribute id="ColorName" value="Pink Pixie" handle="1ab0f8ebc09c4e328a5c75a776d07d22" type="28" /><attribute id="Value" value="0xffFF1493" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="240" type="5" /><attribute id="ColorName" value="Cupid" handle="6cfefdcee0e4409d84bc8e0f8171e7b5" type="28" /><attribute id="Value" value="0xffDA3287" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="241" type="5" /><attribute id="ColorName" value="Soulsap" handle="1766bfc51a3347e880f320c7ce1a6c4f" type="28" /><attribute id="Value" value="0xffC71585" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="242" type="5" /><attribute id="ColorName" value="Asphyxia" handle="659f75a7ec1a42a29e3c4feb28e3f242" type="28" /><attribute id="Value" value="0xff9400D3" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="245" type="5" /><attribute id="ColorName" value="Sunset Orange" handle="b783fa6323cc41d997a62b19bd6deadc" type="28" /><attribute id="Value" value="0xffFE4C40" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="247" type="5" /><attribute id="ColorName" value="Sandman" handle="1c9ce144b85c46d38240033c51c72d80" type="28" /><attribute id="Value" value="0xffCD5C5C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="248" type="5" /><attribute id="ColorName" value="Smashed Pumpkin" handle="2edb358ba22f4d9fad5f0010339e2495" type="28" /><attribute id="Value" value="0xffFF6103" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="249" type="5" /><attribute id="ColorName" value="Violator" handle="841f616f7c894325a8f29392818d907a" type="28" /><attribute id="Value" value="0xffFF355E" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="250" type="5" /><attribute id="ColorName" value="Rosso Quattro" handle="0eb42a05dda749c985d5d34f8a372552" type="28" /><attribute id="Value" value="0xffDA2C43" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="252" type="5" /><attribute id="ColorName" value="Bloodstone" handle="24244143ebfa40708bddc7db5a641e2b" type="28" /><attribute id="Value" value="0xffED0A3F" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="253" type="5" /><attribute id="ColorName" value="Madder Lake" handle="204e881f27654d40bce322ceeb060784" type="28" /><attribute id="Value" value="0xffCC3336" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="254" type="5" /><attribute id="ColorName" value="Last Sin" handle="d05ec003431b4dc2bc2bd361d552e2c0" type="28" /><attribute id="Value" value="0xffCA3435" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="256" type="5" /><attribute id="ColorName" value="Burn Out" handle="7f0bcca4c67648c6aa4a59a0d6d1e2e4" type="28" /><attribute id="Value" value="0xff8b757b" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="258" type="5" /><attribute id="ColorName" value="Folklore Fuscia" handle="cb9048bac87f4a3b979b341bfe38cd5d" type="28" /><attribute id="Value" value="0xff8B475D" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="260" type="5" /><attribute id="ColorName" value="Bordello" handle="a3796338050e47c39a654e5b50ae6230" type="28" /><attribute id="Value" value="0xffA63A79" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="261" type="5" /><attribute id="ColorName" value="Scarlet" handle="b95564f58c804e8db463a5ed0e481af3" type="28" /><attribute id="Value" value="0xffBD0B4C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="262" type="5" /><attribute id="ColorName" value="Heroine" handle="00e6319cd8734974be73fd12f85cb90d" type="28" /><attribute id="Value" value="0xffA50B5E" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="263" type="5" /><attribute id="ColorName" value="Deep Mauve" handle="8c409b7b662249deaf43e08044aa53bd" type="28" /><attribute id="Value" value="0xff993366" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="265" type="5" /><attribute id="ColorName" value="Caramel" handle="a843b547a1ea42e788d08e548892ff7c" type="28" /><attribute id="Value" value="0xffA52A2A" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="266" type="5" /><attribute id="ColorName" value="Blood Brew" handle="aacb7d7425c34d52843e966eba640268" type="28" /><attribute id="Value" value="0xffB0171F" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="268" type="5" /><attribute id="ColorName" value="Bright Sky" handle="543a66d373b448c5ab0ae787fc09d442" type="28" /><attribute id="Value" value="0xff76D7EA" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="269" type="5" /><attribute id="ColorName" value="Deep Freeze" handle="d2344c90ebd94fa7b49b1ff983a4e95d" type="28" /><attribute id="Value" value="0xff40E0D0" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="271" type="5" /><attribute id="ColorName" value="Blizzard Blue" handle="2d6b91493f7144c9b96573e3ba5fa71e" type="28" /><attribute id="Value" value="0xff50BFE6" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="272" type="5" /><attribute id="ColorName" value="Sea Nymph" handle="bf57fd51cb3248b0b373868c64f070ef" type="28" /><attribute id="Value" value="0xff7DA9A4" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="273" type="5" /><attribute id="ColorName" value="Gentle Earth" handle="958dda6dff5c4542bb89371a4fc56a6b" type="28" /><attribute id="Value" value="0xff7DA98D" type="5" /></node>
@@ -519,10 +492,7 @@
 								<node id="ColorDesc"><attribute id="ID" value="278" type="5" /><attribute id="ColorName" value="The Cure" handle="a0c2f4a628a84cf1ad04c3d0d177295c" type="28" /><attribute id="Value" value="0xff339ACC" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="279" type="5" /><attribute id="ColorName" value="Mermaid" handle="b3d7ce4a4a96469e9bbbdf39c129eb7a" type="28" /><attribute id="Value" value="0xff0081FF" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="280" type="5" /><attribute id="ColorName" value="Eucalyptus" handle="49b120f0004c42119e68b1fa3bc0ec90" type="28" /><attribute id="Value" value="0xff29AB87" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="282" type="5" /><attribute id="ColorName" value="Kryptonite" handle="c40fd194e81041209a8ccf287c3e1696" type="28" /><attribute id="Value" value="0xff66FF66" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="285" type="5" /><attribute id="ColorName" value="Wintergreen Dream" handle="0fc0d40de4b24da09ae305651f72b4a0" type="28" /><attribute id="Value" value="0xff56887D" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="286" type="5" /><attribute id="ColorName" value="Hunter's Edge" handle="36a2bf8492bb4bc298730b0417e17768" type="28" /><attribute id="Value" value="0xff1CAC78" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="287" type="5" /><attribute id="ColorName" value="Lucky" handle="338f2e691044402197486579730285b2" type="28" /><attribute id="Value" value="0xff008000" type="5" /></node>
@@ -530,7 +500,6 @@
 								<node id="ColorDesc"><attribute id="ID" value="289" type="5" /><attribute id="ColorName" value="Celestial Blue" handle="3919692fe3a64e2b97b530fff740b0f6" type="28" /><attribute id="Value" value="0xff7070CC" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="290" type="5" /><attribute id="ColorName" value="Slate Blue" handle="2b47429a772b42139cd3d32208a140cb" type="28" /><attribute id="Value" value="0xff6A5ACD" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="291" type="5" /><attribute id="ColorName" value="High Tide" handle="b443edad73934d608bf4a6697e8a4dec" type="28" /><attribute id="Value" value="0xff4570E6" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="293" type="5" /><attribute id="ColorName" value="People Eater" handle="5ab8938cb69f47e5a36772f1d8339652" type="28" /><attribute id="Value" value="0xff652DC1" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="294" type="5" /><attribute id="ColorName" value="Royal Purple" handle="632e58c067094c4f8197b9f5ce095bf0" type="28" /><attribute id="Value" value="0xff6B3FA0" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="295" type="5" /><attribute id="ColorName" value="Stelvio" handle="b7dbb84e3a1045118f2e81f71813bcd0" type="28" /><attribute id="Value" value="0xff00468C" type="5" /></node>
@@ -538,28 +507,20 @@
 								<node id="ColorDesc"><attribute id="ID" value="297" type="5" /><attribute id="ColorName" value="Ultramarine Blue" handle="28672aaf2e4f4ee7b4300f6fdc126c36" type="28" /><attribute id="Value" value="0xff3F26BF" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="298" type="5" /><attribute id="ColorName" value="Void Dragon" handle="fe0debfdba3749f094459903fdae7062" type="28" /><attribute id="Value" value="0xff000080" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="299" type="5" /><attribute id="ColorName" value="Charcoal Gray" handle="5c29c1df6ece42d8a5f791d26d544573" type="28" /><attribute id="Value" value="0xff736A62" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="301" type="5" /><attribute id="ColorName" value="Death Knight" handle="5d79cd4d3c574ed5a0daecd35489805a" type="28" /><attribute id="Value" value="0xff614051" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="302" type="5" /><attribute id="ColorName" value="Cursed Earth" handle="f968e69086b44ce29221de7096c0ce42" type="28" /><attribute id="Value" value="0xff54626F" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="303" type="5" /><attribute id="ColorName" value="Van Dyke Brown" handle="594d493503de432c9417cb269e74f4df" type="28" /><attribute id="Value" value="0xff664228" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="304" type="5" /><attribute id="ColorName" value="Violet Visionary" handle="f41f649b7bec4b1085dc03ebfe7bc7dd" type="28" /><attribute id="Value" value="0xff702670" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="305" type="5" /><attribute id="ColorName" value="Black Opal" handle="df73bc1374024b94bcd5f00c9e8cdf44" type="28" /><attribute id="Value" value="0xff443D4E" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="306" type="5" /><attribute id="ColorName" value="Purple Mountains' Majesty" handle="cfc858dbd83041c08353d56907b841a3" type="28" /><attribute id="Value" value="0xff5C1867" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="308" type="5" /><attribute id="ColorName" value="Zombie Troll" handle="5730b327930a4c8db1e730c34c81e89f" type="28" /><attribute id="Value" value="0xff00755E" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="309" type="5" /><attribute id="ColorName" value="Chathams Blue" handle="ca2122df0be44d82b929b7b7a0baf995" type="28" /><attribute id="Value" value="0xff1D437C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="310" type="5" /><attribute id="ColorName" value="Kush" handle="f60afeb417a549259c1200cd613ce43f" type="28" /><attribute id="Value" value="0xff006400" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="311" type="5" /><attribute id="ColorName" value="Dark Craft" handle="638e2ae564e247eea3e815d15bf891cd" type="28" /><attribute id="Value" value="0xff392C2C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="312" type="5" /><attribute id="ColorName" value="Deepest Mode" handle="4e7537e033df44f2a4fb5e2052681326" type="28" /><attribute id="Value" value="0xff1B1B1B" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="313" type="5" /><attribute id="ColorName" value="Midnight Oil" handle="4de94511350b442696b3366d1f55f2f2" type="28" /><attribute id="Value" value="0xff000000" type="5" /></node>
-								
-
-								
-								
-								
 							</children>
 						</node>
-						
 						<node id="SkinColors">
 							<children>
 								<node id="ColorDesc">
@@ -652,7 +613,6 @@
 									<attribute id="ColorName" value="Posessed" handle="h8e9f6e1eg518ag421bga86cgfabce0a2684b" type="28" />
 									<attribute id="Value" value="0xff4d3f36" type="5" />
 								</node>
-									
 								<node id="ColorDesc"><attribute id="ID" value="201" type="5" /><attribute id="ColorName" value="Soft Rose" handle="ab06ea63bf0746ef871630280011c3f2" type="28" /><attribute id="Value" value="0xffFFE9DC" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="202" type="5" /><attribute id="ColorName" value="Neutral" handle="7ebb6487c9ae4365947e2f776fc01315" type="28" /><attribute id="Value" value="0xffFAE7D0" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="203" type="5" /><attribute id="ColorName" value="Cornsilk" handle="a2e9e89c33e941ff97faf139ee8e855d" type="28" /><attribute id="Value" value="0xffFFEBCD" type="5" /></node>
@@ -663,10 +623,7 @@
 								<node id="ColorDesc"><attribute id="ID" value="208" type="5" /><attribute id="ColorName" value="Peach Puff" handle="e2ea0327c2564d6ba95db6244682978b" type="28" /><attribute id="Value" value="0xffFFDAB9" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="209" type="5" /><attribute id="ColorName" value="Helium" handle="1396f763591e4fc49ac2e731eed00911" type="28" /><attribute id="Value" value="0xffEBB0D7" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="210" type="5" /><attribute id="ColorName" value="Thistle" handle="f238c32bbf524dacbf2fba985f0037f6" type="28" /><attribute id="Value" value="0xffD8BFD8" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="212" type="5" /><attribute id="ColorName" value="Princess Peach" handle="c0f3aea015654299a7536d9680203018" type="28" /><attribute id="Value" value="0xffFEBAAD" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="215" type="5" /><attribute id="ColorName" value="Blue Slate" handle="190b09f3d98d495eb13777e151236481" type="28" /><attribute id="Value" value="0xffB5CEE4" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="216" type="5" /><attribute id="ColorName" value="Cool Breeze" handle="9b04be9a4d824113a29b6c43e4670605" type="28" /><attribute id="Value" value="0xff87CEFA" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="217" type="5" /><attribute id="ColorName" value="Astarte" handle="60bc787213894196b5c7e19b967e8c8b" type="28" /><attribute id="Value" value="0xff8DD9CC" type="5" /></node>
@@ -674,49 +631,33 @@
 								<node id="ColorDesc"><attribute id="ID" value="219" type="5" /><attribute id="ColorName" value="White Smoke" handle="e0895c78f0474477aaa14b0c467e4e9f" type="28" /><attribute id="Value" value="0xffa3a3a3" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="220" type="5" /><attribute id="ColorName" value="Glossy Grape" handle="3f5770f72ca2470eb6695b556bc5345f" type="28" /><attribute id="Value" value="0xffAB92B3" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="221" type="5" /><attribute id="ColorName" value="Sun" handle="8567596d681c445b85a9549efffc9663" type="28" /><attribute id="Value" value="0xffFFFF00" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="224" type="5" /><attribute id="ColorName" value="Smokescreen" handle="aa3608aca36747bcae2ce3c50a85e96a" type="28" /><attribute id="Value" value="0xffFA8072" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="225" type="5" /><attribute id="ColorName" value="Tan" handle="e4893cdd3e864b3b940f63a7cd2b0467" type="28" /><attribute id="Value" value="0xffD99A6C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="226" type="5" /><attribute id="ColorName" value="Gold Rush" handle="8c90bc7b9e5d49e28a4fb2d98e40af00" type="28" /><attribute id="Value" value="0xffC39953" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="227" type="5" /><attribute id="ColorName" value="Butterscotch" handle="4bf0ba08e6f44f429aac785b36869a01" type="28" /><attribute id="Value" value="0xffFFA500" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="230" type="5" /><attribute id="ColorName" value="Grassy Knoll" handle="16db90954ccf4e73ac73a02aee5af47d" type="28" /><attribute id="Value" value="0xff9ec96c" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="232" type="5" /><attribute id="ColorName" value="Ogre Green" handle="aa72243aee93419799a0f210ff6cece3" type="28" /><attribute id="Value" value="0xffABAD48" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="234" type="5" /><attribute id="ColorName" value="Pink Void" handle="947a69b5e458481a9fb942f07a4d55c0" type="28" /><attribute id="Value" value="0xffFC74FD" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="235" type="5" /><attribute id="ColorName" value="Orchid" handle="c5d9172647c140f9a93f2ec9cb2e5b62" type="28" /><attribute id="Value" value="0xffDA70D6" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="236" type="5" /><attribute id="ColorName" value="Violet Visionary" handle="e1a6d3546f4c4a989a70f36f9f550fb1" type="28" /><attribute id="Value" value="0xffC154C1" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="238" type="5" /><attribute id="ColorName" value="Watermelon" handle="b5e8e95977fa4174bfc140a0c062a2a2" type="28" /><attribute id="Value" value="0xffFF3399" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="239" type="5" /><attribute id="ColorName" value="Raspberry" handle="1ab0f8ebc09c4e328a5c75a776d07d22" type="28" /><attribute id="Value" value="0xffFF1493" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="240" type="5" /><attribute id="ColorName" value="Cupid" handle="6cfefdcee0e4409d84bc8e0f8171e7b5" type="28" /><attribute id="Value" value="0xffDA3287" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="241" type="5" /><attribute id="ColorName" value="Soulsap" handle="1766bfc51a3347e880f320c7ce1a6c4f" type="28" /><attribute id="Value" value="0xffC71585" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="242" type="5" /><attribute id="ColorName" value="Asphyxia" handle="659f75a7ec1a42a29e3c4feb28e3f242" type="28" /><attribute id="Value" value="0xff9400D3" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="244" type="5" /><attribute id="ColorName" value="Salmon of Knowledge" handle="dc0f6ad082614cd4a53a2ab7f8facf47" type="28" /><attribute id="Value" value="0xffFF6347" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="245" type="5" /><attribute id="ColorName" value="Sunset Orange" handle="b783fa6323cc41d997a62b19bd6deadc" type="28" /><attribute id="Value" value="0xffFE4C40" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="246" type="5" /><attribute id="ColorName" value="Quicksilver" handle="5421b89051da4064b44d65e2f145decf" type="28" /><attribute id="Value" value="0xffD05340" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="247" type="5" /><attribute id="ColorName" value="Sandman" handle="1c9ce144b85c46d38240033c51c72d80" type="28" /><attribute id="Value" value="0xffCD5C5C" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="249" type="5" /><attribute id="ColorName" value="Violator" handle="841f616f7c894325a8f29392818d907a" type="28" /><attribute id="Value" value="0xffFF355E" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="250" type="5" /><attribute id="ColorName" value="Rosso Quattro" handle="0eb42a05dda749c985d5d34f8a372552" type="28" /><attribute id="Value" value="0xffDA2C43" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="252" type="5" /><attribute id="ColorName" value="Bloodstone" handle="24244143ebfa40708bddc7db5a641e2b" type="28" /><attribute id="Value" value="0xffED0A3F" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="254" type="5" /><attribute id="ColorName" value="Last Sin" handle="d05ec003431b4dc2bc2bd361d552e2c0" type="28" /><attribute id="Value" value="0xffCA3435" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="256" type="5" /><attribute id="ColorName" value="Burn Out" handle="7f0bcca4c67648c6aa4a59a0d6d1e2e4" type="28" /><attribute id="Value" value="0xff8b757b" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="257" type="5" /><attribute id="ColorName" value="Sugar Plum" handle="a3abc8ff560b482f8f020443512ad8db" type="28" /><attribute id="Value" value="0xff914E75" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="259" type="5" /><attribute id="ColorName" value="Saddlebrown" handle="2522bc75abbb424ca4216f5624030152" type="28" /><attribute id="Value" value="0xff8B4513" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="260" type="5" /><attribute id="ColorName" value="Bordello" handle="a3796338050e47c39a654e5b50ae6230" type="28" /><attribute id="Value" value="0xffA63A79" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="262" type="5" /><attribute id="ColorName" value="Heroine" handle="00e6319cd8734974be73fd12f85cb90d" type="28" /><attribute id="Value" value="0xffA50B5E" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="265" type="5" /><attribute id="ColorName" value="Caramel" handle="a843b547a1ea42e788d08e548892ff7c" type="28" /><attribute id="Value" value="0xffA52A2A" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="266" type="5" /><attribute id="ColorName" value="Blood Brew" handle="aacb7d7425c34d52843e966eba640268" type="28" /><attribute id="Value" value="0xffB0171F" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="267" type="5" /><attribute id="ColorName" value="Demon Skin" handle="24f8eae3a8e74cb9a5c0a01680b96ac1" type="28" /><attribute id="Value" value="0xff933709" type="5" /></node>
@@ -733,30 +674,22 @@
 								<node id="ColorDesc"><attribute id="ID" value="278" type="5" /><attribute id="ColorName" value="The Cure" handle="a0c2f4a628a84cf1ad04c3d0d177295c" type="28" /><attribute id="Value" value="0xff339ACC" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="279" type="5" /><attribute id="ColorName" value="Mermaid" handle="b3d7ce4a4a96469e9bbbdf39c129eb7a" type="28" /><attribute id="Value" value="0xff0081FF" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="280" type="5" /><attribute id="ColorName" value="Eucalyptus" handle="49b120f0004c42119e68b1fa3bc0ec90" type="28" /><attribute id="Value" value="0xff29AB87" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="282" type="5" /><attribute id="ColorName" value="Limelight" handle="c40fd194e81041209a8ccf287c3e1696" type="28" /><attribute id="Value" value="0xff66FF66" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="285" type="5" /><attribute id="ColorName" value="Wintergreen Dream" handle="0fc0d40de4b24da09ae305651f72b4a0" type="28" /><attribute id="Value" value="0xff56887D" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="286" type="5" /><attribute id="ColorName" value="Hunter's Edge" handle="36a2bf8492bb4bc298730b0417e17768" type="28" /><attribute id="Value" value="0xff1CAC78" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="287" type="5" /><attribute id="ColorName" value="Lucky" handle="338f2e691044402197486579730285b2" type="28" /><attribute id="Value" value="0xff008000" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="288" type="5" /><attribute id="ColorName" value="Pixie Dust" handle="9b9a5dce13da4dee813edceaa3a3d47b" type="28" /><attribute id="Value" value="0xff7B68EE" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="290" type="5" /><attribute id="ColorName" value="Slate Blue" handle="2b47429a772b42139cd3d32208a140cb" type="28" /><attribute id="Value" value="0xff6A5ACD" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="291" type="5" /><attribute id="ColorName" value="High Tide" handle="b443edad73934d608bf4a6697e8a4dec" type="28" /><attribute id="Value" value="0xff4570E6" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="292" type="5" /><attribute id="ColorName" value="Headvice" handle="395a9cc9d6054219990c5686f136f28a" type="28" /><attribute id="Value" value="0xff4169E1" type="5" /></node>
-
-
 								<node id="ColorDesc"><attribute id="ID" value="295" type="5" /><attribute id="ColorName" value="Stelvio" handle="b7dbb84e3a1045118f2e81f71813bcd0" type="28" /><attribute id="Value" value="0xff00468C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="296" type="5" /><attribute id="ColorName" value="Siren" handle="58753fa655f84814ac3baf3c3b514e0f" type="28" /><attribute id="Value" value="0xff0000CD" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="297" type="5" /><attribute id="ColorName" value="Quiksilver" handle="28672aaf2e4f4ee7b4300f6fdc126c36" type="28" /><attribute id="Value" value="0xff3F26BF" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="298" type="5" /><attribute id="ColorName" value="Void Dragon" handle="fe0debfdba3749f094459903fdae7062" type="28" /><attribute id="Value" value="0xff000080" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="299" type="5" /><attribute id="ColorName" value="Charcoal Gray" handle="5c29c1df6ece42d8a5f791d26d544573" type="28" /><attribute id="Value" value="0xff736A62" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="301" type="5" /><attribute id="ColorName" value="Death Knight" handle="5d79cd4d3c574ed5a0daecd35489805a" type="28" /><attribute id="Value" value="0xff614051" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="302" type="5" /><attribute id="ColorName" value="Coal Mine" handle="f968e69086b44ce29221de7096c0ce42" type="28" /><attribute id="Value" value="0xff54626F" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="303" type="5" /><attribute id="ColorName" value="Van Dyke Brown" handle="594d493503de432c9417cb269e74f4df" type="28" /><attribute id="Value" value="0xff664228" type="5" /></node>
-
 								<node id="ColorDesc"><attribute id="ID" value="305" type="5" /><attribute id="ColorName" value="Black Opal" handle="df73bc1374024b94bcd5f00c9e8cdf44" type="28" /><attribute id="Value" value="0xff443D4E" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="306" type="5" /><attribute id="ColorName" value="Purple Mountains' Majesty" handle="cfc858dbd83041c08353d56907b841a3" type="28" /><attribute id="Value" value="0xff5C1867" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="307" type="5" /><attribute id="ColorName" value="Alchemy" handle="ad91eae4ace74909afb76b3ec9789253" type="28" /><attribute id="Value" value="0xff660033" type="5" /></node>
@@ -766,9 +699,6 @@
 								<node id="ColorDesc"><attribute id="ID" value="311" type="5" /><attribute id="ColorName" value="Dark Craft" handle="638e2ae564e247eea3e815d15bf891cd" type="28" /><attribute id="Value" value="0xff392C2C" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="312" type="5" /><attribute id="ColorName" value="Deepest Mode" handle="4e7537e033df44f2a4fb5e2052681326" type="28" /><attribute id="Value" value="0xff1B1B1B" type="5" /></node>
 								<node id="ColorDesc"><attribute id="ID" value="313" type="5" /><attribute id="ColorName" value="Midnight Oil" handle="4de94511350b442696b3366d1f55f2f2" type="28" /><attribute id="Value" value="0xff000000" type="5" /></node>
-
-
-									
 							</children>
 						</node>
                     </children>
