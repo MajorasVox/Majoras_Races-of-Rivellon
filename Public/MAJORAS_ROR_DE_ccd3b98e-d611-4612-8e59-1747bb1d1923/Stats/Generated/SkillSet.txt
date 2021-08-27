@@ -5,6 +5,8 @@ new skillset "Avatar_ROR_Failed_Gheist"
 add skill "Dome_CircleOfProtection"
 
 new skillset "Avatar_ROR_Demonic_Kin"
+add skill "Target_ROR_DK_AllConsumingHunger"
+new skillset "Race_ROR_Demon"
 add skill "Shout_ROR_DemonWings"
 
 new skillset "Avatar_ROR_Zombie"

@@ -27,7 +27,7 @@
                 		<node id="SupportedRaces">
                 			<children>
                 				<node id="SupportedRaces">
-                                    <attribute id="Object" value="Lizard" type="22" />
+                                    <attribute id="Object" value="ROR_Demon" type="22" />
                                 </node>
                 			</children>
                         </node>
