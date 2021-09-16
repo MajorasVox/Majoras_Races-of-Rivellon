@@ -181,7 +181,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_LEATHER_Lizard_A_Armor_A", VISUALSLOT.Helmet),
 						--vr:Create("", VISUALSLOT.Extra1),
-					-- }
+					}
 				},
 			},
 			Divine = {
