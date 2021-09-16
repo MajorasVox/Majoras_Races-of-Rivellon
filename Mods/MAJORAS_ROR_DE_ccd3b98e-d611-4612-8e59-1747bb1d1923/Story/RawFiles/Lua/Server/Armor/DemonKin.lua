@@ -51,7 +51,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Legendary = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Boots),
+					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_PLATE_TerracottaGardian_A_Armor_B", VISUALSLOT.Boots),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_PLATE_TerracottaGardian_A_Armor_B", VISUALSLOT.Helmet),
 				},
 			},
@@ -65,8 +65,8 @@ return function(ve, vr, onEquipmentChangedCallback)
 		[VisualManager.ArmorType.Mail] = {
 			Common = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					--[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Helmet),
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_MAIL_Lizard_Chain_A_Helmet_A", VISUALSLOT.Arms),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_MAIL_Lizard_Chain_A_Armor_A", VISUALSLOT.Helmet),
 				},
 			},
 			Uncommon = {
@@ -86,7 +86,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ACCESSORY_Ghoul_A_Steaks_B", VISUALSLOT.Extra1),
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_MAIL_AlanBird_A_Armor_A", VISUALSLOT.Torso),
-						--vr:Create("", VISUALSLOT.Extra1)
+						--vr:Create("Demon_Kin_MAIL_AlanBird_A_Armor_A", VISUALSLOT.Extra1)
 					}
 				},
 			},
@@ -95,14 +95,14 @@ return function(ve, vr, onEquipmentChangedCallback)
 					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Demon_Armor_A", VISUALSLOT.Arms),
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_ROBE_Demon_Armor_A", VISUALSLOT.Helmet),
-						--vr:Create("", VISUALSLOT.Extra1),
+						--vr:Create("Demon_Kin_ROBE_Demon_Armor_A", VISUALSLOT.Extra1),
 					}
 				},
 			},
 			Divine = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					--[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Helmet)
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ACCESSORY_Ghoul_Steaks_A", VISUALSLOT.Extra1),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Purged_A_Armor_A", VISUALSLOT.Helmet)
 				},
 			}
 		},
@@ -139,14 +139,14 @@ return function(ve, vr, onEquipmentChangedCallback)
 					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_CLOTH_Lizard_A_Helmet_B", VISUALSLOT.Arms),
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_CLOTH_Lizard_A_Armor_B", VISUALSLOT.Helmet),
-						--vr:Create("", VISUALSLOT.Extra1),
+						--vr:Create("Demon_Kin_CLOTH_Lizard_A_Helmet_B", VISUALSLOT.Extra1),
 					}
 				},
 			},
 			Divine = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					--[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Helmet)
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_CLOTH_Lizard_A_Helmet_B", VISUALSLOT.Arms),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_CLOTH_Lizard_A_Armor_B", VISUALSLOT.Helmet)
 				},
 			}
 		},
@@ -177,17 +177,17 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Legendary = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					--[ITEMSLOT.Breast] = {
-						--vr:Create("", VISUALSLOT.Torso),
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_LEATHER_Lizard_A_Helmet_A", VISUALSLOT.Arms),
+					[ITEMSLOT.Breast] = {
+						vr:Create("Demon_Kin_LEATHER_Lizard_A_Armor_A", VISUALSLOT.Helmet),
 						--vr:Create("", VISUALSLOT.Extra1),
 					-- }
 				},
 			},
 			Divine = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					--[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso)
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ACCESSORY_Ghoul_Steaks_A", VISUALSLOT.Extra1),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Purged_A_Armor_A", VISUALSLOT.Helmet)
 				},
 			}
 		},
@@ -230,8 +230,8 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Divine = {
 				{					
-					--[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-					--[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Helmet)
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_AlanBird_A_Helmet_A", VISUALSLOT.Arms),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_AlanBird_A_Armor_A", VISUALSLOT.Helmet)
 				},
 			}
 		},
