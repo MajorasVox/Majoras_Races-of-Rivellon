@@ -8,7 +8,7 @@
                 <node id="OriginDesc">
                     <attribute id="OriginName" value="ROR_Failed_Gheist" type="22" />
 					<attribute id="OriginDisplayName" value="Null" handle="h66fa7059g0221g42c1ga3f5gd8ad191b33da" type="28" />
-					<attribute id="OriginDescription" value="Poor creature, they took away who you are, they tried to strip you of source. Cast out for not being a useful tool, but you are so much more." handle="h2a691813g0bf5g49b5g91ddg580d7978c18a" type="28" />
+					<attribute id="OriginDescription" value="" handle="h2a691813g0bf5g49b5g91ddg580d7978c18a" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="h2a691813g0bf5g49b5g91ddg580d7978c18a" type="28" />
                     <attribute id="CharacterUUID" value="543a2e21-cbff-4262-a41d-2be62cbe2b7e" type="22" />
                     <attribute id="UserCanAlterTags" value="0" type="19" />

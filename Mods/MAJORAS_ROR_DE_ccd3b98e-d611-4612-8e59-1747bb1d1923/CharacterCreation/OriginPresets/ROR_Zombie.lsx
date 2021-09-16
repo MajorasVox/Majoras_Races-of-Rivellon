@@ -8,7 +8,7 @@
                 <node id="OriginDesc">
                     <attribute id="OriginName" value="ROR_Zombie" type="22" />
 					<attribute id="OriginDisplayName" value="Zebadiah" handle="h03c86dcdgfd76g4999gb300g6f53be6dcbb7" type="28" />
-					<attribute id="OriginDescription" value="The dead rise every day, but you never truly died. Your search continues for whatever force keeps your heart rot &amp; rolling." handle="hae0b1abag1f6cg40beg89dag1f4d5082796d" type="28" />
+					<attribute id="OriginDescription" value="" handle="hae0b1abag1f6cg40beg89dag1f4d5082796d" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="hae0b1abag1f6cg40beg89dag1f4d5082796d" type="28" />
                     <attribute id="CharacterUUID" value="1677ad2e-6c42-4ffd-b3fd-4cecdef0a62c" type="22" />
                     <attribute id="UserCanAlterTags" value="0" type="19" />

@@ -1,0 +1,26 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+KBSECTION
+
+QRY
+QRY_IsTrueRace((CHARACTERGUID)_Character,(STRING)_Race)
+AND
+GetUUID(_Character, _UUID)
+AND
+NRD_ModQuery2("MAJORAS_ROR_DE", "GetRace_QRY", _UUID, _Race)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsTrueUndead((CHARACTERGUID)_Character)
+AND
+GetUUID(_Character, _UUID)
+AND
+NRD_ModQuery1("MAJORAS_ROR_DE", "IsUndeadRace_QRY", _UUID)
+THEN
+DB_NOOP(1);
+
+EXITSECTION
+ENDEXITSECTION
+ParentTargetEdge "__Start"

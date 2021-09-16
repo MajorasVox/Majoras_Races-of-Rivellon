@@ -5,6 +5,10 @@ Debug = {
     TraceEquipParams = "[OnEquipmentChanged] char(%s) item(%s) equipped(%s)"
 }
 
+MODID = {
+    Origins = "1301db3d-1f54-4e98-9be5-5094030916e4"
+}
+
 --[[
 Console commands:
 
@@ -22,7 +26,7 @@ Origins = {
     Zombie = "1677ad2e-6c42-4ffd-b3fd-4cecdef0a62c"
 }
 
-Mods.LeaderLib.ImportUnsafe(Mods.MAJORAS_ROR_DE)
+Mods.LeaderLib.Import(Mods.MAJORAS_ROR_DE)
 
 Ext.RegisterListener("ModuleLoading", function()
     GameHelpers.VoiceMetaData.Register.ScholarMale(Origins.AncientElf)
