@@ -181,7 +181,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 					--[ITEMSLOT.Breast] = {
 						--vr:Create("", VISUALSLOT.Torso),
 						--vr:Create("", VISUALSLOT.Extra1),
-					}
+					-- }
 				},
 			},
 			Divine = {
@@ -245,6 +245,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 		[ITEMSLOT.Breast] = {
 			vr:Create("Demon_Kin_Male_Body_Naked_A_Body_A", VISUALSLOT.Torso),
 			vr:Create(EMPTY_VISUAL, VISUALSLOT.Extra1),
+			vr:Create(EMPTY_VISUAL, VISUALSLOT.Helmet),
 		}
 	})
 	
