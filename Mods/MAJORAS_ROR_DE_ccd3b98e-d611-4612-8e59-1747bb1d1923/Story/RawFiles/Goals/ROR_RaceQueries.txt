@@ -21,6 +21,13 @@ NRD_ModQuery1("MAJORAS_ROR_DE", "IsUndeadRace_QRY", _UUID)
 THEN
 DB_NOOP(1);
 
+PROC
+PROC_GLO_SetOriginalRaceTag((CHARACTERGUID)_Player)
+AND
+GetUUID(_Player, _UUID)
+THEN
+NRD_ModCall("MAJORAS_ROR_DE", "SetOriginTag", _UUID);
+
 EXITSECTION
 ENDEXITSECTION
 ParentTargetEdge "__Start"
