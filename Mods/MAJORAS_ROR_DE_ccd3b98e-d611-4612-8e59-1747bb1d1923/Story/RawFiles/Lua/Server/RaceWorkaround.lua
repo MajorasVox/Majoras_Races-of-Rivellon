@@ -56,6 +56,21 @@ function IsUndeadRace_QRY(uuid)
 	return false
 end
 
+local ReallyOriginTag = {
+	[Origins.AncientElf] = "ROR_REALLY_ANCIENT_ELF",
+	[Origins.DemonicKin] = "ROR_REALLY_DEMON",
+	[Origins.FailedGheist] = "ROR_REALLY_GHEIST",
+	[Origins.LivingBear] = "ROR_REALLY_BEAR",
+	[Origins.Zombie] = "ROR_REALLY_ZOMBIE",
+}
+
+function SetOriginTag(uuid)
+	uuid = StringHelpers.GetUUID(uuid)
+	if ReallyOriginTag[uuid] then
+		SetTag(uuid, ReallyOriginTag[uuid])
+	end
+end
+
 local function InitOriginsWorkarounds()
 
 	local UndeadGodSettings = {Template="QUEST_HoE_Amadia_7a80020b-40b2-42bb-8b30-63fb981340d5", Dialog="FTJ_SW_HoE_UndeadGod"}
@@ -73,7 +88,7 @@ local function InitOriginsWorkarounds()
 	}
 	
 	--Fort Joy God
-	Ext.RegisterOsirisListener("DB_FTJ_HoE_ReturnPoints", "before", 4, function(player, hoeTrigger, returnTrigger, god)
+	Ext.RegisterOsirisListener("DB_FTJ_HoE_ReturnPoints", 4, "before", function(player, hoeTrigger, returnTrigger, god)
 		--Lohse has her own special god settings here
 		if IsTagged(player, "LOHSE") == 0 then
 			local trueRace = GetRace(player, false)
@@ -94,14 +109,41 @@ local function InitOriginsWorkarounds()
 			Osi.DB_CoS_AotO_GodwokenRealRace(uuid, string.upper(race))
 		end
 	end)
+
+	---@type table
+	local riverDB = Osi.DB_FTJ_SW_RiverSurfaceDialog:Get(nil,nil)
+
+	local OriginRiverDialog = {
+		ROR_REALLY_ANCIENT_ELF = "FTJ_SW_AD_RiverSurfaceTirCendelius",
+		ROR_REALLY_DEMON = "FTJ_SW_AD_RiverSurfaceUndead",
+		ROR_REALLY_GHEIST = "FTJ_SW_AD_RiverSurfaceRhalic",
+		ROR_REALLY_BEAR = "FTJ_SW_AD_RiverSurfaceDuna",
+		ROR_REALLY_ZOMBIE = "FTJ_SW_AD_RiverSurfaceUndead",
+	}
+
+	for tag,dialog in pairs(OriginRiverDialog) do
+		table.insert(riverDB, 1, {
+			tag,
+			dialog
+		})
+	end
+
+	Osi.DB_FTJ_SW_RiverSurfaceDialog:Delete(nil,nil)
+
+	for i,v in pairs(riverDB) do
+		Osi.DB_FTJ_SW_RiverSurfaceDialog(v[1], v[2])
+	end
 end
 
 local registeredOriginsRaceListeners = false
 
-Ext.RegisterListener("SessionLoaded", function()
+RegisterListener("Initialized", function()
 	if not registeredOriginsRaceListeners and Ext.IsModLoaded(MODID.Origins) then
 		registeredOriginsRaceListeners = true
 		InitOriginsWorkarounds()
+	end
+	for player in GameHelpers.Character.GetPlayers(false) do
+		SetOriginTag(player.MyGuid)
 	end
 end)
 
