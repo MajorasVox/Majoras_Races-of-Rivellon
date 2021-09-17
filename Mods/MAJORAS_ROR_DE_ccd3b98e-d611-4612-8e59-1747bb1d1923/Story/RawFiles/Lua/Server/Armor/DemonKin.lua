@@ -244,7 +244,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 		[ITEMSLOT.Helmet] = {
 		    vr:Create(EMPTY_VISUAL, VISUALSLOT.Arms),
 			vr:Create(EMPTY_VISUAL, VISUALSLOT.Trousers),
-		}
+		},
 		[ITEMSLOT.Breast] = {
 			vr:Create("Demon_Kin_Male_Body_Naked_A_Body_A", VISUALSLOT.Torso),
 			vr:Create(EMPTY_VISUAL, VISUALSLOT.Extra1),
