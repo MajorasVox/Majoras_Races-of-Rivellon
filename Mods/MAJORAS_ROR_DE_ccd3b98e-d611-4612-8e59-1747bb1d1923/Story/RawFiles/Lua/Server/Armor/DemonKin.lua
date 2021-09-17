@@ -224,8 +224,8 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Divine = {
 				{					
-					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_AlanBird_A_Helmet_A", VISUALSLOT.Beard),
-					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_AlanBird_A_Armor_A", VISUALSLOT.Helmet)
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Blackring_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Blackring_A_Armor_A", VISUALSLOT.Helmet)
 				},
 			}
 		},
