@@ -18,7 +18,7 @@ VISUALSLOT = VisualManager.VisualSlot
 
 EMPTY_VISUAL = "ROR_Empty"
 
----@return VisualResourceData|nil
+---@return VisualResourceData|VisualResourceData[]|nil
 local function GetTieredArmorData(visual, armorType, rarity, level, slot, tieredArmorData)
 	if tieredArmorData == nil then
 		return nil
@@ -85,8 +85,21 @@ local function OnEquipmentChanged(self, char, item, equipped, tieredArmorData, u
 		if not visualsChanged then
 			local visualData = GetTieredArmorData(char.RootTemplate.VisualTemplate, item.Stats.ArmorType, item.Stats.ItemTypeReal, item.Stats.Level, slot, tieredArmorData)
 			if visualData ~= nil then
-				visualData:SetVisualOnCharacter(char.MyGuid)
-				visualsChanged = true
+				if visualData.Type == "VisualResourceData" then
+					if visualData.SetVisualOnCharacter == nil then
+						error(string.format("visualData from TieredArmorData is missing SetVisualOnCharacter. Is it a VisualResourceData? Data:\n%s", Lib.serpent.block(visualData)))
+					end
+					visualData:SetVisualOnCharacter(char.MyGuid)
+					visualsChanged = true
+				else
+					--Table of visual resources
+					for _,v in pairs(visualData) do
+						if type(v) == "table" and v.SetVisualOnCharacter ~= nil then
+							v:SetVisualOnCharacter(char.MyGuid)
+							visualsChanged = true
+						end
+					end
+				end
 			end
 		end
 	end
@@ -110,5 +123,3 @@ for i,func in pairs(ArmorInitFunctions) do
 		Ext.PrintError(result)
 	end
 end
-
-Ext.Require("Server/Armor/_ArmorDebug.lua")
