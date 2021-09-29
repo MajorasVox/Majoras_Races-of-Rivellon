@@ -51,7 +51,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Legendary = {
 				{
-					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_PLATE_TerracottaGardian_A_Helmet_B", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_PLATE_Ghoul_A_Helmet_A", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_PLATE_TerracottaGardian_A_Armor_B", VISUALSLOT.Helmet),
 				},
 			},
@@ -106,13 +106,13 @@ return function(ve, vr, onEquipmentChangedCallback)
 		[VisualManager.ArmorType.Cloth] = {
 			Common = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_CLOTH_Purged_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_CLOTH_Purged_A_Armor_A", VISUALSLOT.Torso),
 				},
 			},
 			Uncommon = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_CLOTH_Demon_Rags_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_CLOTH_Demon_Rags_A_Armor_A", VISUALSLOT.Helmet),
 				},
 			},
@@ -182,19 +182,19 @@ return function(ve, vr, onEquipmentChangedCallback)
 		[VisualManager.ArmorType.Robe] = {
 			Common = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Demon_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Demon_A_Armor_A", VISUALSLOT.Helmet),
 				},
 			},
 			Uncommon = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_BurningWitch_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_BurningWitch_A_Armor_A", VISUALSLOT.Helmet),
 				},
 			},
 			Rare = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Ghoul_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = {
 						vr:Create("Demon_Kin_ROBE_Ghoul_A_Armor_A", VISUALSLOT.Helmet),
 						vr:Create("Demon_Kin_ACCESSORY_Ghoul_A_Steaks_A", VISUALSLOT.Extra1),
@@ -212,7 +212,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 			},
 			Legendary = {
 				{
-					--[ITEMSLOT.Helmet] = vr:Create("Demon_Kin_ROBE_Paladin_A_Helmet_A", VISUALSLOT.Beard),
+					[ITEMSLOT.Helmet] = vr:Create("ROR_Empty", VISUALSLOT.Beard),
 					[ITEMSLOT.Breast] = vr:Create("Demon_Kin_ROBE_Paladin_A_Armor_A", VISUALSLOT.Torso),
 				},
 			},
