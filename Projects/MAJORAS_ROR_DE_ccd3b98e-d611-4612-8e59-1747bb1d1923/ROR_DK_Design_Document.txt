@@ -9,7 +9,7 @@ Origin Name:
 _____________________________________________________________________________
 [Tags]
 > Barbarian
-> Scholar
+> Mystic
 > Villain 
 _____________________________________________________________________________
 [Racial Talent]
@@ -27,7 +27,7 @@ The main mechanic tied to the Demon revolves around consuming Source & starving;
 + 2 Maximum Source Containers
 > 10 States of {Demonic Gluttony}:
 
-Demon of Gluttony ~ (+ 5) - 10 Initiative / + 5 Constitution / {Buff}
+Demon of Gluttony ~ (+ 5) - 10 Initiative / + 5 Constitution / {Buff: 2 Turns Taunted} + {Debuff: Slowed}
 ----------------------------------------------------------------------------
 |
 Insatiable ~ (+ 4) - 4 Initiative / + 4 Constitution
@@ -40,16 +40,16 @@ Satisfied ~ (+ 1) - 1 Initiative / + 1 Constitution
 |---------------------------------------------------------------------------
 Neutral ~ (> 0) * No Buff / * No Debuff
 |---------------------------------------------------------------------------
-Hungry ~ (- 1) + 5% Damage / - 5% Health
+Hungry ~ (- 1) + 5% Damage Boost / - 5% Health
 |
-Starved ~ (- 2) + 10% Damage / - 10% Health
+Starved ~ (- 2) + 10% Damage Boost / - 10% Health
 |
-Ravenous ~ (- 3) + 15% Damage / - 15% Health
+Ravenous ~ (- 3) + 15% Damage Boost / - 15% Health
 |
-Voracious ~ (- 4) + 20% Damage / - 20% Health
+Voracious ~ (- 4) + 20% Damage Boost / - 20% Health
 |
 ----------------------------------------------------------------------------
-Demon of Famine ~ (- 5) + 25% Damage / - 30% Health / {Debuff}
+Demon of Famine ~ (- 5) + 25% Damage Boost / - 30% Health / {Buff: Enraged} + {Debuff: 1 Turn Madness}
 
 - (Logic) - - Demons are source hungry creatures and desire as much Source as they can get. The added maximum Source containers factor into the main mechanic and the hoarding of Source.
 _____________________________________________________________________________
@@ -87,9 +87,17 @@ A risk-reward ability that consumes target *Fatality* within a radius of 3 for 1
 > 2 Turns
 + Taunted
 + Enraged
-+ Madness
 
-- (When Failed) - - Will set {Crippled}
+- (When Failed) - - Will debuff if failing to consume your target.
+
+~ Debuff ~ / Bite Your Tongue
+- 5 Stacks of {Demonic Gluttony}
+> 5 Turns
++ Bleeding
+> 2 Turns
++ Crippled
+> 1 Turn
++ Silenced
 _____________________________________________________________________________
 [Origin Skill]
 Skill Name:
