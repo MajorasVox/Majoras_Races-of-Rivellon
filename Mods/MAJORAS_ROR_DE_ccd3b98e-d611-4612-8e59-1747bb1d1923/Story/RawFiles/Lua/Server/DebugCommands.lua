@@ -5,7 +5,7 @@ end)
 local lastCycleIndex = {}
 local allVisuals = {
 	[Origins.DemonicKin] = {
-		[VISUALSLOT.Torso] = {
+		[VM.VisualSlot.Torso] = {
 			"Demon_Kin_Male_Body_Naked_A_Body_A",
 			"Demon_Kin_ROBE_Lizard_Armor_A",
 			"Demon_Kin_ROBE_Demon_Armor_A",
@@ -16,7 +16,7 @@ local allVisuals = {
 			"Demon_Kin_ROBE_Ghoul_Armor_A",
 			"Demon_Kin_ROBE_BurningWitch_Armor_A",
 		},
-		[VISUALSLOT.Arms] = {
+		[VM.VisualSlot.Arms] = {
 			"Demon_Kin_ROBE_Lizard_Helmet_A",
 			"Demon_Kin_ROBE_Dreamer_Helmet_A",
 			"Demon_Kin_ROBE_Dreamer_Helmet_B",
@@ -24,7 +24,7 @@ local allVisuals = {
 			"Demon_Kin_ROBE_Incarnate_Helmet_A",
 			"ROR_Empty",
 		},
-		[VISUALSLOT.Extra1] = {
+		[VM.VisualSlot.Extra1] = {
 			"Demon_Kin_ACCESSORY_Ghost_Steaks_A",
 			"Demon_Kin_ACCESSORY_Ghost_Steaks_B",
 			"Demon_Kin_ACCESSORY_Ghoul_Sword_A",
@@ -49,7 +49,7 @@ Ext.RegisterConsoleCommand("ror", function(cmd, subcmd, param1)
 		local slot = param1
 		if type(slot) == "string" then
 			if StringHelpers.IsNullOrWhitespace(slot) then
-				slot = VISUALSLOT.Torso
+				slot = VM.VisualSlot.Torso
 			else
 				local slotNum = tonumber(slot)
 				if slotNum ~= nil then
@@ -65,10 +65,10 @@ Ext.RegisterConsoleCommand("ror", function(cmd, subcmd, param1)
 				end
 			end
 		else
-			slot = VISUALSLOT.Torso
+			slot = VM.VisualSlot.Torso
 		end
 		if slot == nil then
-			slot = VISUALSLOT.Torso
+			slot = VM.VisualSlot.Torso
 		end
 		local uuid = Vars.ConsoleWindowVariables.host.MyGuid
 		local index = 0

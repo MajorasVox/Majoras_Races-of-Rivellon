@@ -28,6 +28,8 @@ Origins = {
 
 Mods.LeaderLib.Import(Mods.MAJORAS_ROR_DE)
 
+VM = VisualManager.Elements
+
 Ext.RegisterListener("ModuleLoading", function()
     GameHelpers.VoiceMetaData.Register.ScholarMale(Origins.AncientElf)
     GameHelpers.VoiceMetaData.Register.TricksterMale(Origins.FailedGheist)

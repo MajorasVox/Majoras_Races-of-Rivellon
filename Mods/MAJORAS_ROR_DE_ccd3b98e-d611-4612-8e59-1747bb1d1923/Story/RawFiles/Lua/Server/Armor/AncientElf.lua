@@ -11,38 +11,38 @@ return function(ve, vr, onEquipmentChangedCallback)
 		onEquipmentChangedCallback(self, char, item, equipped, TieredArmor, UniqueItems)
 	end})
 	
-	-- visualData:AddVisualsForType(VisualManager.ArmorType.None, {
-	-- 	[ITEMSLOT.Helmet] = vr:Create(EMPTY_VISUAL, VISUALSLOT.Arms),
-	-- 	[ITEMSLOT.Breast] = {
-	-- 		vr:Create("", VISUALSLOT.Torso),
-	-- 		vr:Create(EMPTY_VISUAL, VISUALSLOT.Extra1),
+	-- visualData:AddVisualsForType(VM.ArmorType.None, {
+	-- 	[VM.Slot.Helmet] = vr:Create(EMPTY_VISUAL, VM.VisualSlot.Arms),
+	-- 	[VM.Slot.Breast] = {
+	-- 		vr:Create("", VM.VisualSlot.Torso),
+	-- 		vr:Create(EMPTY_VISUAL, VM.VisualSlot.Extra1),
 	-- 	}
 	-- })
 	
-	-- visualData:AddVisualsForType(VisualManager.ArmorType.Plate, {
-	-- 	[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-	-- 	[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso),
+	-- visualData:AddVisualsForType(VM.ArmorType.Plate, {
+	-- 	[VM.Slot.Helmet] = vr:Create("", VM.VisualSlot.Arms),
+	-- 	[VM.Slot.Breast] = vr:Create("", VM.VisualSlot.Torso),
 	-- })
 	
-	-- visualData:AddVisualsForType(VisualManager.ArmorType.Robe, {
-	-- 	[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-	-- 	[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso),
+	-- visualData:AddVisualsForType(VM.ArmorType.Robe, {
+	-- 	[VM.Slot.Helmet] = vr:Create("", VM.VisualSlot.Arms),
+	-- 	[VM.Slot.Breast] = vr:Create("", VM.VisualSlot.Torso),
 	-- })
 	
-	-- visualData:AddVisualsForType(VisualManager.ArmorType.Leather, {
-	-- 	[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-	-- 	[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso),
+	-- visualData:AddVisualsForType(VM.ArmorType.Leather, {
+	-- 	[VM.Slot.Helmet] = vr:Create("", VM.VisualSlot.Arms),
+	-- 	[VM.Slot.Breast] = vr:Create("", VM.VisualSlot.Torso),
 	-- })
 	
-	-- visualData:AddVisualsForType(VisualManager.ArmorType.Cloth, {
-	-- 	[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-	-- 	[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso),
+	-- visualData:AddVisualsForType(VM.ArmorType.Cloth, {
+	-- 	[VM.Slot.Helmet] = vr:Create("", VM.VisualSlot.Arms),
+	-- 	[VM.Slot.Breast] = vr:Create("", VM.VisualSlot.Torso),
 	-- })
 	
-	-- visualData:AddVisualsForType(VisualManager.ArmorType.Mail, {
-	-- 	[ITEMSLOT.Helmet] = vr:Create("", VISUALSLOT.Arms),
-	-- 	[ITEMSLOT.Breast] = vr:Create("", VISUALSLOT.Torso),
+	-- visualData:AddVisualsForType(VM.ArmorType.Mail, {
+	-- 	[VM.Slot.Helmet] = vr:Create("", VM.VisualSlot.Arms),
+	-- 	[VM.Slot.Breast] = vr:Create("", VM.VisualSlot.Torso),
 	-- })
 	
-	VisualManager.Register.Visuals(VISUALID.AncientElf, visualData)
+	VM.Register.Visuals(VISUALID.AncientElf, visualData)
 end

@@ -6,15 +6,10 @@ VISUALID = {
 	Zombie = "ab01c22a-cce0-483b-84e6-2d331b6c2982"
 }
 
-VisualManager = LeaderLib.VisualManager
-
 ---@type VisualElementData
-local ve = LeaderLib.Classes.VisualElementData
+local ve = Classes.VisualElementData
 ---@type VisualResourceData
-local vr = LeaderLib.Classes.VisualResourceData
-
-ITEMSLOT = VisualManager.Slot
-VISUALSLOT = VisualManager.VisualSlot
+local vr = Classes.VisualResourceData
 
 EMPTY_VISUAL = "ROR_Empty"
 
