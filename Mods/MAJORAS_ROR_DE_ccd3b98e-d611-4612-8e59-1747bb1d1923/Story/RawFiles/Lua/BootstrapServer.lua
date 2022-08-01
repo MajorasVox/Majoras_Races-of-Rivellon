@@ -1,3 +1,5 @@
+VM = VisualManager.Elements
+
 Ext.Require("Shared.lua")
 Ext.Require("Server/Armor/_InitArmor.lua")
 Ext.Require("Server/OriginSetup.lua")
