@@ -11,8 +11,10 @@ local UniqueItems = {
 		ARM_UNIQUE_BraccusCursedRing = "ROR_SkullRing",
 		--Gawin's Robe, Mistral Robes
 		ARM_UNIQUE_AirRobe = "ROR_LizardRobe_A",
+		--Alexandar's Cloak, Divine Order Inquisitor
+		FTJ_Alexandar_Armour = "ROR_InquisitorRobe_A",
 		--Danna Dumora
-		ARM_UNIQUE_RC_MageUpperBody = "ROR_LizardRobe_A",
+		ARM_UNIQUE_RC_MageUpperBody = "ROR_ElfRobe_A",
 	}
 }
 
@@ -237,7 +239,7 @@ return function(ve, vr, onEquipmentChangedCallback)
 			vr:Create(EMPTY_VISUAL, VM.VisualSlot.Trousers),
 			vr:Create(EMPTY_VISUAL, VM.VisualSlot.Boots),
 			vr:Create(EMPTY_VISUAL, VM.VisualSlot.Extra1),
-			vr:Create(EMPTY_VISUAL, VM.VisualSlot.Extra2),			
+			vr:Create(EMPTY_VISUAL, VM.VisualSlot.Extra2),
 		}
 	})
 	
@@ -279,6 +281,12 @@ return function(ve, vr, onEquipmentChangedCallback)
 	visualData:AddVisualsForType("ROR_SkullRing", {
 		[VM.Slot.Ring] = vr:Create("Demon_Kin_ACCESSORY_Skull_A_Ring_A", VM.VisualSlot.Extra2),
 	})
-	
+	visualData:AddVisualsForType("ROR_InquisitorRobe_A", {
+		[VM.Slot.Breast] = vr:Create("Demon_Kin_ROBE_Redfaction_Inquisitor_A_Armor_A", VM.VisualSlot.Torso),
+	})
+	visualData:AddVisualsForType("ROR_ElfRobe_A", {
+		[VM.Slot.Breast] = vr:Create("Demon_Kin_ROBE_Elf_A_Armor_A", VM.VisualSlot.Helmet),
+	})
+		
 	VM.Register.Visuals(VISUALID.DemonicKin, visualData)
 end
