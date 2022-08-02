@@ -95,7 +95,7 @@ local function InitOriginsWorkarounds()
 			if trueRace then
 				local settings = FortJoyRaceToGodTransform[trueRace]
 				if settings then
-					Transform(god,settings.Template,1)
+					Transform(god,settings.Template,1,0,0)
 					Osi.DB_Dialogs(god,settings.Dialog)
 				end
 			end
