@@ -7,6 +7,8 @@ local UniqueItems = {
 	Stats = {
 		--Gloves of Teleportation
 		ARM_UNIQUE_TeleportationGloves = "ROR_ScaliePort",
+		--Migo's Breastplate
+		FTJ_Gheist_Migo_UpperBody = "ROR_BrutePlate_A",
 		--Band of Braccus
 		ARM_UNIQUE_BraccusCursedRing = "ROR_SkullRing",
 		--Gawin's Robe, Mistral Robes
@@ -283,6 +285,9 @@ return function(ve, vr, onEquipmentChangedCallback)
 	})
 	visualData:AddVisualsForType("ROR_InquisitorRobe_A", {
 		[VM.Slot.Breast] = vr:Create("Demon_Kin_ROBE_Redfaction_Inquisitor_A_Armor_A", VM.VisualSlot.Torso),
+	})
+	visualData:AddVisualsForType("ROR_BrutePlate_A", {
+		[VM.Slot.Breast] = vr:Create("Demon_Kin_ROBE_Redfaction_Brute_A_Armor_A", VM.VisualSlot.Torso),
 	})
 	visualData:AddVisualsForType("ROR_ElfRobe_A", {
 		[VM.Slot.Breast] = vr:Create("Demon_Kin_ROBE_Elf_A_Armor_A", VM.VisualSlot.Helmet),
