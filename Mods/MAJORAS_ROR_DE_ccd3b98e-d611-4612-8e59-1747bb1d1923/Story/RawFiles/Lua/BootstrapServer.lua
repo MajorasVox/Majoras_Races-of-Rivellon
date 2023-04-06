@@ -8,5 +8,5 @@ Ext.Require("Server/RaceWorkaround.lua")
 Ext.Require("Server/SkillListeners.lua")
 
 if Ext.IsDeveloperMode() then
-	Ext.Require("Server/DebugCommands.lua")
+    Ext.Require("Server/DebugCommands.lua")
 end
