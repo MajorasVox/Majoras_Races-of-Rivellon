@@ -1,9 +1,9 @@
-local ARMORTYPE = VM.ArmorType
-local SLOT = VM.Slot
+local ARMORTYPE = Ext.Enums.ArmorType
+local SLOT = Ext.Enums.ItemSlot
 local RESOURCE = VisualResources.DemonKin
 
 ---@type VisualDataEntry
-VisualData[VISUALID.DemonKin] = {
+VisualData[OriginID.DemonKin] = {
 	RarityArmorTypes = {
 		[ARMORTYPE.Plate] = {
 			Common = {

@@ -1,9 +1,9 @@
-local ARMORTYPE = VM.ArmorType
-local SLOT = VM.Slot
+local ARMORTYPE = Ext.Enums.ArmorType
+local SLOT = Ext.Enums.ItemSlot
 local RESOURCE = VisualResources.LivingBear
 
 ---@type VisualDataEntry
-VisualData[VISUALID.LivingBear] = {
+VisualData[OriginID.LivingBear] = {
 	RarityArmorTypes = {
 	},
 	ArmorTypes = {
