@@ -3,7 +3,7 @@ local SLOT = Ext.Enums.ItemSlot
 local RESOURCE = VisualResources.AncientElf
 
 ---@type VisualDataEntry
-VisualData[OriginID.AncientElf] = {
+VisualData[VisualSetID.AncientElf] = {
 	RarityArmorTypes = {
 	},
 	ArmorTypes = {

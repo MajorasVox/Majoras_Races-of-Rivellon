@@ -7,6 +7,22 @@ MODID = {
     Origins = "1301db3d-1f54-4e98-9be5-5094030916e4"
 }
 
+VisualSetID = {
+	AncientElf = "23229ccd-519a-4fa1-8124-9bcd899cdc91",
+	FailedGheist = "880ff786-9b3a-4bbd-abed-2f6316f70343",
+	DemonKin = "c384a458-13c5-40c6-8da7-1502189ca40e",
+	LivingBear = "f84b9cfd-3415-41cb-b027-da0360a86940",
+	Zombie = "8926cd28-a40a-4d26-af7b-b336b40ee4d0"
+}
+
+OriginID = {
+	AncientElf = "ROR_Ancestor_Husk",
+	FailedGheist = "ROR_Failed_Gheist",
+	DemonKin = "ROR_Demonic_Kin",
+	LivingBear = "ROR_Living_Bear",
+	Zombie = "ROR_Zombie"
+}
+
 --[[
 Console commands:
 

@@ -3,7 +3,7 @@ local SLOT = Ext.Enums.ItemSlot
 local RESOURCE = VisualResources.DemonKin
 
 ---@type VisualDataEntry
-VisualData[OriginID.DemonKin] = {
+VisualData[VisualSetID.DemonKin] = {
 	RarityArmorTypes = {
 		[ARMORTYPE.Plate] = {
 			Common = {

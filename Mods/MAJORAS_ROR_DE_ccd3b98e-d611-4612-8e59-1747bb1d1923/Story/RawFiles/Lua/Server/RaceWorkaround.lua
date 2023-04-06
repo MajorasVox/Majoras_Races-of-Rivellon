@@ -32,7 +32,7 @@ local function GetRace(uuid, canPolymorphOverride)
 		if not canPolymorphOverride then
 			return trueRace
 		else
-			local character = Ext.GetCharacter(uuid)
+			local character = Ext.Entity.GetCharacter(uuid)
 			if character and not character:GetStatusByType("POLYMORPHED") then
 				return trueRace
 			end
@@ -88,7 +88,7 @@ local function InitOriginsWorkarounds()
 	}
 	
 	--Fort Joy God
-	Ext.RegisterOsirisListener("DB_FTJ_HoE_ReturnPoints", 4, "before", function(player, hoeTrigger, returnTrigger, god)
+	Ext.Osiris.RegisterListener("DB_FTJ_HoE_ReturnPoints", 4, "before", function(player, hoeTrigger, returnTrigger, god)
 		--Lohse has her own special god settings here
 		if IsTagged(player, "LOHSE") == 0 then
 			local trueRace = GetRace(player, false)
@@ -102,7 +102,7 @@ local function InitOriginsWorkarounds()
 		end
 	end)
 	
-	Ext.RegisterOsirisListener("QRY_CoS_AotO_GodwokenGetRealRace", 1, "before", function(uuid)
+	Ext.Osiris.RegisterListener("QRY_CoS_AotO_GodwokenGetRealRace", 1, "before", function(uuid)
 		local race = GetRace(uuid, false)
 		if race then
 			--For DB_CoS_AotO_CreateGodwokenNemesis_NemesisTemplate(_Tag, _Template, _Flag, _Dialog)
@@ -147,7 +147,7 @@ RegisterListener("Initialized", function()
 	end
 end)
 
---[[ Ext.RegisterOsirisListener("CharacterGetRace", 3, "before", function(uuid, canPolymorphOverride, raceResult)
+--[[ Ext.Osiris.RegisterListener("CharacterGetRace", 3, "before", function(uuid, canPolymorphOverride, raceResult)
 	local race = GetRace(uuid, canPolymorphOverride == 1)
 	print("CharacterGetRace(before)", uuid, canPolymorphOverride, raceResult, race)
 	if race then
@@ -157,7 +157,7 @@ end)
 end)
 
 --Making sure QRY_IsTrueRace doesn't return true for whatever race our origins might be inherently
-Ext.RegisterOsirisListener("QRY_IsTrueRace", 2, "before", function(uuid, race)
+Ext.Osiris.RegisterListener("QRY_IsTrueRace", 2, "before", function(uuid, race)
 	local trueRace = GetRace(uuid, false)
 	print("QRY_IsTrueRace", uuid, trueRace)
 	if trueRace then
@@ -166,7 +166,7 @@ Ext.RegisterOsirisListener("QRY_IsTrueRace", 2, "before", function(uuid, race)
 end)
 
 --Overriding the QRY_IsTrueUndead result so it works regardless of the CharacterGetRace result.
-Ext.RegisterOsirisListener("QRY_IsTrueUndead", 1, "before", function(uuid)
+Ext.Osiris.RegisterListener("QRY_IsTrueUndead", 1, "before", function(uuid)
 	local trueRace = GetRace(uuid, false)
 	print("QRY_IsTrueUndead", uuid, trueRace)
 	if trueRace and undeadRace[trueRace] == true then

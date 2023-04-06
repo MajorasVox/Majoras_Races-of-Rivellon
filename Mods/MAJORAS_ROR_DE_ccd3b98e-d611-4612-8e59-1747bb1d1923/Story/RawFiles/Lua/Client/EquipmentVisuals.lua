@@ -1,25 +1,7 @@
-
---TODO Replace with CurrentTemplate.VisualSetResourceID once that stops being empty.
-OriginID = {
-	AncientElf = "ROR_Ancestor_Husk",
-	FailedGheist = "ROR_Failed_Gheist",
-	DemonKin = "ROR_Demonic_Kin",
-	LivingBear = "ROR_Living_Bear",
-	Zombie = "ROR_Zombie"
-}
-
-local OriginToSkeleton = {
-	ROR_Ancestor_Husk = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
-	ROR_Failed_Gheist = "6439c71c-87f4-4c02-80c2-0f9537954f9d",
-	ROR_Demonic_Kin = "d656291b-81f3-445e-84df-4e32cfc18d46",
-	ROR_Living_Bear = "b8ddbc75-415f-4894-afc2-2256e11b723d",
-	ROR_Zombie = "ab01c22a-cce0-483b-84e6-2d331b6c2982"
-}
-
-EMPTY_VISUAL = "ROR_Empty"
-
 VisualResources = {}
+
 Ext.Require("Client/VisualResources.lua")
+
 VisualData = {}
 
 ---@alias VisualDataUniques {Stats:table<string,string>, Tags:table<string,string>}
@@ -101,7 +83,50 @@ local function _SetVisual(e, visual, slot, itemType)
 			e.Params.DeactivateTorso = true
 			e.Params.DeactivateArms = true
 		elseif slot == "Helmet" then
-			e.Params.DeactivateHead = true
+			--e.Params.DeactivateHead = true
+		end
+	end
+end
+
+---@param character EclCharacter
+---@param e EclLuaCreateEquipmentVisualsRequestEvent
+---@return VisualDataEntry|nil
+local function _GetVisualData(character, e)
+	if character then
+		local templateGUID = ""
+		
+		local slot = e.Params.Slot
+		if character.PlayerData then
+			if slot == "Helmet" then
+				if not character.PlayerData.HelmetOptionState then
+					return nil
+				end
+			elseif Data.VisibleEquipmentSlots[slot] and not character.PlayerData.ArmorOptionState then
+				return nil
+			end
+		end
+
+		if GameHelpers.IsLevelType(LEVELTYPE.CHARACTER_CREATION) then
+			--The root template will be the dummy's template in CC, so we need to get the template from the CharacterCreationManager
+
+			local cc = Ext.UI.GetCharacterCreationWizard()
+			if cc then
+				for _,v in pairs(cc.CharacterCreationManager.Customizations) do
+					if v.CharacterHandle == character.Handle then
+						templateGUID = v.State.RootTemplate
+						break
+					end
+				end
+			end
+		end
+		if templateGUID == "" then
+			templateGUID = GameHelpers.GetTemplate(character)
+		end
+		if templateGUID ~= "" then
+			local template = Ext.Template.GetTemplate(templateGUID) --[[@as CharacterTemplate]]
+			if template then
+				return VisualData[template.VisualSetResourceID]
+			end
 		end
 	end
 end
@@ -109,13 +134,7 @@ end
 Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 	local character = e.Character or Client:GetCharacter() --[[@as EclCharacter]]
 	if character and character.PlayerCustomData then
-		local origin = character.PlayerCustomData.OriginName
-		local skeleton = OriginToSkeleton[character.PlayerCustomData.OriginName]
-		if character.CurrentTemplate.VisualTemplate ~= skeleton then
-			--Character is polymorphed
-			return
-		end
-		local data = VisualData[origin] --[[@as VisualDataEntry]]
+		local data = _GetVisualData(character, e)
 		if data then
 			local slot = Ext.Enums.ItemSlot[e.Params.Slot]
 			local item = character:GetItemObjectBySlot(e.Params.Slot)
