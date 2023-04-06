@@ -101,7 +101,7 @@ local function _GetVisualData(character, e)
 				if not character.PlayerData.HelmetOptionState then
 					return nil
 				end
-			elseif Data.VisibleEquipmentSlots[slot] and not character.PlayerData.ArmorOptionState then
+			elseif Data.VisibleEquipmentSlots[slot] and character.PlayerData.ArmorOptionState then
 				return nil
 			end
 		end
