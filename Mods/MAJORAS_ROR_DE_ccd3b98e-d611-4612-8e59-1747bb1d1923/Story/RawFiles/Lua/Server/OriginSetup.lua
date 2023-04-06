@@ -21,7 +21,7 @@ end
 
 --RegisterListener("Initialized", SwapOriginSkills)
 
-Ext.RegisterOsirisListener("RegionEnded", 1, "before", function(region)
+Ext.Osiris.RegisterListener("RegionEnded", 1, "before", function(region)
 	if IsCharacterCreationLevel(region) == 1 then
 		SwapOriginSkills()
 	end
@@ -39,7 +39,7 @@ local function InitOrigins()
 	Osi.LeaderLib_Origins_Register_All(Origins.Zombie, "Neutral", "Hero Henchman Fighter", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "OUTLAW", "JESTER", "SHAPESHIFT_ROR_ZOMBIE")
 end
 
-Ext.RegisterOsirisListener("GameModeStarted", 2, "before", function(gameMode, isEditor)
+Ext.Osiris.RegisterListener("GameModeStarted", 2, "before", function(gameMode, isEditor)
 	if gameMode == "Campaign" or isEditor == 1 then
 		InitOrigins()
 	end

@@ -1,7 +1,5 @@
-Ext.Print("[ROR] Loaded Shared.lua.")
-
 Debug = {
-    Enabled = Ext.IsDeveloperMode(),
+    Enabled = Ext.Debug.IsDeveloperMode(),
     TraceEquipParams = "[OnEquipmentChanged] char(%s) item(%s) equipped(%s)"
 }
 
