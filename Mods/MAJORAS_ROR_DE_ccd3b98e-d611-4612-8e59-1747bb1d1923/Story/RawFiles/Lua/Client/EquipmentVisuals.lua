@@ -167,3 +167,12 @@ Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 		end
 	end
 end)
+
+Events.ClientCharacterChanged:Subscribe(function (e)
+	if SharedData.RegionData.LevelType == LEVELTYPE.CHARACTER_CREATION and e.Character.PlayerCustomData then
+		if e.Character.PlayerCustomData.OriginName == "ROR_Demonic_Kin" then
+			GameHelpers.CC.SetColor("Skin", "24f8eae3a8e74cb9a5c0a01680b96ac1", "Handle") -- Demon Skin
+			GameHelpers.CC.SetColor("Hair", "e0895c78f0474477aaa14b0c467e4e9f", "Handle") -- White Smoke
+		end
+	end
+end)
