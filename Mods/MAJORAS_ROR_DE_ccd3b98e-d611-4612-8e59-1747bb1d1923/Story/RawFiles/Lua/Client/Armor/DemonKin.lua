@@ -229,6 +229,9 @@ VisualData[OriginID.DemonKin] = {
 		-- ROR_InquisitorRobe_A = {
 		-- 	[SLOT.Breast] = "Demon_Kin_ROBE_Redfaction_Inquisitor_Armor_A",
 		-- },
+		-- ROR_BrutePlate_A = {
+		-- 	[SLOT.Breast] = "Demon_Kin_ROBE_Redfaction_Brute_Armor_A",
+		-- },
 		-- ROR_ElfRobe_A = {
 		-- 	[SLOT.Breast] = "Demon_Kin_ROBE_Elf_Armor_A",
 		-- },
@@ -250,6 +253,8 @@ VisualData[OriginID.DemonKin] = {
 			FTJ_Alexandar_Armour = "ROR_InquisitorRobe_A",
 			--Danna Dumora
 			ARM_UNIQUE_RC_MageUpperBody = "ROR_ElfRobe_A",
+			--Migo's Breastplate
+			FTJ_Gheist_Migo_UpperBody = "ROR_BrutePlate_A",
 		}
 	},
 	Weapons = {}
