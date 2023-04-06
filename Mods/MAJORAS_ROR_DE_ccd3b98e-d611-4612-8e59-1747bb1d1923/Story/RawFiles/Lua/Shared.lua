@@ -42,12 +42,29 @@ Origins = {
 
 Mods.LeaderLib.Import(Mods.MAJORAS_ROR_DE)
 
+local _CustomOriginPresets = {
+	ROR_Ancestor_Husk = "AncientElf",
+	ROR_Failed_Gheist = "FailedGheist",
+	ROR_Demonic_Kin = "DemonKin",
+	ROR_Living_Bear = "LivingBear",
+	ROR_Zombie = "Zombie"
+}
+
 Ext.Events.SessionLoaded:Subscribe(function (e)
     GameHelpers.VoiceMetaData.Register.ScholarMale(Origins.AncientElf)
     GameHelpers.VoiceMetaData.Register.TricksterMale(Origins.FailedGheist)
     GameHelpers.VoiceMetaData.Register.WarriorMale(Origins.DemonicKin)
     GameHelpers.VoiceMetaData.Register.AdventurerMale(Origins.LivingBear)
     GameHelpers.VoiceMetaData.Register.TricksterMale(Origins.Zombie)
+
+    --[[ local cc = Ext.Stats.GetCharacterCreation()
+    if cc then
+        for _,v in pairs(cc.OriginPresets) do
+            if _CustomOriginPresets[v.OriginName] then
+                v.UserCanAlterTags = true
+            end
+        end
+    end ]]
 end)
 
 Ext.Require("Shared/CustomSkillProperties.lua")

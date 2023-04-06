@@ -11,7 +11,7 @@
 					<attribute id="OriginDescription" value="" handle="hae0b1abag1f6cg40beg89dag1f4d5082796d" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="hae0b1abag1f6cg40beg89dag1f4d5082796d" type="28" />
                     <attribute id="CharacterUUID" value="1677ad2e-6c42-4ffd-b3fd-4cecdef0a62c" type="22" />
-                    <attribute id="UserCanAlterTags" value="0" type="19" />
+                    <attribute id="UserCanAlterTags" value="1" type="19" />
                     <attribute id="SkillSet" value="Avatar_ROR_Zombie" type="22" />
                     <attribute id="RootTemplateOverride" value="2204877f-02dc-482b-b7bd-2c75c7f921da" type="22" />
                     
