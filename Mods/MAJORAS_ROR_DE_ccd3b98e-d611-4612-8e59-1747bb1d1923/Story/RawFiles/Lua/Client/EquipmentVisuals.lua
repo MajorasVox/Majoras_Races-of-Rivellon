@@ -4,7 +4,10 @@ Ext.Require("Client/VisualResources.lua")
 
 VisualData = {}
 
----@alias VisualDataUniques {Stats:table<string,string>, Tags:table<string,string>}
+---@class VisualDataUniques
+---@field RootTemplates table<string,string> Priority 1
+---@field Stats table<string,string> Priority 2
+---@field Tags table<string,string> Priority 3
 
 ---@class VisualDataEntry
 ---@field Uniques VisualDataUniques
@@ -26,12 +29,17 @@ local function _GetUniqueArmorType(char, item, data)
 	if not data then
 		return nil
 	end
+	local template = GameHelpers.GetTemplate(item)
+	if data.RootTemplates[template] then
+		return data.RootTemplates[template]
+	end
 	local statArmorType = data.Stats[item.StatsId]
 	if statArmorType then
 		return statArmorType
 	end
+	local _TAGS = GameHelpers.GetItemTags(item, true)
 	for tag,armorType in pairs(data.Tags) do
-		if GameHelpers.ItemHasTag(item, tag) then
+		if _TAGS[tag] then
 			return armorType
 		end
 	end
