@@ -1,6 +1,8 @@
 VisualResources.AncientElf = {}
 VisualResources.FailedGheist = {}
-VisualResources.LivingBear = {}
+VisualResources.LivingBear = {
+	Bucket_Helmet_Starter_A = "7bb8a118-65e1-4263-a39d-a1773eee6969",
+}
 VisualResources.Zombie = {}
 
 VisualResources.DemonKin = {
