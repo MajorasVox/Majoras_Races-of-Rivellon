@@ -11,7 +11,6 @@
 					<attribute id="OriginDescription" value="The last great war wrought devastation on all the races, you remember first hand the massacre of your people. Deliver the justice denied your people." handle="h5c98296agd425g4303gb985gd772c9207290" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="h5c98296agd425g4303gb985gd772c9207290" type="28" />
                     <attribute id="CharacterUUID" value="ddf64b07-0637-4194-b26e-2e0e80d6821d" type="22" />
-                    <attribute id="UserCanAlterTags" value="1" type="19" />
                     <attribute id="SkillSet" value="Avatar_ROR_Ancestor_Husk" type="22" />
                     <attribute id="RootTemplateOverride" value="2089617c-41b0-4760-b07c-139760542b87" type="22" />
                     

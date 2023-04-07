@@ -19,23 +19,19 @@ local function SwapOriginSkills()
 	end
 end
 
---RegisterListener("Initialized", SwapOriginSkills)
-
-Ext.Osiris.RegisterListener("RegionEnded", 1, "before", function(region)
-	if IsCharacterCreationLevel(region) == 1 then
-		SwapOriginSkills()
-	end
-end)
+Events.RegionChanged:Subscribe(function (e)
+	SwapOriginSkills()
+end, {MatchArgs={LevelType=LEVELTYPE.CHARACTER_CREATION, State=REGIONSTATE.ENDED}})
 
 local function InitOrigins()
 	Osi.LeaderLib_Origins_Register_All(Origins.AncientElf, "Neutral", "Hero Henchman Metamorph", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "MYSTIC", "SOLDIER", "SHAPESHIFT_ROR_ANCESTOR_HUSK")
 
 	Osi.LeaderLib_Origins_Register_All(Origins.DemonicKin, "Neutral", "Hero Henchman Rogue", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "OUTLAW", "BARBARIAN", "SHAPESHIFT_ROR_DEMONIC_KIN")
-	
+
 	Osi.LeaderLib_Origins_Register_All(Origins.FailedGheist, "Neutral", "Hero Henchman Inquisitor", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "OUTLAW", "JESTER", "SHAPESHIFT_ROR_FAILED_GHEIST")
-	
+
 	Osi.LeaderLib_Origins_Register_All(Origins.LivingBear, "Neutral", "Hero Henchman Wayfarer", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "MYSTIC", "JESTER", "SHAPESHIFT_ROR_LIVING_BEAR")
-	
+
 	Osi.LeaderLib_Origins_Register_All(Origins.Zombie, "Neutral", "Hero Henchman Fighter", "LeaderLib_Debug_RecruitCharacter", "GLO_Henchman", "OUTLAW", "JESTER", "SHAPESHIFT_ROR_ZOMBIE")
 end
 

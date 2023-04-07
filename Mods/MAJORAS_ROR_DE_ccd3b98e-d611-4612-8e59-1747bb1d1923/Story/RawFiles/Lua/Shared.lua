@@ -58,13 +58,13 @@ Ext.Events.SessionLoaded:Subscribe(function (e)
     GameHelpers.VoiceMetaData.Register.TricksterMale(Origins.Zombie)
 
     local cc = Ext.Stats.GetCharacterCreation()
-    --[[ if cc then
+    if cc then
         for _,v in pairs(cc.OriginPresets) do
             if _CustomOriginPresets[v.OriginName] then
                 v.UserCanAlterTags = true
             end
         end
-    end ]]
+    end
 end)
 
 Ext.Require("Shared/CustomSkillProperties.lua")
