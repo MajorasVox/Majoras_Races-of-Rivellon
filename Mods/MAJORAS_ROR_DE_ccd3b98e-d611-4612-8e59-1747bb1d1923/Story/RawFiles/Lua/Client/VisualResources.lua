@@ -3,49 +3,6 @@ VisualResources.AncientElf = {
 	Spirit_Helmet_B  = "f2e11399-e1b2-4a65-bd99-530a3b627b36"
 }
 
----@class FailedGheistVisuals
-VisualResources.FailedGheist = {
-	Armor_Gheist_A_Cape_A = "89d9e4ff-aecd-4480-81eb-e5709a55dd6e",
-	Armor_Gheist_A_Helmet_A = "bc8c6f2c-6b9c-4112-8550-16c04f678869",
-	Armor_Gheist_A_Upperbody_A = "aaa478d6-acb6-4e79-93f0-1f329ea52deb",
-}
-
----@class LivingBearVisuals
-VisualResources.LivingBear = {
-	Bucket_Helmet_Starter_A = "7bb8a118-65e1-4263-a39d-a1773eee6969",
-	Chainmail_Armor_Dwarf_A = "f4d02cfe-d1b3-43db-b5c7-cdbc6e6edb31",
-	Chainmail_Armor_Starter_A = "2493f315-9d74-46d8-bcc7-62dbb274ab48",
-	Chainmail_Helmet_Dwarf_A = "d8466a7a-21a6-42c8-98c9-99f1f03f0d99",
-	Chainmail_Helmet_Starter_A = "ae70707b-5c2e-40b1-bf00-f85d0fc63a37",
-	Leather_Armor_Bandit_A = "a9aa1787-8f12-43a0-8832-c86547ce6f31",
-	Leather_Armor_Dwarf_A = "7b5400d4-0076-46ca-993b-721f45656165",
-	Leather_Armor_Starter_A = "ace32c25-9cdd-4a3b-8175-f6e5002fac3d",
-	Leather_Helmet_Bandit_A = "35dcdc9f-3241-432a-a367-22a9c43d1e68",
-	Leather_Helmet_Dwarf_A = "241f2858-cc3f-4c9b-969a-21c69181e46e",
-	Leather_Helmet_Starter_A = "fd334121-4ebb-4183-aa22-68d75a6a17f9",
-	Mage_Armor_Civilian_A = "4dbeee14-a207-41c0-8497-0f7198349766",
-	Mage_Armor_Civilian_B = "5f5070f9-af69-4ba2-8788-71fcd28b3a90",
-	Mage_Armor_Civilian_C = "1669672c-9ba2-44b9-9ced-bad997c4fa19",
-	Mage_Armor_Dwarf_A = "6bd0490c-46d8-42d6-b4cd-49908b1fd9e2",
-	Mage_Armor_Dwarf_B = "191d3ebf-8cd4-4e6c-8034-beeeee26191d",
-	Mage_Armor_Dwarf_C = "4ef2b408-8cb7-462b-a322-b263d396fef8",
-	Mage_Helmet_Dwarf_B = "d3b97b58-e312-4e08-a413-2b2d1e5f2635",
-	Mage_Helmet_Dwarf_C = "44b6ad3f-586f-4d9a-aa2b-e3a8ff818c1a",
-	Platemail_Armor_Dwarf_A = "be6013d4-6138-42b0-88ed-1435df239f7c",
-	Platemail_Armor_Utopian_A = "e544d058-75ce-4e56-8e12-48674ccf6b57",
-	Platemail_Helmet_Dwarf_A = "1826a542-4a1e-4c4b-aa0c-3796be546ec8",
-	Platemail_Helmet_Dwarf_B = "766a03bf-235b-41db-9688-b66acc1d3f26",
-	Platemail_Helmet_Utopian_A = "ceb20f4c-4ded-48a3-8bb2-f9f302fb3f6e",
-	Pot_Helmet_Starter_A = "f6a95648-b147-43d8-ab4e-1e6ab1f69e44",
-	UNIQUE_Armor_Arhu_A = "a9f1290f-996c-461d-8f52-863e9432da52",
-	UNIQUE_Armor_Malady_A = "afcf1edb-3ddc-4be4-be6b-6b8d2374ec02",
-	UNIQUE_Armor_RedFaction_A = "06d04c81-30d4-4bec-888a-125f6c90bd28",
-	UNIQUE_Helmet_Arhu_A = "1d0c75aa-9024-43ee-9da6-998aa5711b0d",
-	UNIQUE_Helmet_Malady_A = "08d3815a-8053-4340-84ba-6342d5ff8f09",
-}
----@class ZombieVisuals
-VisualResources.Zombie = {}
-
 ---@class DemonKinVisuals
 VisualResources.DemonKin = {
 	ACCESSORY_Claw_A_Ring_A = "bcc9d5af-7e85-4df8-a099-53bfa45d0d88",
@@ -119,3 +76,47 @@ VisualResources.DemonKin = {
 	ROBE_Paladin_A_Armor_A = "eb539d3e-8466-44a9-8ad1-0309822523b8",
 	ROBE_Redfaction_Inquisitor_A_Armor_A = "104ab712-4cc8-43fd-80fe-ac3171393f74",
 }
+
+---@class FailedGheistVisuals
+VisualResources.FailedGheist = {
+	Armor_Gheist_A_Cape_A = "89d9e4ff-aecd-4480-81eb-e5709a55dd6e",
+	Armor_Gheist_A_Helmet_A = "bc8c6f2c-6b9c-4112-8550-16c04f678869",
+	Armor_Gheist_A_Upperbody_A = "aaa478d6-acb6-4e79-93f0-1f329ea52deb",
+}
+
+---@class LivingBearVisuals
+VisualResources.LivingBear = {
+	Bucket_Helmet_Starter_A = "7bb8a118-65e1-4263-a39d-a1773eee6969",
+	Chainmail_Armor_Dwarf_A = "f4d02cfe-d1b3-43db-b5c7-cdbc6e6edb31",
+	Chainmail_Armor_Starter_A = "2493f315-9d74-46d8-bcc7-62dbb274ab48",
+	Chainmail_Helmet_Dwarf_A = "d8466a7a-21a6-42c8-98c9-99f1f03f0d99",
+	Chainmail_Helmet_Starter_A = "ae70707b-5c2e-40b1-bf00-f85d0fc63a37",
+	Leather_Armor_Bandit_A = "a9aa1787-8f12-43a0-8832-c86547ce6f31",
+	Leather_Armor_Dwarf_A = "7b5400d4-0076-46ca-993b-721f45656165",
+	Leather_Armor_Starter_A = "ace32c25-9cdd-4a3b-8175-f6e5002fac3d",
+	Leather_Helmet_Bandit_A = "35dcdc9f-3241-432a-a367-22a9c43d1e68",
+	Leather_Helmet_Dwarf_A = "241f2858-cc3f-4c9b-969a-21c69181e46e",
+	Leather_Helmet_Starter_A = "fd334121-4ebb-4183-aa22-68d75a6a17f9",
+	Mage_Armor_Civilian_A = "4dbeee14-a207-41c0-8497-0f7198349766",
+	Mage_Armor_Civilian_B = "5f5070f9-af69-4ba2-8788-71fcd28b3a90",
+	Mage_Armor_Civilian_C = "1669672c-9ba2-44b9-9ced-bad997c4fa19",
+	Mage_Armor_Dwarf_A = "6bd0490c-46d8-42d6-b4cd-49908b1fd9e2",
+	Mage_Armor_Dwarf_B = "191d3ebf-8cd4-4e6c-8034-beeeee26191d",
+	Mage_Armor_Dwarf_C = "4ef2b408-8cb7-462b-a322-b263d396fef8",
+	Mage_Helmet_Dwarf_B = "d3b97b58-e312-4e08-a413-2b2d1e5f2635",
+	Mage_Helmet_Dwarf_C = "44b6ad3f-586f-4d9a-aa2b-e3a8ff818c1a",
+	Platemail_Armor_Dwarf_A = "be6013d4-6138-42b0-88ed-1435df239f7c",
+	Platemail_Armor_Utopian_A = "e544d058-75ce-4e56-8e12-48674ccf6b57",
+	Platemail_Helmet_Dwarf_A = "1826a542-4a1e-4c4b-aa0c-3796be546ec8",
+	Platemail_Helmet_Dwarf_B = "766a03bf-235b-41db-9688-b66acc1d3f26",
+	Platemail_Helmet_Utopian_A = "ceb20f4c-4ded-48a3-8bb2-f9f302fb3f6e",
+	Pot_Helmet_Starter_A = "f6a95648-b147-43d8-ab4e-1e6ab1f69e44",
+	UNIQUE_Armor_Arhu_A = "a9f1290f-996c-461d-8f52-863e9432da52",
+	UNIQUE_Armor_Malady_A = "afcf1edb-3ddc-4be4-be6b-6b8d2374ec02",
+	UNIQUE_Armor_RedFaction_A = "06d04c81-30d4-4bec-888a-125f6c90bd28",
+	UNIQUE_Helmet_Arhu_A = "1d0c75aa-9024-43ee-9da6-998aa5711b0d",
+	UNIQUE_Helmet_Malady_A = "08d3815a-8053-4340-84ba-6342d5ff8f09",
+}
+
+---@class ZombieVisuals
+VisualResources.Zombie = {}
