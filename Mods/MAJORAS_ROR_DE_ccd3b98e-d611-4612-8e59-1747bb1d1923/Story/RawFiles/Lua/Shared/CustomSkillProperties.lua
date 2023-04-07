@@ -28,15 +28,15 @@ if not isClient then
 		CombatLog.AddTextToAllPlayers("Combat", text.ConsumingHungerCombatLogSuccess:ReplacePlaceholders(attacker.DisplayName, target.DisplayName))
 	end
 
-	Timer.RegisterListener("ROR_ConsumingHunger", function(timerName, data)
-		local target = Ext.GetCharacter(data.Target)
-		local attacker = Ext.GetCharacter(data.Attacker)
+	Timer.Subscribe("ROR_ConsumingHunger", function(e)
+		local target = GameHelpers.TryGetObject(e.Data.Target, "EsvCharacter")
+		local attacker = GameHelpers.TryGetObject(e.Data.Attacker, "EsvCharacter")
 		---@type number
-		local x,y,z = table.unpack(data.Position)
+		local x,y,z = table.unpack(e.Data.Position)
 
-		local minPercentage = data.Percentage or 20
-		if not attacker.Dead then
-			if target.Dead then
+		local minPercentage = e.Data.Percentage or 20
+		if not GameHelpers.ObjectIsDead(attacker) then
+			if GameHelpers.ObjectIsDead(target) then
 				ConsumingHungerSuccess(attacker, target)
 			elseif CharacterGetHitpointsPercentage(target.MyGuid) <= minPercentage then
 				if not target.RootTemplate.CombatTemplate.IsBoss then
@@ -60,7 +60,7 @@ CustomSkillProperties.ROR_ConsumingHunger = {
 	GetDescription = function(prop)
 		local maxVitalityPercentage = prop.Arg4 or 0
 		if maxVitalityPercentage > 0 then
-			local vitalityText = Ext.GetTranslatedString("h67a4c781g589ag4872g8c46g870e336074bd", "Vitality")
+			local vitalityText = GameHelpers.GetTranslatedString("h67a4c781g589ag4872g8c46g870e336074bd", "Vitality")
 			return text.ConsumingHungerSkillProperties:ReplacePlaceholders(string.format(" (Below %s%% %s)", maxVitalityPercentage, vitalityText))
 		else
 			return text.ConsumingHungerSkillProperties:ReplacePlaceholders("")
@@ -72,7 +72,7 @@ CustomSkillProperties.ROR_ConsumingHunger = {
 	ExecuteOnTarget = function(prop, attacker, target, position, isFromItem, skill, hit)
 		if attacker.MyGuid ~= target.MyGuid then
 			local chance = prop.Arg1
-			if chance >= 1.0 or Ext.Random(0,1) <= chance then
+			if chance >= 1.0 or Ext.Utils.Random(0,1) <= chance then
 				Timer.StartObjectTimer("ROR_ConsumingHunger", target, 500, {
 					Attacker = attacker.MyGuid,
 					Target = target.MyGuid,
