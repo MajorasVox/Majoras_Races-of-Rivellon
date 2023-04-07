@@ -11,7 +11,6 @@
 					<attribute id="OriginDescription" value="Demon, first one, child of Chaos. Plucked from Tartarus. A would be sourceror shackles you to the shores of the material, thinking you their would be puppet; you stand, rightly so, where Source is ripe, and you are ravening!" handle="h73a38336gff1eg452agbea9g690dbb69309f" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="h73a38336gff1eg452agbea9g690dbb69309f" type="28" />
                     <attribute id="CharacterUUID" value="9666cb05-8764-4d97-9bb5-9e3a6556d562" type="22" />
-                    <attribute id="UserCanAlterTags" value="1" type="19" />
                     <attribute id="SkillSet" value="Avatar_ROR_Demonic_Kin" type="22" />
                     <attribute id="RootTemplateOverride" value="917e3361-0fd1-4c1a-be22-be3d20beadab" type="22" />
                     

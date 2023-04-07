@@ -11,7 +11,6 @@
 					<attribute id="OriginDescription" value="" handle="h8d7db582g41fag4ef2gb9dcgd205ef66ad1a" type="28" />
 					<attribute id="OriginLongDescription" value="" handle="h8d7db582g41fag4ef2gb9dcgd205ef66ad1a" type="28" />
                     <attribute id="CharacterUUID" value="50924c85-ffd3-469b-ab68-49f056580f00" type="22" />
-                    <attribute id="UserCanAlterTags" value="1" type="19" />
                     <attribute id="SkillSet" value="Avatar_ROR_Living_Bear" type="22" />
                     <attribute id="RootTemplateOverride" value="d1561903-ec2a-4bed-b232-2f6f3accdd33" type="22" />
                     
