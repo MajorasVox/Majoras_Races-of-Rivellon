@@ -8,233 +8,232 @@ VisualData[VisualSetID.DemonKin] = {
 		[ARMORTYPE.Plate] = {
 			Common = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Lizard_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Lizard_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Lizard_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
-					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Chain_Helmet_B,
-					[SLOT.Breast] = RESOURCE.PLATE_Lizard_Armor_B,
+					[SLOT.Helmet] = RESOURCE.PLATE_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Lizard_A_Armor_B,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Ghoul_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Ghoul_A_Armor_A,
 				},
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_Armor_B
+					[SLOT.Helmet] = RESOURCE.PLATE_AlanBird_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_AlanBird_A_Armor_A
 				},
 			},
 			Legendary = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_TerracottaGardian_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_TerracottaGardian_A_Armor_A,
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_SquirrelKnight_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Utopian_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Utopian_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Utopian_A_Armor_A,
 				},
 			}
 		},
 		[ARMORTYPE.Mail] = {
 			Common = {
 				{
-					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Chain_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_Lizard_Chain_Armor_A,
+					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Chain_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.MAIL_Lizard_Chain_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
-					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Chain_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_Lizard_Chain_Armor_A,
+					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Chain_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.MAIL_Lizard_Chain_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Scale_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_Lizard_Scale_Armor_A,
+					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Scale_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.MAIL_Lizard_Scale_A_Armor_A,
 				},
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_Armor_B
+					[SLOT.Helmet] = RESOURCE.PLATE_AlanBird_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_A_Armor_A
 				},
 			},
 			Legendary = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_Armor_B,
+					[SLOT.Helmet] = RESOURCE.PLATE_AlanBird_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_A_Armor_A
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_Armor_B,
+					[SLOT.Helmet] = RESOURCE.PLATE_AlanBird_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.MAIL_AlanBird_A_Armor_A
 				},
 			}
 		},
 		[ARMORTYPE.Cloth] = {
 			Common = {
 				{
-					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_Armor_A,
+					[SLOT.Breast] = RESOURCE.CLOTH_Purged_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
-					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_Armor_A,
+					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.CLOTH_TrollFez_Helmet_A,
-					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Bandit_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Bandit_A_Armor_A,
 				},
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_Lizard_Helmet_A,
-					[SLOT.Breast] = RESOURCE.ROBE_Lizard_Armor_A,
+					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_A,
 				},
 			},
 			Legendary = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_Dreamer_Helmet_A,
-					[SLOT.Breast] = RESOURCE.ROBE_Dreamer_Armor_A,
+					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_B,
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_Dreamer_Helmet_B,
-					[SLOT.Breast] = RESOURCE.ROBE_Dreamer_Armor_B,
+					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_B,
 				},
 			}
 		},
 		[ARMORTYPE.Leather] = {
 			Common = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Gheist_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Gheist_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Bandit_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Bandit_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Assassin_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Assassin_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Assassin_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Elf_A_Armor_A,
 				},
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Lizard_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Lizard_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Lizard_A_Armor_A,
 				},
 			},
 			Legendary = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Lizard_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Lizard_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Lizard_A_Armor_A,
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Lizard_Helmet_B,
-					[SLOT.Breast] = RESOURCE.LEATHER_Lizard_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Lizard_A_Helmet_B,
+					[SLOT.Breast] = RESOURCE.LEATHER_Lizard_A_Armor_A,
 				},
 			}
 		},
 		[ARMORTYPE.Robe] = {
 			Common = {
 				{
-					[SLOT.Breast] = RESOURCE.ROBE_Demon_Armor_A,
+					[SLOT.Breast] = RESOURCE.ROBE_Demon_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
-					[SLOT.Breast] = RESOURCE.ROBE_BurningWitch_Armor_A,
+					[SLOT.Breast] = RESOURCE.ROBE_BurningWitch_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Breast] = RESOURCE.ROBE_Ghoul_Armor_A
+					[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A
 				},
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-					[SLOT.Breast] = RESOURCE.ROBE_AlanBird_Armor_A
+					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.ROBE_AlanBird_A_Armor_A
 				},
 			},
 			Legendary = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-					[SLOT.Breast] = RESOURCE.ROBE_AlanBird_Armor_C,
+					[SLOT.Helmet] = RESOURCE.ROBE_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.ROBE_Paladin_A_Armor_A,
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_Dreamer_Helmet_B,
-					[SLOT.Breast] = RESOURCE.ROBE_Dreamer_Armor_B,
+					[SLOT.Helmet] = RESOURCE.ROBE_Blackring_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.ROBE_Blackring_A_Armor_A,
 				},
 			}
 		},
 	},
 	ArmorTypes = {
 		[ARMORTYPE.Plate] = {
-			[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_Helmet_A,
-			[SLOT.Breast] = RESOURCE.PLATE_Ghoul_Armor_A,
+			[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
+			[SLOT.Breast] = RESOURCE.PLATE_Ghoul_A_Armor_A,
 		},
 		[ARMORTYPE.Robe] = {
-			[SLOT.Helmet] = RESOURCE.ROBE_Lizard_Helmet_A,
-			[SLOT.Breast] = RESOURCE.ROBE_Ghoul_Armor_A,
+			[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A, -- TODO Has a skull covering the head
 		},
 		[ARMORTYPE.Leather] = {
-			[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_Helmet_A,
-			[SLOT.Breast] = RESOURCE.LEATHER_Assassin_Armor_A,
+			[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_A_Helmet_A,
+			[SLOT.Breast] = RESOURCE.LEATHER_Assassin_A_Armor_A,
 		},
 		[ARMORTYPE.Cloth] = {
-			[SLOT.Helmet] = RESOURCE.CLOTH_TrollFez_Helmet_A,
-			[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_Armor_A,
+			[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
+			[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_A_Armor_A,
 		},
 		[ARMORTYPE.Mail] = {
-			[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_Helmet_A,
-			[SLOT.Breast] = RESOURCE.MAIL_AlanBird_Armor_B,
+			[SLOT.Helmet] = RESOURCE.ROBE_AlanBird_A_Helmet_A,
+			[SLOT.Breast] = RESOURCE.MAIL_AlanBird_A_Armor_A,
 		},
 		--Custom armor types
 		ROR_Incarnate = {
-			[SLOT.Helmet] = RESOURCE.ROBE_Incarnate_Helmet_A,
-			[SLOT.Breast] = RESOURCE.ROBE_Incarnate_Armor_A,
+			[SLOT.Helmet] = RESOURCE.ROBE_Incarnate_A_Helmet_A,
+			[SLOT.Breast] = RESOURCE.ROBE_Incarnate_A_Armor_A,
 		},
 		ROR_LizardRobe_A = {
-			[SLOT.Breast] = RESOURCE.ROBE_Lizard_Armor_A,
+			[SLOT.Breast] = RESOURCE.ROBE_Lizard_A_Armor_A,
 		},
-		-- ROR_ScaliePort = {
-		-- 	[SLOT.Gloves] = "Demon_Kin_ACCESSORY_ScaliePort_Arms_A",
-		-- },
-		-- ROR_SkullRing = {
-		-- 	[SLOT.Ring] = "Demon_Kin_ACCESSORY_Skull_Ring_A",
-		-- },
-		-- ROR_InquisitorRobe_A = {
-		-- 	[SLOT.Breast] = "Demon_Kin_ROBE_Redfaction_Inquisitor_Armor_A",
-		-- },
-		-- ROR_BrutePlate_A = {
-		-- 	[SLOT.Breast] = "Demon_Kin_ROBE_Redfaction_Brute_Armor_A",
-		-- },
-		-- ROR_ElfRobe_A = {
-		-- 	[SLOT.Breast] = "Demon_Kin_ROBE_Elf_Armor_A",
-		-- },
+		ROR_ScaliePort = {
+			[SLOT.Gloves] = RESOURCE.ACCESSORY_ScaliePort_A_Arms_A,
+		},
+		ROR_SkullRing = {
+			[SLOT.Ring] = RESOURCE.ACCESSORY_Skull_A_Ring_A,
+		},
+		ROR_InquisitorRobe_A = {
+			[SLOT.Breast] = RESOURCE.ROBE_Redfaction_Inquisitor_A_Armor_A,
+		},
+		ROR_BrutePlate_A = {
+			[SLOT.Breast] = RESOURCE.PLATE_Redfaction_Brute_A_Armor_A,
+		},
+		ROR_ElfRobe_A = {
+			[SLOT.Breast] = RESOURCE.ROBE_Elf_A_Armor_A,
+		},
 	},
 	Uniques = {
 		--Tag,ArmorTypeKey

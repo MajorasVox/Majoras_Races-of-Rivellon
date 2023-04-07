@@ -5,6 +5,13 @@ local RESOURCE = VisualResources.LivingBear
 ---@type VisualDataEntry
 VisualData[VisualSetID.LivingBear] = {
 	RarityArmorTypes = {
+		[ARMORTYPE.Plate] = {
+			Common = {
+				{
+					[SLOT.Helmet] = RESOURCE.Pot_Helmet_Starter_A,
+				},
+			}
+		},
 	},
 	ArmorTypes = {
 		[ARMORTYPE.Plate] = {
