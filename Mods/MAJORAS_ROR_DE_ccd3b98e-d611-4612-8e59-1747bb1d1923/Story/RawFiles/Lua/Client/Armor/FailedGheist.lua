@@ -26,6 +26,7 @@ VisualData[VisualSetID.FailedGheist] = {
 	Uniques = {
 		Stats = {},
 		Tags = {},
+		RootTemplates = {},
 	},
 	Weapons = {}
 }

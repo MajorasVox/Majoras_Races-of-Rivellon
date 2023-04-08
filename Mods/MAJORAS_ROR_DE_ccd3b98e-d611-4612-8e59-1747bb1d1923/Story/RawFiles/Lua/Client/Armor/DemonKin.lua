@@ -254,7 +254,8 @@ VisualData[VisualSetID.DemonKin] = {
 			ARM_UNIQUE_RC_MageUpperBody = "ROR_ElfRobe_A",
 			--Migo's Breastplate
 			FTJ_Gheist_Migo_UpperBody = "ROR_BrutePlate_A",
-		}
+		},
+		RootTemplates = {},
 	},
 	Weapons = {}
 }

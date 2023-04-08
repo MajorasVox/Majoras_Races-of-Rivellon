@@ -26,6 +26,7 @@ VisualData[VisualSetID.Zombie] = {
 	Uniques = {
 		Stats = {},
 		Tags = {},
+		RootTemplates = {},
 	},
 	Weapons = {}
 }
