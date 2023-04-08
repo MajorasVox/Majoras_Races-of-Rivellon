@@ -26,6 +26,7 @@ VisualData[VisualSetID.AncientElf] = {
 	Uniques = {
 		Stats = {},
 		Tags = {},
+		RootTemplates = {},
 	},
 	Weapons = {}
 }
