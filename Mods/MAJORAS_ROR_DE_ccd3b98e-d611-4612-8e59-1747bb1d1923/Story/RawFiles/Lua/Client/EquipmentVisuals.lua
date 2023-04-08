@@ -9,10 +9,12 @@ VisualData = {}
 ---@field Stats table<string,string> Priority 2
 ---@field Tags table<string,string> Priority 3
 
+---@alias ArmorTypeRarity ItemRarity|"All"
+
 ---@class VisualDataEntry
 ---@field Uniques VisualDataUniques
 ---@field ArmorTypes table<ArmorType, table<ItemSlot, string>>
----@field RarityArmorTypes table<ArmorType, table<ItemRarity, table<integer, table<ItemSlot, string>>>>
+---@field RarityArmorTypes table<ArmorType, table<ArmorTypeRarity, table<integer, table<ItemSlot, string>>>>
 ---@field Weapons table<string,string>
 
 Ext.Require("Client/Armor/AncientElf.lua")
