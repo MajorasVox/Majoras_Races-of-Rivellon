@@ -4,6 +4,32 @@ Ext.Require("Client/VisualResources.lua")
 
 VisualData = {}
 
+---@param character EclCharacter
+---@return string|nil
+local function _GetTemplate(character)
+	if character then
+		if character.CurrentTemplate then
+			--When not transformed, CurrentTemplate.Id is the character's MyGuid, and CurrentTemplate.RootTemplate is their root template.
+			--When polymorphed etc, CurrentTemplate.Id is the polymorph root template, and CurrentTemplate.RootTemplate is empty.
+			if character.CurrentTemplate.Id == character.MyGuid then
+				if not StringHelpers.IsNullOrEmpty(character.CurrentTemplate.RootTemplate) then
+					return character.CurrentTemplate.RootTemplate
+				end
+			elseif not StringHelpers.IsNullOrEmpty(character.CurrentTemplate.Id) then
+				return character.CurrentTemplate.Id
+			end
+		end
+		if character.RootTemplate then
+			if not StringHelpers.IsNullOrEmpty(character.RootTemplate.RootTemplate) then
+				return character.RootTemplate.RootTemplate
+			else
+				return character.RootTemplate.Id
+			end
+		end
+	end
+	return nil
+end
+
 ---@class VisualDataUniques
 ---@field RootTemplates table<string,string> Priority 1
 ---@field Stats table<string,string> Priority 2
@@ -129,8 +155,9 @@ local function _GetVisualData(character, e)
 				end
 			end
 		end
+		
 		if templateGUID == "" then
-			templateGUID = GameHelpers.GetTemplate(character)
+			templateGUID = _GetTemplate(character)
 		end
 		if templateGUID ~= "" then
 			local template = Ext.Template.GetTemplate(templateGUID) --[[@as CharacterTemplate]]
