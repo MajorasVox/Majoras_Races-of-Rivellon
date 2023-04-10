@@ -234,6 +234,9 @@ VisualData[VisualSetID.DemonKin] = {
 		ROR_ElfRobe_A = {
 			[SLOT.Breast] = RESOURCE.ROBE_Elf_A_Armor_A,
 		},
+		ROR_PriestRobe_A = {
+			[SLOT.Breast] = RESOURCE.ROBE_Redfaction_Priest_A_Armor_A,
+		},
 	},
 	Uniques = {
 		--Tag,ArmorTypeKey
@@ -254,6 +257,8 @@ VisualData[VisualSetID.DemonKin] = {
 			ARM_UNIQUE_RC_MageUpperBody = "ROR_ElfRobe_A",
 			--Migo's Breastplate
 			FTJ_Gheist_Migo_UpperBody = "ROR_BrutePlate_A",
+			--Magister's Mantle
+			FTJ_HarbourMagister_MageArmour = "ROR_PriestRobe_A",
 		},
 		RootTemplates = {},
 	},

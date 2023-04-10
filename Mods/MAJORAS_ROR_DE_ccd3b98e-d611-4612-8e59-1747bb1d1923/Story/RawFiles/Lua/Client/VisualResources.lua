@@ -75,6 +75,7 @@ VisualResources.DemonKin = {
 	ROBE_Lizard_A_Helmet_A = "5a877528-b690-44d1-a88f-1c2dd9531c39",
 	ROBE_Paladin_A_Armor_A = "eb539d3e-8466-44a9-8ad1-0309822523b8",
 	ROBE_Redfaction_Inquisitor_A_Armor_A = "104ab712-4cc8-43fd-80fe-ac3171393f74",
+	ROBE_Redfaction_Priest_A_Armor_A = "15e8a18e-10a6-4214-bffb-ebeb51542d1a",
 }
 
 ---@class FailedGheistVisuals
