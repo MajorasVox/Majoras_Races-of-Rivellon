@@ -30,10 +30,13 @@ local function _GetTemplate(character, ignorePolymorph)
 	return nil
 end
 
+---@alias VisualDataEntryGetResourceCallback (fun(character:EclCharacter, e:EclLuaCreateEquipmentVisualsRequestEvent, item:EclItem):string)
+---@alias VisualDataEntryValue string|VisualDataEntryGetResourceCallback
+
 ---@class VisualDataUniques
----@field RootTemplates table<string,string> Priority 1
----@field Stats table<string,string> Priority 2
----@field Tags table<string,string> Priority 3
+---@field RootTemplates table<string,VisualDataEntryValue> Priority 1
+---@field Stats table<string,VisualDataEntryValue> Priority 2
+---@field Tags table<string,VisualDataEntryValue> Priority 3
 
 ---@alias ArmorTypeRarity ItemRarity|"All"
 
@@ -41,13 +44,13 @@ end
 ---@field Min integer
 ---@field Max integer
 
----@alias VisualRarityEntry VisualRarityLevelSettings|table<ItemSlot, string>
+---@alias VisualRarityEntry VisualRarityLevelSettings|table<ItemSlot, VisualDataEntryValue>
 
 ---@class VisualDataEntry
 ---@field Uniques VisualDataUniques
----@field ArmorTypes table<ArmorType, table<ItemSlot, string>>
+---@field ArmorTypes table<ArmorType, table<ItemSlot, VisualDataEntryValue>>
 ---@field RarityArmorTypes table<ArmorType, table<ArmorTypeRarity, table<integer,VisualRarityEntry>>>
----@field Weapons table<string,string>
+---@field Weapons table<string,VisualDataEntryValue>
 ---@field DeactivateVisuals table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
 
 Ext.Require("Client/Armor/AncientElf.lua")
@@ -130,12 +133,23 @@ local function _SetDeactivationFlags(e, character, deactivateVisuals)
 	end
 end
 
+---@param character EclCharacter
+---@param item EclItem
 ---@param e EclLuaCreateEquipmentVisualsRequestEvent
----@param visual FixedString
+---@param visual VisualDataEntryValue
 ---@param slot ItemSlot
 ---@param itemType "Armor"|"Shield"|"Weapon"
 ---@param deactivateVisuals? table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
-local function _SetVisual(e, visual, slot, itemType, deactivateVisuals)
+local function _SetVisual(character, item, e, visual, slot, itemType, deactivateVisuals)
+	if type(visual) == "function" then
+		local b,result = xpcall(visual, debug.traceback, character, e, item)
+		if b then
+			visual = result
+		else
+			Ext.Utils.PrintError(result)
+			return
+		end
+	end
 	e.Params.VisualResourceID = visual
 	if itemType == "Armor" then
 		if deactivateVisuals and deactivateVisuals[slot] then
@@ -213,7 +227,7 @@ Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 				if specialArmorType then
 					local visual = _GetVisualForArmorType(character, data, specialArmorType, slot, rarity)
 					if visual then
-						_SetVisual(e, visual, slot, itemType, data.DeactivateVisuals)
+						_SetVisual(character, item, e, visual, slot, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
@@ -221,13 +235,13 @@ Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 					local armorType = Ext.Enums.ArmorType[item.Stats.StatsEntry.ArmorType]
 					local visual = _GetVisualForArmorType(character, data, armorType, slot, rarity)
 					if visual then
-						_SetVisual(e, visual, slot, itemType, data.DeactivateVisuals)
+						_SetVisual(character, item, e, visual, slot, itemType, data.DeactivateVisuals)
 						return
 					end
 				else
 					local visual = data.Weapons[template] or data.Weapons[item.Stats.Name]
 					if visual then
-						_SetVisual(e, visual, slot, itemType, data.DeactivateVisuals)
+						_SetVisual(character, item, e, visual, slot, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
