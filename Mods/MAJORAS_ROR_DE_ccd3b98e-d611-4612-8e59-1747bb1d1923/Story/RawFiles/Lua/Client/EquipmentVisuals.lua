@@ -153,7 +153,10 @@ local function _SetVisual(character, item, e, visual, slot, itemType, deactivate
 		end
 	end
 	if _DEBUG then
-		
+		local resource = Ext.Resource.Get(Ext.Enums.ResourceType.Visual, visual)
+		if resource ~= nil then
+			e.Params.VisualResourceID = visual
+		end
 	else
 		e.Params.VisualResourceID = visual
 	end
