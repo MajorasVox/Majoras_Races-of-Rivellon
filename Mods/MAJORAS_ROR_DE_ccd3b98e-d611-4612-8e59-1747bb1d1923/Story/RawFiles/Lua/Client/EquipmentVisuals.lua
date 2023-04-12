@@ -4,44 +4,56 @@ Ext.Require("Client/VisualResources.lua")
 
 VisualData = {}
 
+local _DEBUG = Ext.Debug.IsDeveloperMode()
+
 ---@param character EclCharacter
+---@param ignorePolymorph? boolean
 ---@return string|nil
-local function _GetTemplate(character)
+local function _GetTemplate(character, ignorePolymorph)
 	if character then
-		if character.CurrentTemplate then
+		local instanceData = character.CurrentTemplate or character.RootTemplate
+		if instanceData then
+			if ignorePolymorph then
+				if not StringHelpers.IsNullOrEmpty(character.RootTemplate.RootTemplate) and character.RootTemplate.RootTemplate ~= character.MyGuid then
+					return character.RootTemplate.RootTemplate
+				end
+			end
 			--When not transformed, CurrentTemplate.Id is the character's MyGuid, and CurrentTemplate.RootTemplate is their root template.
 			--When polymorphed etc, CurrentTemplate.Id is the polymorph root template, and CurrentTemplate.RootTemplate is empty.
-			if character.CurrentTemplate.Id == character.MyGuid then
-				if not StringHelpers.IsNullOrEmpty(character.CurrentTemplate.RootTemplate) then
-					return character.CurrentTemplate.RootTemplate
+			if instanceData.Id == character.MyGuid then
+				if not StringHelpers.IsNullOrEmpty(instanceData.RootTemplate) then
+					return instanceData.RootTemplate
 				end
-			elseif not StringHelpers.IsNullOrEmpty(character.CurrentTemplate.Id) then
-				return character.CurrentTemplate.Id
-			end
-		end
-		if character.RootTemplate then
-			if not StringHelpers.IsNullOrEmpty(character.RootTemplate.RootTemplate) then
-				return character.RootTemplate.RootTemplate
-			else
-				return character.RootTemplate.Id
+			elseif not StringHelpers.IsNullOrEmpty(instanceData.Id) then
+				return instanceData.Id
 			end
 		end
 	end
 	return nil
 end
 
+---@alias VisualDataEntryGetResourceCallback (fun(character:EclCharacter, e:EclLuaCreateEquipmentVisualsRequestEvent, item:EclItem):string)
+---@alias VisualDataEntryValue string|VisualDataEntryGetResourceCallback
+
 ---@class VisualDataUniques
----@field RootTemplates table<string,string> Priority 1
----@field Stats table<string,string> Priority 2
----@field Tags table<string,string> Priority 3
+---@field RootTemplates table<string,VisualDataEntryValue> Priority 1
+---@field Stats table<string,VisualDataEntryValue> Priority 2
+---@field Tags table<string,VisualDataEntryValue> Priority 3
 
 ---@alias ArmorTypeRarity ItemRarity|"All"
 
+---@class VisualRarityLevelSettings
+---@field Min integer
+---@field Max integer
+
+---@alias VisualRarityEntry VisualRarityLevelSettings|table<ItemSlot, VisualDataEntryValue>
+
 ---@class VisualDataEntry
 ---@field Uniques VisualDataUniques
----@field ArmorTypes table<ArmorType, table<ItemSlot, string>>
----@field RarityArmorTypes table<ArmorType, table<ArmorTypeRarity, table<integer, table<ItemSlot, string>>>>
----@field Weapons table<string,string>
+---@field ArmorTypes table<ArmorType, table<ItemSlot, VisualDataEntryValue>>
+---@field RarityArmorTypes table<ArmorType, table<ArmorTypeRarity, table<integer,VisualRarityEntry>>>
+---@field Weapons table<string,VisualDataEntryValue>
+---@field DeactivateVisuals table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
 
 Ext.Require("Client/Armor/AncientElf.lua")
 Ext.Require("Client/Armor/DemonKin.lua")
@@ -52,12 +64,12 @@ Ext.Require("Client/Armor/Zombie.lua")
 ---@param char EclCharacter
 ---@param item EclItem
 ---@param data VisualDataUniques
+---@param template Guid
 ---@return string|nil
-local function _GetUniqueArmorType(char, item, data)
+local function _GetUniqueArmorType(char, item, data, template)
 	if not data then
 		return nil
 	end
-	local template = GameHelpers.GetTemplate(item)
 	if data.RootTemplates[template] then
 		return data.RootTemplates[template]
 	end
@@ -93,7 +105,7 @@ local function _GetVisualForArmorType(character, data, armorType, slot, rarity)
 			local levelCap = GameHelpers.GetExtraData("LevelCap", 30)
 			for i=1,#rarityData do
 				local v = rarityData[i]
-				if (v.Min == nil or level >= v.Min or v.Min <= 0) and (v.Max == nil or level <= v.Max or v.Max >= levelCap) then
+				if v and (v.Min == nil or level >= v.Min or v.Min <= 0) and (v.Max == nil or level <= v.Max or v.Max >= levelCap) then
 					if v[slot] then
 						return v[slot]
 					end
@@ -108,20 +120,61 @@ local function _GetVisualForArmorType(character, data, armorType, slot, rarity)
 end
 
 ---@param e EclLuaCreateEquipmentVisualsRequestEvent
----@param visual FixedString
----@param slot ItemSlot
----@param itemType "Armor"|"Shield"|"Weapon"
-local function _SetVisual(e, visual, slot, itemType)
-	e.Params.VisualResourceID = visual
-	--fprint(LOGLEVEL.TRACE, "[ROR] Setting visual to %s for slot %s", visual, slot)
-	if itemType == "Armor" then
-		if slot == "Breast" then
-			e.Params.DeactivateTorso = true
-			e.Params.DeactivateArms = true
-		elseif slot == "Helmet" then
-			--e.Params.DeactivateHead = true
+---@param character EclCharacter
+---@param deactivateVisuals? table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
+local function _SetDeactivationFlags(e, character, deactivateVisuals)
+	if deactivateVisuals then
+		for equipmentSlot,flags in pairs(deactivateVisuals) do
+			local equipped = character:GetItemObjectBySlot(equipmentSlot)
+			if equipped then
+				for k,b in pairs(flags) do
+					e.Params[k] = b
+				end
+			end
 		end
 	end
+end
+
+---@param character EclCharacter
+---@param item EclItem
+---@param e EclLuaCreateEquipmentVisualsRequestEvent
+---@param visual VisualDataEntryValue
+---@param slot ItemSlot
+---@param itemType "Armor"|"Shield"|"Weapon"
+---@param deactivateVisuals? table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
+local function _SetVisual(character, item, e, visual, slot, itemType, deactivateVisuals)
+	if type(visual) == "function" then
+		local b,result = xpcall(visual, debug.traceback, character, e, item)
+		if b then
+			visual = result
+		else
+			Ext.Utils.PrintError(result)
+			return
+		end
+	end
+	if _DEBUG then
+		local resource = Ext.Resource.Get(Ext.Enums.ResourceType.Visual, visual)
+		if resource ~= nil then
+			e.Params.VisualResourceID = visual
+		end
+	else
+		e.Params.VisualResourceID = visual
+	end
+	if itemType == "Armor" then
+		if deactivateVisuals and deactivateVisuals[slot] then
+			for k,b in pairs(deactivateVisuals[slot]) do
+				e.Params[k] = b
+			end
+		else
+			if slot == "Breast" then
+				e.Params.DeactivateTorso = true
+				e.Params.DeactivateArms = true
+			elseif slot == "Helmet" then
+				--e.Params.DeactivateHead = true
+			end
+		end
+	end
+	fprint(LOGLEVEL.TRACE, "[ROR] Setting visual to %s. ItemType(%s) Slot(%s) VisualSetSlotMask(%s)", visual, itemType, slot, e.Params.VisualSetSlotMask)
 end
 
 ---@param character EclCharacter
@@ -130,7 +183,7 @@ end
 local function _GetVisualData(character, e)
 	if character then
 		local templateGUID = ""
-		
+
 		local slot = e.Params.Slot
 		if character.PlayerData then
 			if slot == "Helmet" then
@@ -155,7 +208,7 @@ local function _GetVisualData(character, e)
 				end
 			end
 		end
-		
+
 		if templateGUID == "" then
 			templateGUID = _GetTemplate(character)
 		end
@@ -173,34 +226,36 @@ Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 	if character and character.PlayerCustomData then
 		local data = _GetVisualData(character, e)
 		if data then
-			local slot = Ext.Enums.ItemSlot[e.Params.Slot]
+			local slotInt = Ext.Enums.ItemSlot[e.Params.Slot]
 			local item = character:GetItemObjectBySlot(e.Params.Slot)
 			if item then
 				local template = GameHelpers.GetTemplate(item) --[[@as string]]
 				local rarity = item.Stats.ItemTypeReal --[[@as ItemRarity]]
-				local specialArmorType = _GetUniqueArmorType(character, item, data.Uniques)
+				local specialArmorType = _GetUniqueArmorType(character, item, data.Uniques, template)
+				local itemType = item.Stats.ItemType
 				if specialArmorType then
-					local visual = _GetVisualForArmorType(character, data, specialArmorType, slot, rarity)
+					local visual = _GetVisualForArmorType(character, data, specialArmorType, slotInt, rarity)
 					if visual then
-						_SetVisual(e, visual, slot, item.Stats.ItemType)
+						_SetVisual(character, item, e, visual, slotInt, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
-				if item.Stats.ItemType == "Armor" then
+				if itemType == "Armor" then
 					local armorType = Ext.Enums.ArmorType[item.Stats.StatsEntry.ArmorType]
-					local visual = _GetVisualForArmorType(character, data, armorType, slot, rarity)
+					local visual = _GetVisualForArmorType(character, data, armorType, slotInt, rarity)
 					if visual then
-						_SetVisual(e, visual, slot, item.Stats.ItemType)
+						_SetVisual(character, item, e, visual, slotInt, itemType, data.DeactivateVisuals)
 						return
 					end
 				else
 					local visual = data.Weapons[template] or data.Weapons[item.Stats.Name]
 					if visual then
-						_SetVisual(e, visual, slot, item.Stats.ItemType)
+						_SetVisual(character, item, e, visual, slotInt, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
 			end
+			--_SetDeactivationFlags(e, character, data.DeactivateVisuals)
 		end
 	end
 end)

@@ -90,7 +90,7 @@ VisualData[VisualSetID.DemonKin] = {
 			},
 			Uncommon = {
 				{
-					[SLOT.Helmet] = RESOURCE.CLOTH_Demon_Rags_A_Helmet_A,
+					[SLOT.Helmet] = RESOURCE.CLOTH_Purged_A_Helmet_A,
 					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_A_Armor_A,
 				},
 			},
@@ -243,6 +243,14 @@ VisualData[VisualSetID.DemonKin] = {
 		ROR_BicorneHat = {
 			[SLOT.Helmet] = RESOURCE.UNIQUE_Beast_A_Helmet_A,
 		},
+		ROR_Wings = {
+			[SLOT.Wings] = function (character, e, item)
+				if character:GetStatus("PURE") then
+					return RESOURCE.FX_SK_Angel_A_Wings_A
+				end
+				return RESOURCE.FX_SK_Demon_A_Wings_A
+			end
+		}
 	},
 	Uniques = {
 		--Tag,ArmorTypeKey
@@ -268,7 +276,16 @@ VisualData[VisualSetID.DemonKin] = {
 			--Magister's Mantle
 			FTJ_HarbourMagister_MageArmour = "ROR_PriestRobe_A",
 		},
-		RootTemplates = {},
+		RootTemplates = {
+			-- EQ_Avatar_Wings
+			["a71d1908-7499-42c2-8c6b-a2173be582dc"] = "ROR_Wings"
+		},
 	},
-	Weapons = {}
+	Weapons = {},
+	DeactivateVisuals = {
+		Breast = {
+			DeactivateTorso = true,
+			DeactivateArms = true,
+		}
+	}
 }
