@@ -84,11 +84,13 @@ VisualData[VisualSetID.DemonKin] = {
 		[ARMORTYPE.Cloth] = {
 			Common = {
 				{
+					[SLOT.Helmet] = RESOURCE.CLOTH_Purged_A_Helmet_A,
 					[SLOT.Breast] = RESOURCE.CLOTH_Purged_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
+					[SLOT.Helmet] = RESOURCE.CLOTH_Demon_Rags_A_Helmet_A,
 					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_A_Armor_A,
 				},
 			},
@@ -100,19 +102,19 @@ VisualData[VisualSetID.DemonKin] = {
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Bandit_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.LEATHER_Bandit_A_Armor_A,
 				},
 			},
 			Legendary = {
 				{
 					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_B,
+					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_A,
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
+					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_B,
 					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_B,
 				},
 			}
@@ -197,6 +199,7 @@ VisualData[VisualSetID.DemonKin] = {
 			[SLOT.Breast] = RESOURCE.PLATE_Ghoul_A_Armor_A,
 		},
 		[ARMORTYPE.Robe] = {
+			[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
 			[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A, -- TODO Has a skull covering the head
 		},
 		[ARMORTYPE.Leather] = {
@@ -237,6 +240,9 @@ VisualData[VisualSetID.DemonKin] = {
 		ROR_PriestRobe_A = {
 			[SLOT.Breast] = RESOURCE.ROBE_Redfaction_Priest_A_Armor_A,
 		},
+		ROR_BicorneHat = {
+			[SLOT.Helmet] = RESOURCE.UNIQUE_Beast_A_Helmet_A,
+		},
 	},
 	Uniques = {
 		--Tag,ArmorTypeKey
@@ -245,6 +251,8 @@ VisualData[VisualSetID.DemonKin] = {
 		},
 		--StatID,ArmorTypeKey
 		Stats = {
+			--Fran The Bicorne Hat
+			ARM_UNIQUE_BeastBicorne = "ROR_BicorneHat",
 			--Gloves of Teleportation
 			ARM_UNIQUE_TeleportationGloves = "ROR_ScaliePort",
 			--Band of Braccus

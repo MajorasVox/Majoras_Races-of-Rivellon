@@ -33,7 +33,7 @@
                             <attribute id="MD5" value="" type="23" />
                             <attribute id="Name" value="Majoras - Character Creation Plus - Definitive Edition" type="22" />
                             <attribute id="UUID" value="627f624f-e2b8-4b37-977e-03044e500fec" type="22" />
-                            <attribute id="Version" value="1610612744" type="4" />
+                            <attribute id="Version" value="1610612748" type="4" />
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" value="LadyC_MoreCharacterColors_dcdfeaf4-8f2d-4aca-80ab-5aa70747d2b2" type="30" />
@@ -47,7 +47,7 @@
                             <attribute id="MD5" value="" type="23" />
                             <attribute id="Name" value="LeaderLib - Definitive Edition" type="22" />
                             <attribute id="UUID" value="7e737d2f-31d2-4751-963f-be6ccc59cd0c" type="22" />
-                            <attribute id="Version" value="387907585" type="4" />
+                            <attribute id="Version" value="387907587" type="4" />
                         </node>
                     </children>
                 </node>
@@ -69,7 +69,7 @@
                     <attribute id="Tags" value="" type="30" />
                     <attribute id="Type" value="Add-on" type="22" />
                     <attribute id="UUID" value="ccd3b98e-d611-4612-8e59-1747bb1d1923" type="22" />
-                    <attribute id="Version" value="268435468" type="4" />
+                    <attribute id="Version" value="268435471" type="4" />
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version" value="909321303" type="4" />
