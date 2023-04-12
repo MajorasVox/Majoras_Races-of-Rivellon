@@ -270,5 +270,11 @@ VisualData[VisualSetID.DemonKin] = {
 		},
 		RootTemplates = {},
 	},
-	Weapons = {}
+	Weapons = {},
+	DeactivateVisuals = {
+		Breast = {
+			DeactivateTorso = true,
+			DeactivateArms = true,
+		}
+	}
 }

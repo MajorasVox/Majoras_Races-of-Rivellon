@@ -5,25 +5,25 @@ Ext.Require("Client/VisualResources.lua")
 VisualData = {}
 
 ---@param character EclCharacter
+---@param ignorePolymorph? boolean
 ---@return string|nil
-local function _GetTemplate(character)
+local function _GetTemplate(character, ignorePolymorph)
 	if character then
-		if character.CurrentTemplate then
+		local instanceData = character.CurrentTemplate or character.RootTemplate
+		if instanceData then
+			if ignorePolymorph then
+				if not StringHelpers.IsNullOrEmpty(character.RootTemplate.RootTemplate) and character.RootTemplate.RootTemplate ~= character.MyGuid then
+					return character.RootTemplate.RootTemplate
+				end
+			end
 			--When not transformed, CurrentTemplate.Id is the character's MyGuid, and CurrentTemplate.RootTemplate is their root template.
 			--When polymorphed etc, CurrentTemplate.Id is the polymorph root template, and CurrentTemplate.RootTemplate is empty.
-			if character.CurrentTemplate.Id == character.MyGuid then
-				if not StringHelpers.IsNullOrEmpty(character.CurrentTemplate.RootTemplate) then
-					return character.CurrentTemplate.RootTemplate
+			if instanceData.Id == character.MyGuid then
+				if not StringHelpers.IsNullOrEmpty(instanceData.RootTemplate) then
+					return instanceData.RootTemplate
 				end
-			elseif not StringHelpers.IsNullOrEmpty(character.CurrentTemplate.Id) then
-				return character.CurrentTemplate.Id
-			end
-		end
-		if character.RootTemplate then
-			if not StringHelpers.IsNullOrEmpty(character.RootTemplate.RootTemplate) then
-				return character.RootTemplate.RootTemplate
-			else
-				return character.RootTemplate.Id
+			elseif not StringHelpers.IsNullOrEmpty(instanceData.Id) then
+				return instanceData.Id
 			end
 		end
 	end
@@ -37,11 +37,18 @@ end
 
 ---@alias ArmorTypeRarity ItemRarity|"All"
 
+---@class VisualRarityLevelSettings
+---@field Min integer
+---@field Max integer
+
+---@alias VisualRarityEntry VisualRarityLevelSettings|table<ItemSlot, string>
+
 ---@class VisualDataEntry
 ---@field Uniques VisualDataUniques
 ---@field ArmorTypes table<ArmorType, table<ItemSlot, string>>
----@field RarityArmorTypes table<ArmorType, table<ArmorTypeRarity, table<integer, table<ItemSlot, string>>>>
+---@field RarityArmorTypes table<ArmorType, table<ArmorTypeRarity, table<integer,VisualRarityEntry>>>
 ---@field Weapons table<string,string>
+---@field DeactivateVisuals table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
 
 Ext.Require("Client/Armor/AncientElf.lua")
 Ext.Require("Client/Armor/DemonKin.lua")
@@ -93,7 +100,7 @@ local function _GetVisualForArmorType(character, data, armorType, slot, rarity)
 			local levelCap = GameHelpers.GetExtraData("LevelCap", 30)
 			for i=1,#rarityData do
 				local v = rarityData[i]
-				if (v.Min == nil or level >= v.Min or v.Min <= 0) and (v.Max == nil or level <= v.Max or v.Max >= levelCap) then
+				if v and (v.Min == nil or level >= v.Min or v.Min <= 0) and (v.Max == nil or level <= v.Max or v.Max >= levelCap) then
 					if v[slot] then
 						return v[slot]
 					end
@@ -108,20 +115,43 @@ local function _GetVisualForArmorType(character, data, armorType, slot, rarity)
 end
 
 ---@param e EclLuaCreateEquipmentVisualsRequestEvent
+---@param character EclCharacter
+---@param deactivateVisuals? table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
+local function _SetDeactivationFlags(e, character, deactivateVisuals)
+	if deactivateVisuals then
+		for equipmentSlot,flags in pairs(deactivateVisuals) do
+			local equipped = character:GetItemObjectBySlot(equipmentSlot)
+			if equipped then
+				for k,b in pairs(flags) do
+					e.Params[k] = b
+				end
+			end
+		end
+	end
+end
+
+---@param e EclLuaCreateEquipmentVisualsRequestEvent
 ---@param visual FixedString
 ---@param slot ItemSlot
 ---@param itemType "Armor"|"Shield"|"Weapon"
-local function _SetVisual(e, visual, slot, itemType)
+---@param deactivateVisuals? table<ItemSlot, table<DeactivateVisualSetSlotMask, boolean>>
+local function _SetVisual(e, visual, slot, itemType, deactivateVisuals)
 	e.Params.VisualResourceID = visual
-	--fprint(LOGLEVEL.TRACE, "[ROR] Setting visual to %s for slot %s", visual, slot)
 	if itemType == "Armor" then
-		if slot == "Breast" then
-			e.Params.DeactivateTorso = true
-			e.Params.DeactivateArms = true
-		elseif slot == "Helmet" then
-			--e.Params.DeactivateHead = true
+		if deactivateVisuals and deactivateVisuals[slot] then
+			for k,b in pairs(deactivateVisuals[slot]) do
+				e.Params[k] = b
+			end
+		else
+			if slot == "Breast" then
+				e.Params.DeactivateTorso = true
+				e.Params.DeactivateArms = true
+			elseif slot == "Helmet" then
+				--e.Params.DeactivateHead = true
+			end
 		end
 	end
+	--fprint(LOGLEVEL.TRACE, "[ROR] Setting visual to %s. ItemType(%s) Slot(%s) VisualSetSlotMask(%s)", visual, itemType, slot, e.Params.VisualSetSlotMask)
 end
 
 ---@param character EclCharacter
@@ -130,7 +160,7 @@ end
 local function _GetVisualData(character, e)
 	if character then
 		local templateGUID = ""
-		
+
 		local slot = e.Params.Slot
 		if character.PlayerData then
 			if slot == "Helmet" then
@@ -155,7 +185,7 @@ local function _GetVisualData(character, e)
 				end
 			end
 		end
-		
+
 		if templateGUID == "" then
 			templateGUID = _GetTemplate(character)
 		end
@@ -179,28 +209,30 @@ Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 				local template = GameHelpers.GetTemplate(item) --[[@as string]]
 				local rarity = item.Stats.ItemTypeReal --[[@as ItemRarity]]
 				local specialArmorType = _GetUniqueArmorType(character, item, data.Uniques)
+				local itemType = item.Stats.ItemType
 				if specialArmorType then
 					local visual = _GetVisualForArmorType(character, data, specialArmorType, slot, rarity)
 					if visual then
-						_SetVisual(e, visual, slot, item.Stats.ItemType)
+						_SetVisual(e, visual, slot, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
-				if item.Stats.ItemType == "Armor" then
+				if itemType == "Armor" then
 					local armorType = Ext.Enums.ArmorType[item.Stats.StatsEntry.ArmorType]
 					local visual = _GetVisualForArmorType(character, data, armorType, slot, rarity)
 					if visual then
-						_SetVisual(e, visual, slot, item.Stats.ItemType)
+						_SetVisual(e, visual, slot, itemType, data.DeactivateVisuals)
 						return
 					end
 				else
 					local visual = data.Weapons[template] or data.Weapons[item.Stats.Name]
 					if visual then
-						_SetVisual(e, visual, slot, item.Stats.ItemType)
+						_SetVisual(e, visual, slot, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
 			end
+			--_SetDeactivationFlags(e, character, data.DeactivateVisuals)
 		end
 	end
 end)
