@@ -4,6 +4,8 @@ Ext.Require("Client/VisualResources.lua")
 
 VisualData = {}
 
+local _DEBUG = Ext.Debug.IsDeveloperMode()
+
 ---@param character EclCharacter
 ---@param ignorePolymorph? boolean
 ---@return string|nil
@@ -62,12 +64,12 @@ Ext.Require("Client/Armor/Zombie.lua")
 ---@param char EclCharacter
 ---@param item EclItem
 ---@param data VisualDataUniques
+---@param template Guid
 ---@return string|nil
-local function _GetUniqueArmorType(char, item, data)
+local function _GetUniqueArmorType(char, item, data, template)
 	if not data then
 		return nil
 	end
-	local template = GameHelpers.GetTemplate(item)
 	if data.RootTemplates[template] then
 		return data.RootTemplates[template]
 	end
@@ -150,7 +152,11 @@ local function _SetVisual(character, item, e, visual, slot, itemType, deactivate
 			return
 		end
 	end
-	e.Params.VisualResourceID = visual
+	if _DEBUG then
+		
+	else
+		e.Params.VisualResourceID = visual
+	end
 	if itemType == "Armor" then
 		if deactivateVisuals and deactivateVisuals[slot] then
 			for k,b in pairs(deactivateVisuals[slot]) do
@@ -165,7 +171,7 @@ local function _SetVisual(character, item, e, visual, slot, itemType, deactivate
 			end
 		end
 	end
-	--fprint(LOGLEVEL.TRACE, "[ROR] Setting visual to %s. ItemType(%s) Slot(%s) VisualSetSlotMask(%s)", visual, itemType, slot, e.Params.VisualSetSlotMask)
+	fprint(LOGLEVEL.TRACE, "[ROR] Setting visual to %s. ItemType(%s) Slot(%s) VisualSetSlotMask(%s)", visual, itemType, slot, e.Params.VisualSetSlotMask)
 end
 
 ---@param character EclCharacter
@@ -217,31 +223,31 @@ Ext.Events.CreateEquipmentVisualsRequest:Subscribe(function (e)
 	if character and character.PlayerCustomData then
 		local data = _GetVisualData(character, e)
 		if data then
-			local slot = Ext.Enums.ItemSlot[e.Params.Slot]
+			local slotInt = Ext.Enums.ItemSlot[e.Params.Slot]
 			local item = character:GetItemObjectBySlot(e.Params.Slot)
 			if item then
 				local template = GameHelpers.GetTemplate(item) --[[@as string]]
 				local rarity = item.Stats.ItemTypeReal --[[@as ItemRarity]]
-				local specialArmorType = _GetUniqueArmorType(character, item, data.Uniques)
+				local specialArmorType = _GetUniqueArmorType(character, item, data.Uniques, template)
 				local itemType = item.Stats.ItemType
 				if specialArmorType then
-					local visual = _GetVisualForArmorType(character, data, specialArmorType, slot, rarity)
+					local visual = _GetVisualForArmorType(character, data, specialArmorType, slotInt, rarity)
 					if visual then
-						_SetVisual(character, item, e, visual, slot, itemType, data.DeactivateVisuals)
+						_SetVisual(character, item, e, visual, slotInt, itemType, data.DeactivateVisuals)
 						return
 					end
 				end
 				if itemType == "Armor" then
 					local armorType = Ext.Enums.ArmorType[item.Stats.StatsEntry.ArmorType]
-					local visual = _GetVisualForArmorType(character, data, armorType, slot, rarity)
+					local visual = _GetVisualForArmorType(character, data, armorType, slotInt, rarity)
 					if visual then
-						_SetVisual(character, item, e, visual, slot, itemType, data.DeactivateVisuals)
+						_SetVisual(character, item, e, visual, slotInt, itemType, data.DeactivateVisuals)
 						return
 					end
 				else
 					local visual = data.Weapons[template] or data.Weapons[item.Stats.Name]
 					if visual then
-						_SetVisual(character, item, e, visual, slot, itemType, data.DeactivateVisuals)
+						_SetVisual(character, item, e, visual, slotInt, itemType, data.DeactivateVisuals)
 						return
 					end
 				end

@@ -244,11 +244,13 @@ VisualData[VisualSetID.DemonKin] = {
 			[SLOT.Helmet] = RESOURCE.UNIQUE_Beast_A_Helmet_A,
 		},
 		ROR_Wings = {
-			[SLOT.Wings] = RESOURCE.FX_SK_Demon_A_Wings_A,
-		},
-		ROR_Wings_Pure = {
-			[SLOT.Wings] = RESOURCE.FX_SK_Angel_A_Wings_A,
-		},
+			[SLOT.Wings] = function (character, e, item)
+				if character:GetStatus("PURE") then
+					return RESOURCE.FX_SK_Angel_A_Wings_A
+				end
+				return RESOURCE.FX_SK_Demon_A_Wings_A
+			end
+		}
 	},
 	Uniques = {
 		--Tag,ArmorTypeKey
@@ -276,12 +278,7 @@ VisualData[VisualSetID.DemonKin] = {
 		},
 		RootTemplates = {
 			-- EQ_Avatar_Wings
-			["a71d1908-7499-42c2-8c6b-a2173be582dc"] = function (character, e, item)
-				if character:GetStatus("PURE") then
-					return "ROR_Wings_Pure"
-				end
-				return "ROR_Wings"
-			end
+			["a71d1908-7499-42c2-8c6b-a2173be582dc"] = "ROR_Wings"
 		},
 	},
 	Weapons = {},
