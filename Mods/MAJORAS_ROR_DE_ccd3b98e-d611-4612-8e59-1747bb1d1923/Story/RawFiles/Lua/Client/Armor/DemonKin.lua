@@ -8,38 +8,38 @@ VisualData[VisualSetID.DemonKin] = {
 		[ARMORTYPE.Plate] = {
 			Common = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Lizard_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Lizard_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Guard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Guard_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
 					[SLOT.Helmet] = RESOURCE.PLATE_Lizard_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Lizard_A_Armor_B,
+					[SLOT.Breast] = RESOURCE.PLATE_Lizard_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Ghoul_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.MAIL_Lizard_Chain_A_Helmet_B,
+					[SLOT.Breast] = RESOURCE.PLATE_Lizard_A_Armor_B,
 				},
 			},
 			Epic = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_AlanBird_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_AlanBird_A_Armor_A
+					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Ghoul_A_Armor_A
 				},
 			},
 			Legendary = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_TerracottaGardian_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_AlanBird_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_AlanBird_A_Armor_A,
 				},
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Utopian_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Utopian_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Blackring_Brute_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Blackring_Brute_A_Armor_A,
 				},
 			}
 		},
@@ -90,32 +90,32 @@ VisualData[VisualSetID.DemonKin] = {
 			},
 			Uncommon = {
 				{
-					[SLOT.Helmet] = RESOURCE.CLOTH_Purged_A_Helmet_A,
+					[SLOT.Helmet] = RESOURCE.CLOTH_Demon_Rags_A_Helmet_A,
 					[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Bandit_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Bandit_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.LEATHER_Bandit_A_Helmet_A,--TODO Rare Helmet
+					[SLOT.Breast] = RESOURCE.LEATHER_Bandit_A_Armor_A,--TODO Rare Breast
 				},
 			},
 			Epic = {
-				{
-					[SLOT.Helmet] = RESOURCE.LEATHER_Bandit_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.LEATHER_Bandit_A_Armor_A,
-				},
-			},
-			Legendary = {
 				{
 					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_A,
 					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_A,
 				},
 			},
-			Divine = {
+			Legendary = {
 				{
 					[SLOT.Helmet] = RESOURCE.CLOTH_Lizard_A_Helmet_B,
 					[SLOT.Breast] = RESOURCE.CLOTH_Lizard_A_Armor_B,
+				},
+			},
+			Divine = {
+				{
+					[SLOT.Helmet] = RESOURCE.ROBE_Lizard_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.ROBE_Lizard_A_Armor_A,
 				},
 			}
 		},
@@ -160,16 +160,19 @@ VisualData[VisualSetID.DemonKin] = {
 		[ARMORTYPE.Robe] = {
 			Common = {
 				{
+					[SLOT.Helmet] = RESOURCE.CLOTH_Demon_Rags_A_Helmet_A,--TODO Common Helmet
 					[SLOT.Breast] = RESOURCE.ROBE_Demon_A_Armor_A,
 				},
 			},
 			Uncommon = {
 				{
-					[SLOT.Breast] = RESOURCE.ROBE_BurningWitch_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.ROBE_Dreamer_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.ROBE_Dreamer_A_Armor_A,
 				},
 			},
 			Rare = {
 				{
+					[SLOT.Helmet] = RESOURCE.ROBE_Ghoul_A_Helmet_A
 					[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A
 				},
 			},
@@ -200,14 +203,14 @@ VisualData[VisualSetID.DemonKin] = {
 		},
 		[ARMORTYPE.Robe] = {
 			[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
-			[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A, -- TODO Has a skull covering the head
+			[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A,
 		},
 		[ARMORTYPE.Leather] = {
 			[SLOT.Helmet] = RESOURCE.LEATHER_Assassin_A_Helmet_A,
 			[SLOT.Breast] = RESOURCE.LEATHER_Assassin_A_Armor_A,
 		},
 		[ARMORTYPE.Cloth] = {
-			[SLOT.Helmet] = RESOURCE.PLATE_Ghoul_A_Helmet_A,
+			[SLOT.Helmet] = RESOURCE.CLOTH_Demon_Rags_A_Helmet_A,
 			[SLOT.Breast] = RESOURCE.CLOTH_Demon_Rags_A_Armor_A,
 		},
 		[ARMORTYPE.Mail] = {
@@ -243,6 +246,12 @@ VisualData[VisualSetID.DemonKin] = {
 		ROR_BicorneHat = {
 			[SLOT.Helmet] = RESOURCE.UNIQUE_Beast_A_Helmet_A,
 		},
+		ROR_Blindfold = {
+			[SLOT.Helmet] = RESOURCE.UNIQUE_Blindfold_A_Helmet_A,
+		},
+		ROR_GuardPlate = {
+			[SLOT.Breast] = RESOURCE.PLATE_Guard_A_Armor_A,
+		},
 		ROR_Wings = {
 			[SLOT.Wings] = function (character, e, item)
 				if character:GetStatus("PURE") then
@@ -263,6 +272,8 @@ VisualData[VisualSetID.DemonKin] = {
 			ARM_UNIQUE_BeastBicorne = "ROR_BicorneHat",
 			--Gloves of Teleportation
 			ARM_UNIQUE_TeleportationGloves = "ROR_ScaliePort",
+			--Hildur's Plate
+			ARM_UNIQUE_Hildurs_Plate_UpperBody = "ROR_GuardPlate",
 			--Band of Braccus
 			ARM_UNIQUE_BraccusCursedRing = "ROR_SkullRing",
 			--Gawin's Robe, Mistral Robes
@@ -275,6 +286,8 @@ VisualData[VisualSetID.DemonKin] = {
 			FTJ_Gheist_Migo_UpperBody = "ROR_BrutePlate_A",
 			--Magister's Mantle
 			FTJ_HarbourMagister_MageArmour = "ROR_PriestRobe_A",
+			--Blindfold
+			ARM_UNIQUE_Blindfolds = "ROR_Blindfold",
 		},
 		RootTemplates = {
 			-- EQ_Avatar_Wings
