@@ -135,3 +135,31 @@ VisualResources.LivingBear = {
 
 ---@class ZombieVisuals
 VisualResources.Zombie = {}
+
+if Ext.Debug.IsDeveloperMode() then
+	Ext.Events.SessionLoaded:Subscribe(function (e)
+		local missingResources = {}
+		local len = 0
+		for id,entries in pairs(VisualResources) do
+			for name,guid in pairs(entries) do
+				local resource = Ext.Resource.Get("Visual", guid)
+				if resource == nil then
+					len = len + 1
+					missingResources[len] = {
+						Key = string.format("VisualResources.%s.%s", id, name),
+						Guid = guid
+					}
+				end
+			end
+		end
+		if len > 0 then
+			table.sort(missingResources, function (a, b)
+				return a.Key < b.Key
+			end)
+			Ext.Utils.PrintError("[Races of Rivellon] The following registered resources are missing:")
+			Ext.Utils.PrintError(StringHelpers.Join("\n", missingResources, nil, function (k, v)
+				return string.format("  %s: %s", v.Key, v.Guid)
+			end))
+		end
+	end)
+end
