@@ -38,8 +38,8 @@ VisualData[VisualSetID.DemonKin] = {
 			},
 			Divine = {
 				{
-					[SLOT.Helmet] = RESOURCE.PLATE_Blackring_Brute_A_Helmet_A,
-					[SLOT.Breast] = RESOURCE.PLATE_Blackring_Brute_A_Armor_A,
+					[SLOT.Helmet] = RESOURCE.PLATE_Blackring_A_Helmet_A,
+					[SLOT.Breast] = RESOURCE.PLATE_Blackring_A_Armor_A,
 				},
 			}
 		},
@@ -172,7 +172,7 @@ VisualData[VisualSetID.DemonKin] = {
 			},
 			Rare = {
 				{
-					[SLOT.Helmet] = RESOURCE.ROBE_Ghoul_A_Helmet_A
+					[SLOT.Helmet] = RESOURCE.ROBE_Ghoul_A_Helmet_A,
 					[SLOT.Breast] = RESOURCE.ROBE_Ghoul_A_Armor_A
 				},
 			},

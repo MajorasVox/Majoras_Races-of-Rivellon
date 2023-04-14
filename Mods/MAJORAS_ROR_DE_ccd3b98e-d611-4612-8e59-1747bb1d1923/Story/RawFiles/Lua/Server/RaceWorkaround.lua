@@ -137,7 +137,7 @@ end
 
 local registeredOriginsRaceListeners = false
 
-RegisterListener("Initialized", function()
+Events.Initialized:Subscribe(function(e)
 	if not registeredOriginsRaceListeners and Ext.Mod.IsModLoaded(MODID.Origins) then
 		registeredOriginsRaceListeners = true
 		InitOriginsWorkarounds()

@@ -93,10 +93,6 @@ end
 ---@param rarity ItemRarity
 ---@return string|nil
 local function _GetVisualForArmorType(character, data, armorType, slot, rarity)
-	local armorTypeData = data.ArmorTypes[armorType]
-	if armorTypeData and armorTypeData[slot] then
-		return armorTypeData[slot]
-	end
 	local rarityArmorTypeData = data.RarityArmorTypes[armorType]
 	if rarityArmorTypeData then
 		local rarityData = rarityArmorTypeData[rarity] or rarityArmorTypeData.All
@@ -112,9 +108,10 @@ local function _GetVisualForArmorType(character, data, armorType, slot, rarity)
 				end
 			end
 		end
-		if armorTypeData and armorTypeData[slot] then
-			return armorTypeData[slot]
-		end
+	end
+	local armorTypeData = data.ArmorTypes[armorType]
+	if armorTypeData and armorTypeData[slot] then
+		return armorTypeData[slot]
 	end
 	return nil
 end
